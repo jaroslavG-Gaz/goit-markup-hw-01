@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "Montserrat",  sans-serif;
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format("ttf") ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+
+ font-family: "Roboto";
+}

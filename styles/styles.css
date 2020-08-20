@@ -1,0 +1,80 @@
+:root {
+    --white: #ffffff ;
+    --active : #2196F3 ;
+    --footer-hero: #2F303A ;
+    --gray : #757575;
+    --black : #212121 ;
+    --number : rgba(255, 255, 255, 0.6); ;
+    --team-back : #F5F4FA ;
+
+
+ }
+
+body{
+    font-family: "Roboto";
+    color: var(--black);
+    
+    
+   
+}
+header a{
+    text-decoration: none;
+}
+.link-web{
+    color: var(--active);
+}
+header  span {
+    color: var(--black);
+}
+
+.head-item{
+    color: var(--black);
+    
+        
+}
+.head-item:hover{
+    color: var(--active);
+}
+
+.hero{
+    color: var(--white);
+    background-color: var(--footer-hero);
+    
+}
+.hero a{
+    text-decoration: none;
+}
+
+.hero a {
+    background-color: var(--active);
+    color: var(--white);
+}
+
+.advantages p span{
+    color: var(--gray);
+}
+
+
+.team-container {
+    background-color: var(--team-back);
+}
+.profession {
+    color: var(--gray);
+}
+
+.footer{
+    background-color: var(--footer-hero);
+}
+
+.footer a{
+    text-decoration: none;
+}
+.link-studio{
+    color: var(--white);
+}
+ul {
+    color: var(--white);
+}
+.contacts {
+    color: var(--number);
+}
