@@ -6,32 +6,41 @@
     --black : #212121 ;
     --number : rgba(255, 255, 255, 0.6); ;
     --team-back : #F5F4FA ;
-
-
- }
+}
 
 body{
     font-family: "Roboto";
     color: var(--black);
-    
-    
-   
+}
+
+h2 h3{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+
 }
 header a{
     text-decoration: none;
 }
+
 .link-web{
     color: var(--active);
+    font-family: "Raleway";
+   
 }
+
 header  span {
     color: var(--black);
 }
 
 .head-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     color: var(--black);
-    
-        
+    list-style-type: none;       
 }
+
 .head-item:hover{
     color: var(--active);
 }
@@ -39,10 +48,19 @@ header  span {
 .hero{
     color: var(--white);
     background-color: var(--footer-hero);
+    font-weight: 900;
+    font-size: 44px;
+    line-height:  1.36;
     
 }
 .hero a{
     text-decoration: none;
+    font-style: normal;
+     font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    
+
 }
 
 .hero a {
@@ -52,14 +70,36 @@ header  span {
 
 .advantages p span{
     color: var(--gray);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
 }
 
+.advantages-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+
+
+}
 
 .team-container {
     background-color: var(--team-back);
 }
+.team-container p{
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
 .profession {
     color: var(--gray);
+    
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+
 }
 
 .footer{
@@ -68,7 +108,15 @@ header  span {
 
 .footer a{
     text-decoration: none;
+    font-family: "Raleway";
 }
+.footer b{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
 .link-studio{
     color: var(--white);
 }
@@ -77,4 +125,7 @@ ul {
 }
 .contacts {
     color: var(--number);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
