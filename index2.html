@@ -3,72 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles2.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
-    <link rel="stylesheet" href="./fonts/Montserrat-ExtraLight.ttf">
-
     <title>Портфолио</title>
+    <link rel="stylesheet" href="./styles/normalize.css"/> 
+    <link rel="stylesheet" href="./styles/styles2.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" > 
 </head>
 <body>
     <!--Шапка сайта-->
-<header>
+<header class="head">
 
-        <a href="????">Web Studio</a>
-        <ul>
-            <a href="./index.html"><li>Студия</li></a>
-            <li>Портфолио</li>
-            <li>Контакты</li>
-            <li>info@devstudio.com</li>
-            <li class="number">+38 096 111 11 11</li>
+        <a href="????" class="head-link footer-link">Web<span class="head-link-studio">Studio</span></a>
+        <ul class="head-nav">
+            <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+            <li class="nav-item">Портфолио</li>
+            <li class="nav-item">Контакты</li>
+        </ul>
+        <ul class="auth-nav">   
+            <li class="auth-item">info@devstudio.com</li>
+            <li class="auth-item">+38 096 111 11 11</li>
         </ul>
 
 </header>
 <main>
     <!--Наши проэкты-->
-<section>
+<section class="projects">
     <h1>Нашы проэкты</h1>
-    <ul>
-        <li><button type="button">Все</button></li>
-        <li><button type="button">Веб-сайты</button></li>
-        <li><button type="button">Приложения</button></li>
-        <li><button type="button">Дизайн</button></li>
-        <li><button type="button">Маркетинг</button></li>
+    <ul class="projects-nav">
+        <li><button type="button" class="projects-nav-item">Все</button></li>
+        <li><button type="button" class="projects-nav-item">Веб-сайты</button></li>
+        <li><button type="button" class="projects-nav-item">Приложения</button></li>
+        <li><button type="button" class="projects-nav-item">Дизайн</button></li>
+        <li><button type="button" class="projects-nav-item">Маркетинг</button></li>
     </ul>
 
-    <ul>
-        <li><img src="./images/Images2/img.jpg">
+    <ul class="projects-list">
+        <li><img src="./images/Images2/img.jpg" alt="photo">
             <h2>Технокряк</h2>
             <p>веб-сайт</p>
         </li>
-        <li><img src="./images/Images2/img(1).jpg">
+        <li><img src="./images/Images2/img(1).jpg" alt="photo">
           <h2>Постер New Orlean vs Golden Star</h2>
           <p>Дизайн</p>
         </li>
-        <li><img src="./images/Images2/img(2).jpg">
+        <li><img src="./images/Images2/img(2).jpg" alt="photo">
             <h2>Ресторан Seafood</h2>
             <p>Приложение</p>
         </li>
-        <li><img src="./images/Images2/img(3).jpg">
+        <li><img src="./images/Images2/img(3).jpg" alt="photo">
             <h2>Проект Prime</h2>
             <p>Маркетинг</p>
         </li>
-        <li><img src="./images/Images2/img(4).jpg">
+        <li><img src="./images/Images2/img(4).jpg" alt="photo">
             <h2>Проект Boxes</h2>
             <p>Приложение</p>
         </li>
-        <li><img src="./images/Images2/img(5).jpg">
+        <li><img src="./images/Images2/img(5).jpg" alt="photo">
             <h2>Inspiration has no Borders</h2>
             <p>Веб-сайт</p>
         </li>
-        <li><img src="./images/Images2/img(6).jpg">
+        <li><img src="./images/Images2/img(6).jpg" alt="photo">
             <h2>Издание Limited Edition</h2>
             <p>Дизайн</p>
         </li>
-        <li><img src="./images/Images2/img(7).jpg">
+        <li><img src="./images/Images2/img(7).jpg" alt="photo">
             <h2>Проект LAB</h2>
             <p>Маркетинг</p>
         </li>
-        <li><img src="./images/Images2/img(8).jpg">
+        <li><img src="./images/Images2/img(8).jpg" alt="photo">
             <h2>Growing Business</h2>
             <p>Приложение</p>
         </li>
@@ -79,14 +80,14 @@
 </main>
 
 <!---Подвал сайта-->
-<footer>
+<footer class=" footer">
 
-    <a href="?????">WebStudio</a>
-    <ul>
+    <a href="?????" class=" footer-link">Web<span class="footer-link-studio">Studio</span></a>
+    <ul class="footer-nav">
         
-        <li><b>г. Киев, пр-т Леси Украинки, 26</b></li>
-        <li>info@example.com</li>
-        <li>+38 099 111 11 11</li>
+        <li class="footer-adrres"><b>г. Киев, пр-т Леси Украинки, 26</b></li>
+        <li class="footer-info">info@example.com</li>
+        <li class="footer-info">+38 099 111 11 11</li>
     </ul>
 </footer>
 </body>

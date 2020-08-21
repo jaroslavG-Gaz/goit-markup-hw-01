@@ -21,11 +21,20 @@ h2 h3{
 }
 header a{
     text-decoration: none;
+    
+    
 }
 
 .link-web{
     color: var(--active);
     font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.29;
+
+/* identical to box height */
+letter-spacing: 0.03em;
    
 }
 
@@ -33,13 +42,16 @@ header  span {
     color: var(--black);
 }
 
-.head-item{
+.head-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--black);
-    list-style-type: none;       
+    list-style-type: none; 
+    
+          
 }
+
 
 .head-item:hover{
     color: var(--active);
@@ -60,6 +72,7 @@ header  span {
     font-size: 16px;
     line-height: 1.87;
     
+    
 
 }
 
@@ -77,9 +90,9 @@ header  span {
 }
 
 .advantages-title{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
 
 
 }
@@ -104,28 +117,40 @@ header  span {
 
 .footer{
     background-color: var(--footer-hero);
+    
 }
 
 .footer a{
-    text-decoration: none;
+    
     font-family: "Raleway";
+    text-decoration: none;
+
 }
 .footer b{
+    color: var(--white);
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+
+}
+.footer li b {
+    
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
 
 }
 
 .link-studio{
     color: var(--white);
 }
-ul {
-    color: var(--white);
-}
+
 .contacts {
     color: var(--number);
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+    list-style-type: none; 
 }

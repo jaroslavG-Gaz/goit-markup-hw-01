@@ -1,16 +1,136 @@
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
-    src: url(../fonts/Montserrat-ExtraLight.ttf) format("ttf");
-  }
-  @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    src: url(../fonts/Montserrat-Medium.ttf) format("ttf");
-  }
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-color: darkblue;
-  }
+:root{
+  --white: #ffffff ;
+    --active : #2196F3 ;
+    --footer-hero: #2F303A ;
+    --gray : #757575;
+    --black : #212121 ;
+    --number : rgba(255, 255, 255, 0.6); ;
+    --team-back : #F5F4FA ;
+}
+
+
+body{
+  font-family: "Raleway";
+  font-family: "Roboto";
+}
+/* header */
+
+.head-link, .footer-link{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.29;
+  color: var(--active);
+  text-decoration: none;
+
+
+}
+.head-link-studio{
+  color: #212121;
+}
+.head-nav{
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;  
+  list-style-type: none;
+}
+
+.nav-item:hover{
+  color: var(--active);
+}
+.nav-link{
+  color: #212121;
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: var(--active);
+}
+
+/* auth-item */
+
+.auth-nav{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+list-style-type: none;
+}
+
+.auth-item{
+  color: var(--gray)
+}
+.auth-item:hover{
+  color: var(--active);
+}
+
+/* Projects */
+
+h2{
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+
+}
+p{
+font-weight: normal;
+font-size: 16px;
+line-height: 2.25;
+color: #757575;
+}
+
+.projects-nav{
+  list-style-type: none;
+}
+
+.projects-list{
+  list-style-type: none;
+}
+
+.projects-nav-item{
+  color: var(--black);
+  background-color: #F5F4FA;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.85;
+  
+}
+.projects-nav-item:hover{
+  background-color: var(--active);
+  color: var(--white);
+}
+
+/* foooter */
+
+.footer{
+  background-color: var(--footer-hero);
+}
+.footer-nav{
+  list-style-type: none ;
+  
+}
+
+.footer-link-studio{
+  color: var(--white);
+}
+
+.footer-adrres{
+  font-style: normal;
+  font-weight: 200px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white);
+
+}
+
+.footer-info{
+  color: var(--number);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
