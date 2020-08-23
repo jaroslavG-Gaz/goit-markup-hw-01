@@ -11,6 +11,8 @@
 body{
     font-family: "Roboto";
     color: var(--black);
+    line-height: 1.67 ;
+    background-image: url(../images/Images2/Images3/les-gory-ozero.jpg);
 }
 
 h2 h3{
@@ -32,9 +34,6 @@ header a{
     font-weight: bold;
     font-size: 26px;
     line-height: 1.29;
-
-/* identical to box height */
-letter-spacing: 0.03em;
    
 }
 
@@ -154,3 +153,5 @@ line-height: 1.14;
     line-height: 1.71;
     list-style-type: none; 
 }
+
+
