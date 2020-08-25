@@ -39,8 +39,10 @@ body{
   list-style-type: none;
 }
 
+
 .nav-item:hover{
   color: var(--active);
+  
 }
 .nav-link{
   color: #212121;
