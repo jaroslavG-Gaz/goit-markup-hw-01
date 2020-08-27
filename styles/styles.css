@@ -60,7 +60,7 @@ body {
 .header-container{
     display: flex;
     align-items: center;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .site-nav{
@@ -135,7 +135,7 @@ body {
     padding-bottom: 200px;
     margin-bottom: 94px;
     background-color: var(--footer-hero);
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 
 }
 
@@ -168,7 +168,7 @@ body {
 .advantages-container{
     margin-bottom: 120px;
     display: flex;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .advantages-nav{
@@ -180,7 +180,7 @@ body {
 .item{
     width: 270px;
     height: 75px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .item:not(:last-child){
@@ -217,13 +217,13 @@ line-height: 1.71;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.36;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .doing-container{
     display: flex;
     justify-content: space-between;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 
@@ -240,6 +240,8 @@ line-height: 1.71;
 
 .page-command{
     background-color:#F5F4FA;;
+    padding-bottom: 10px;
+
 }
 
 .command-title {
@@ -251,14 +253,15 @@ line-height: 1.71;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .command-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    outline: 1px solid tomato;
+    margin-bottom: 94px;
+    /* outline: 1px solid tomato; */
 }
 
 .command-item{
@@ -293,7 +296,12 @@ line-height: 1.71;
     background-color: var(--footer-hero);
 }
 
+.link-footer{
+    padding-bottom: 20px;
+}
+
 .logo-footer{
+
     color: var(--active);
     font-family: Raleway;
     font-weight: bold;
@@ -310,7 +318,7 @@ line-height: 1.71;
 }
 
 .adress{
-
+    padding-bottom: 9px;
     font-weight: 200;
     font-size: 14px;
     line-height: 1.71;
@@ -320,5 +328,16 @@ line-height: 1.71;
 .footer{
     padding-top: 30px;
     padding-bottom: 30px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
+    
+   
 }
+.footer-list{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.footer-list .mail{
+    padding-bottom: 9px;
+} 
