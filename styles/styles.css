@@ -25,6 +25,13 @@ html{
     list-style-type: none;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
 body {
     /* width: 1200px;
     margin-right: auto;
@@ -125,7 +132,7 @@ body {
 }
 
 .container-hero {
-    height: 600px;
+    padding-bottom: 200px;
     margin-bottom: 94px;
     background-color: var(--footer-hero);
     outline: 1px solid tomato;
@@ -159,7 +166,7 @@ body {
 /* Сексия наши преимущества  */
 
 .advantages-container{
-    margin-bottom: 94px;
+    margin-bottom: 120px;
     display: flex;
     outline: 1px solid tomato;
 }
@@ -203,7 +210,9 @@ line-height: 1.71;
 
 .doing-title{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 50px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -218,12 +227,10 @@ line-height: 1.71;
 }
 
 
-
-}
-
 .doing-item{
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 95px;
   background-color:var(--active);
 }
 
@@ -231,3 +238,87 @@ line-height: 1.71;
 
 /* наша команда */
 
+.page-command{
+    background-color:#F5F4FA;;
+}
+
+.command-title {
+    margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    outline: 1px solid tomato;
+}
+
+.command-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    outline: 1px solid tomato;
+}
+
+.command-item{
+    width: calc((100% - 30px)/4);
+
+}
+
+.command-text{
+    margin-top: 20px;
+    padding-bottom: 25px;
+    max-width: 270px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.command-text > p {
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--gray);
+}
+
+.command-text > p {
+    margin: 0 ;
+
+}
+
+/*  footer */
+
+.page-footer{
+    background-color: var(--footer-hero);
+}
+
+.logo-footer{
+    color: var(--active);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo1-footer{
+    margin-right: 93px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white);
+}
+
+.adress{
+
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white);
+
+}
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    outline: 1px solid tomato;
+}
