@@ -150,16 +150,26 @@ body {
 
 /* Сексия наши преимущества  */
 
+.page-advantages{
+    outline: 1px solid tomato;
+}
+
 .advantages-container{
     margin-bottom: 94px;
 }
 
 .advantages-nav{
     display: flex;
+    
 }
 
 .item{
     margin-right: 30px;
+    width: 270px;
+    height: 75px;
+    outline: 1px solid tomato;
+
+    
 }
 
 .hiden-text{
@@ -185,15 +195,32 @@ line-height: 1.71;
 
 
 .doing-title{
+    text-align: center;
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.36;
+    outline: 1px solid tomato;
 }
 
-.doing-container img{
-    margin-right: 30px;
+.doing-container{
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid tomato;
+}
+
+
 
 }
 
+.doing-item{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color:var(--active);
+}
+
+
+
+/* наша команда */
 
