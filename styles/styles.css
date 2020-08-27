@@ -19,20 +19,18 @@ html{
 }
 
 .naked{
-
-    padding: 0;
     margin: 0;
-    
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
 }
 
 body {
-    width: 1200px;
+    /* width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px; */
 
 
     font-family: "Roboto";
@@ -43,8 +41,16 @@ body {
 
 /* header */
 
-
 .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
+.header-container{
     display: flex;
     align-items: center;
     outline: 1px solid tomato;
@@ -113,7 +119,9 @@ body {
 /* Сайт герой главная */
 
 .page-hero{
-   text-align: center
+   text-align: center;
+   background-color: var(--footer-hero);
+   
 }
 
 .container-hero {
@@ -126,7 +134,7 @@ body {
 
 .main-title{
     padding-top: 200px;
-    margin-top: 19px;
+    margin-top: 18px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -150,28 +158,27 @@ body {
 
 /* Сексия наши преимущества  */
 
-.page-advantages{
-    outline: 1px solid tomato;
-}
-
 .advantages-container{
     margin-bottom: 94px;
+    display: flex;
+    outline: 1px solid tomato;
 }
 
 .advantages-nav{
     display: flex;
+    justify-content: end;
     
 }
 
 .item{
-    margin-right: 30px;
     width: 270px;
     height: 75px;
     outline: 1px solid tomato;
-
-    
 }
 
+.item:not(:last-child){
+    margin-right: 30px;;
+}
 .hiden-text{
     display: none;
 }
