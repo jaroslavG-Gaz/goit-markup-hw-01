@@ -202,14 +202,11 @@ color: #757575;
 }
 
 
-.projects-sector{
-  outline: 1px solid tomato;
-
-}
 
 .projects-list{
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
   
   
 }
@@ -238,32 +235,48 @@ color: #757575;
 
 /* foooter */
 
+
+.footer-list{
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .footer{
   background-color: var(--footer-hero);
 }
-.footer-nav{
-  
-  
-}
 
-.footer-link-studio{
+
+
+.logo3{
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--white);
 }
 
-.footer-adrres{
+.adress{
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-style: normal;
-  font-weight: 200px;
+  font-weight: 200;
   font-size: 14px;
   line-height: 1.71;
   color: var(--white);
 
 }
 
-.footer-info{
-  color: var(--number);
-  font-family: Roboto;
+.footer-item{
+  margin-bottom: 9px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 14px;
-  line-height: 1.71; 
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-item:last-child{
+  margin-bottom: 0;
+  
+}
+

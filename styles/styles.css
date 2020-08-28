@@ -55,7 +55,7 @@ body {
 .header-container{
     display: flex;
     align-items: center;
-    outline: 1px solid tomato;
+   
 }
 
 .site-nav{
@@ -300,7 +300,6 @@ line-height: 1.71;
 
 
 .logo-footer{
-    margin-right: 93px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -309,7 +308,7 @@ line-height: 1.71;
 }
 
 .adress{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-weight: 200;
     font-size: 14px;
     line-height: 1.71;
@@ -317,8 +316,8 @@ line-height: 1.71;
 
 }
 .footer{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     /* outline: 1px solid tomato; */
     
    
@@ -330,5 +329,5 @@ line-height: 1.71;
 }
 
 .footer-list .mail{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 } 
