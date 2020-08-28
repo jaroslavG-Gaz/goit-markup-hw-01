@@ -10,30 +10,38 @@
 </head>
 <body>
     <!--Шапка сайта-->
-<header class="head">
-
-        <a href="????" class="head-link footer-link">Web<span class="head-link-studio">Studio</span></a>
-        <ul class="head-nav">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-            <li class="nav-item text-portfolio">Портфолио</li>
-            <li class="nav-item">Контакты</li>
-        </ul>
-        <ul class="auth-nav">   
-            <li class="auth-item">info@devstudio.com</li>
-            <li class="auth-item">+38 096 111 11 11</li>
-        </ul>
-
-</header>
+    <header class="page-header">
+        <div class="container">
+               <nav class="header-container">
+                       <a href="????" class="naked"><span class="logo">Web</span><span class="logo2">Studio</span></a>
+       
+                   <ul class="site-nav naked">
+                       <li><a href="./index.html" class="link naked">Студия</a></li>
+                       <li><a href="./portfolio.html" class="link naked ">Портфолио</a></li>
+                       <li><a href="./conacts.html" class="link naked">Контакты</a></li>
+                   </ul>
+       
+                   <ul class="auth-nav">
+                       <li class="mail naked">info@devstudio.com</li>
+                       <li class="phone naked">+38 096 111 11 11</li>
+       
+                   </ul>
+       
+               </nav>
+           </div>
+       </header>
 <main>
     <!--Наши проэкты-->
 <section class="projects">
-    <h1>Нашы проэкты</h1>
-    <ul class="projects-nav">
-        <li><button type="button" class="projects-nav-item">Все</button></li>
-        <li><button type="button" class="projects-nav-item">Веб-сайты</button></li>
-        <li><button type="button" class="projects-nav-item">Приложения</button></li>
-        <li><button type="button" class="projects-nav-item">Дизайн</button></li>
-        <li><button type="button" class="projects-nav-item">Маркетинг</button></li>
+    <div class="container">
+
+        <h1 class="hidden">Нашы проэкты</h1>
+        <ul class="projects-nav">
+            <li><button type="button" class="projects-nav-item">Все</button></li>
+            <li><button type="button" class="projects-nav-item">Веб-сайты</button></li>
+            <li><button type="button" class="projects-nav-item">Приложения</button></li>
+            <li><button type="button" class="projects-nav-item">Дизайн</button></li>
+            <li><button type="button" class="projects-nav-item">Маркетинг</button></li>
     </ul>
 
     <ul class="projects-list">
@@ -74,6 +82,8 @@
             <p>Приложение</p>
         </li>
     </ul>
+
+    </div>
 </section>
 
 
@@ -81,6 +91,7 @@
 
 <!---Подвал сайта-->
 <footer class=" footer">
+    <div class="container">
 
     <a href="?????" class=" footer-link">Web<span class="footer-link-studio">Studio</span></a>
     <ul class="footer-nav">
@@ -89,6 +100,7 @@
         <li class="footer-info">info@example.com</li>
         <li class="footer-info">+38 099 111 11 11</li>
     </ul>
+    </div>
 </footer>
 </body>
 </html>

@@ -1,3 +1,16 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
 :root{
   --white: #ffffff ;
     --active : #2196F3 ;
@@ -15,57 +28,115 @@ body{
   line-height: 1.67 ;
   letter-spacing: 0.03em;
 }
-/* header */
 
-.head-link, .footer-link{
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.29;
-  color: var(--active);
+/* container */
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.naked{
+  margin: 0;
+  padding: 0;
   text-decoration: none;
-
-
-}
-.head-link-studio{
-  color: #212121;
-}
-.head-nav{
-  color: #212121;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;  
   list-style-type: none;
 }
 
-
-.nav-item:hover{
-  color: var(--active);
-  
-}
-.nav-link{
-  color: #212121;
-  text-decoration: none;
-}
-.nav-link:hover{
-  color: var(--active);
+.hidden{
+  display: none;
 }
 
-/* auth-item */
+
+
+/* header */
+
+.header-container{
+  display: flex;
+  align-items: center;
+  outline: 1px solid tomato;
+}
+
+.site-nav{
+  display: flex;
+}
+
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo{
+  color: var(--active);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo2{
+  margin-right: 93px;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--footer-hero);
+}
+.link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black);
+}
+
+.link:hover{
+  color: var(--active);
+
+}
+
+.mail, .phone{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--gray);
+}
+
+.phone{
+  margin-left: 50px;
+}
+.mail:hover,
+.phone:hover{
+  color: var(--active);
+}
 
 .auth-nav{
+  display: flex;
+  margin-left: auto;
+}
+
+
+.auth-nav{
+  display: flex;
+margin-left: auto;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-list-style-type: none;
+
 }
 
 .auth-item{
   color: var(--gray)
 }
+.auth-item:not(:last-child){
+  margin-right: 50px;
+}
+
 .auth-item:hover{
   color: var(--active);
 }
@@ -86,13 +157,6 @@ line-height: 2.25;
 color: #757575;
 }
 
-.projects-nav{
-  list-style-type: none;
-}
-
-.projects-list{
-  list-style-type: none;
-}
 
 .projects-nav-item{
   color: var(--black);
@@ -114,7 +178,7 @@ color: #757575;
   background-color: var(--footer-hero);
 }
 .footer-nav{
-  list-style-type: none ;
+  
   
 }
 

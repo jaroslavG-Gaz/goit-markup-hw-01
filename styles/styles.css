@@ -55,7 +55,7 @@ body {
 .header-container{
     display: flex;
     align-items: center;
-    /* outline: 1px solid tomato; */
+    outline: 1px solid tomato;
 }
 
 .site-nav{
