@@ -54,10 +54,15 @@ body{
 
 /* header */
 
+.page-header{
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header-container{
   display: flex;
   align-items: center;
-  outline: 1px solid tomato;
+
+  /* outline: 1px solid tomato; */
 }
 
 .site-nav{
@@ -157,8 +162,17 @@ line-height: 2.25;
 color: #757575;
 }
 
+.projects-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.projects-item{
+  padding: 6px 22px;
+  margin-right: 8px;
+  border-radius: 4px;
 
-.projects-nav-item{
   color: var(--black);
   background-color: #F5F4FA;
   font-style: normal;
@@ -167,6 +181,13 @@ color: #757575;
   line-height: 1.85;
   
 }
+
+
+.projects-item:hover{
+  background-color: var(--active);
+  color: var(--white);
+}
+
 .projects-nav-item:hover{
   background-color: var(--active);
   color: var(--white);
