@@ -50,7 +50,7 @@ body{
   display: none;
 }
 
-.img{
+.img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -220,6 +220,8 @@ color: #757575;
 .projects-card:nth-child(3n){
   margin-right: 0;
 }
+
+
 
 .card-text{
   padding-right: 24px;

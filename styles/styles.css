@@ -219,22 +219,25 @@ line-height: 1.71;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.36;
-    /* outline: 1px solid tomato; */
-}
 
+}
+/* КОСТЫЛЬ ВРЕМЕНЫЙ */
 .doing-container{
     display: flex;
-    justify-content: space-between;
-    /* outline: 1px solid tomato; */
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+    
 }
 
-
-.doing-item{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 95px;
-  background-color:var(--active);
+.doing-img{
+    margin-right: 60px;
 }
+
+.doing-img:last-child{
+    margin-right: 0;
+}
+
+/* КОСТЫЛЬ ВРЕМЕНЫЙ */
 
 
 
