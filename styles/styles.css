@@ -136,7 +136,7 @@ body {
 .main-title{
     padding-top: 200px;
     margin: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
