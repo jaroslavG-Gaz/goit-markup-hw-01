@@ -33,6 +33,7 @@ html{
 }
 
 body {
+    margin: 0;
     font-family: "Roboto";
     color: var(--black);
     line-height: 1.67 ;
@@ -51,6 +52,7 @@ body {
 
 
 /* header */
+
 
 .header-container{
     display: flex;
@@ -221,32 +223,19 @@ line-height: 1.71;
     line-height: 1.36;
 
 }
-/* КОСТЫЛЬ ВРЕМЕНЫЙ */
-.doing-container{
+
+.doing-list{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
-    
+    justify-content: space-between;
 }
-
-.doing-img{
-    margin-right: 30px;
-}
-
-.doing-img:last-child{
-    margin-right: 0;
-}
-
-/* КОСТЫЛЬ ВРЕМЕНЫЙ */
-
 
 
 /* наша команда */
 
 .page-command{
     background-color:#F5F4FA;;
-    /* padding-bottom: 10px; */
-
 }
 
 .command-title {
