@@ -225,12 +225,24 @@ line-height: 1.71;
 }
 
 .doing-list{
+
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
-    justify-content: space-between;
+    
 }
 
+.doing-item{
+    width: calc((100% - 30px *2) /3);
+    margin-right: 30px;
+    
+}
+
+.doing-item:nth-child(3n){
+    margin-right: 0;
+
+
+}
 
 /* наша команда */
 
