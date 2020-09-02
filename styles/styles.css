@@ -434,6 +434,7 @@ line-height: 1.71;
             margin-right: 10px;
             width: 44px;
             height: 44px;
+            border-radius: 50px;
             outline: 1px solid tomato;
         }
                 .instagram{
@@ -444,13 +445,17 @@ line-height: 1.71;
                  fill: var(--gray);
                  
                 }
+                    .inst-section:hover .instagram{
+                        fill: var(--white);
+                        
+                    }
+            
                     .inst-section:hover{
                         background-color: var(--active);
-                        
                     }
-                    .inst-section:hover, .instagram{
                         
-                    }
+                        
+            
 
         .twitt-section{
             margin-right: 10px;
