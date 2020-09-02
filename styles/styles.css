@@ -48,6 +48,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 } 
 
 
@@ -57,6 +58,7 @@ body {
 .header-container{
     display: flex;
     align-items: center;
+    
    
 }
 
@@ -107,8 +109,9 @@ body {
 }
 
 .phone{
-    margin-left: 50px;
+    margin-left: 10px;
 }
+
 .mail:hover,
 .phone:hover{
     color: var(--active);
@@ -119,20 +122,51 @@ body {
     margin-left: auto;
 }
 
+        .emale{
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+            fill: var(--gray);
+        }
+        
+        .emale:hover{
+            fill: var(--active);
+        }
+
+        .phone-svg{
+            margin-left: 30px;
+            width: 10px;
+            height: 16px;
+            fill: var(--gray);
+    
+        }
+        .phone-svg:hover{
+            fill: var(--active);
+        }
+
 
 /* Сайт герой главная */
+
+
 
 .page-hero{
    text-align: center;
    background-color: var(--footer-hero);
+   background-image: url("../images/hero.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
    
 }
 
 .container-hero {
     padding-bottom: 200px;
-    background-color: var(--footer-hero);
-    /* outline: 1px solid tomato; */
-
+    background-image: url("../images/mountain1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center ;
+    background-size: cover ;
+    background-attachment: fixed;
+   
 }
 
 .main-title{
@@ -143,6 +177,8 @@ body {
     line-height: 1.36;
     text-transform: uppercase;
     color: var(--white);
+    
+
 }
 .button{
     
@@ -154,6 +190,7 @@ body {
 
     background-color: var(--active);
     color: var(--white);
+    
 
 }
 .button span{
@@ -162,20 +199,20 @@ body {
     font-size: 16px;
     line-height: 1.87;
 }
-
+    
 
 /* Сексия наши преимущества  */
 
-
 .advantages-container{
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 288px;
     /* outline: 1px solid tomato; */
 }
 
 .advantages-nav{
     display: flex;
     justify-content: end;
+    
     
 }
 
@@ -206,6 +243,86 @@ font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
 }
+
+
+    .antenna-section{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+
+    }
+    .antenna{
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    }
+
+    .clock-section{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .clock{
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }
+    .diagram-section{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .diagram{
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }
+
+
+    .astronaut-section{
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .astronaut{
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }
 
 /* Чем мы занимаемся */
 
@@ -275,12 +392,20 @@ line-height: 1.71;
 
 }
 
-.command-text{
+.command-item{
 
-    padding-bottom: 25px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+
     max-width: 270px;
     text-align: center;
     background-color: var(--white);
+}
+
+.command-text{
+    padding-bottom: 24px;
 }
 
 .command-text > p {
@@ -295,6 +420,82 @@ line-height: 1.71;
     margin: 0 ;
 
 }
+
+        .icon-section{
+            display: flex;
+            margin-top: 16px;
+            margin-left: 32px;
+            width: 206px;
+            height: 44px;
+            outline: 1px solid tomato;
+        }
+
+        .inst-section{
+            margin-right: 10px;
+            width: 44px;
+            height: 44px;
+            outline: 1px solid tomato;
+        }
+                .instagram{
+                 margin-top: 12px;
+                 margin-bottom: 12px;
+                 width: 20px;
+                 height: 20px;
+                 fill: var(--gray);
+                 
+                }
+                    .inst-section:hover{
+                        background-color: var(--active);
+                        
+                    }
+                    .inst-section:hover, .instagram{
+                        
+                    }
+
+        .twitt-section{
+            margin-right: 10px;
+            width: 44px;
+            height: 44px;
+            outline: 1px solid tomato;      
+        }
+
+                .twitter{
+                    margin: 14px 12px;
+                 width: 20px;
+                 height: 16px;
+                 fill: var(--gray);
+                 
+                }
+
+        .facebook-section{
+            margin-right: 10px;
+            width: 44px;
+            height: 44px;
+            outline: 1px solid tomato;
+        } 
+                
+                .facebook{
+                margin: 12px 17px;
+                width: 10px;
+                height: 20px;
+                fill: var(--gray);
+                }
+
+        .linked-section{
+            width: 44px;
+            height: 44px;
+            outline: 1px solid tomato;
+        }        
+                .linked{
+                margin: 12px;
+                width: 20px;
+                height: 20px;
+                fill: var(--gray);
+                }
+    
+
+
+
 
 /*  footer */
 

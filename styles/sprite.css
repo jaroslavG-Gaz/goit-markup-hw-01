@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(73, 68, 68);
+  
+}
+
+
+
+.action{
+    display: flex;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    outline: 3px solid black;
+    list-style: none;
+}
+
+.btn{
+    border: 0;
+    padding: 0;
+    border-radius: 60px;
+    background-color: rgb(181, 240, 191);
+    width: 100px;
+    height: 100px;
+  
+}

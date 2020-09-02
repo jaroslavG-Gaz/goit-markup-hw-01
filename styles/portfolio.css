@@ -62,12 +62,13 @@ body{
 
 .page-header{
   border-bottom: 1px solid #ECECEC;
+  
 }
 
 .header-container{
   display: flex;
   align-items: center;
-
+ 
   /* outline: 1px solid tomato; */
 }
 
