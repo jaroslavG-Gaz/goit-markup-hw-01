@@ -152,21 +152,17 @@ body {
 .page-hero{
    text-align: center;
    background-color: var(--footer-hero);
-   background-image: url("../images/hero.jpg");
+   /* max-width: 1600px; */
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
+   url("../images/hero.jpg");
    background-repeat: no-repeat;
    background-position: center;
-   background-size: contain;
-   
+  ;
 }
 
 .container-hero {
     padding-bottom: 200px;
-    background-image: url("../images/mountain1.jpg");
-    background-repeat: no-repeat;
-    background-position: top center ;
-    background-size: cover ;
-    background-attachment: fixed;
-   
+    
 }
 
 .main-title{
@@ -420,14 +416,15 @@ line-height: 1.71;
     margin: 0 ;
 
 }
-
+        /* Первый заздел */
         .icon-section{
             display: flex;
             margin-top: 16px;
             margin-left: 32px;
             width: 206px;
             height: 44px;
-            outline: 1px solid tomato;
+            
+            
         }
 
         .inst-section{
@@ -435,7 +432,7 @@ line-height: 1.71;
             width: 44px;
             height: 44px;
             border-radius: 50px;
-            outline: 1px solid tomato;
+            
         }
                 .instagram{
                  margin-top: 12px;
@@ -461,22 +458,34 @@ line-height: 1.71;
             margin-right: 10px;
             width: 44px;
             height: 44px;
-            outline: 1px solid tomato;      
+            border-radius: 50px;
+            
         }
 
                 .twitter{
-                    margin: 14px 12px;
+                margin: 14px 12px;
                  width: 20px;
                  height: 16px;
                  fill: var(--gray);
                  
                 }
+                
+                .twitt-section:hover .twitter{
+                    fill: var(--white);
+
+                }
+                
+                .twitt-section:hover{
+                    background-color: var(--active);
+                }
+            
 
         .facebook-section{
             margin-right: 10px;
             width: 44px;
             height: 44px;
-            outline: 1px solid tomato;
+            border-radius: 50px;
+           
         } 
                 
                 .facebook{
@@ -486,10 +495,22 @@ line-height: 1.71;
                 fill: var(--gray);
                 }
 
+                .facebook-section:hover .facebook{
+                    fill: var(--white);
+                    
+                }
+                .facebook-section:hover{
+                    background-color: var(--active);
+                }
+
+
+
         .linked-section{
             width: 44px;
             height: 44px;
-            outline: 1px solid tomato;
+            border-radius: 50px;
+            
+            
         }        
                 .linked{
                 margin: 12px;
@@ -497,10 +518,126 @@ line-height: 1.71;
                 height: 20px;
                 fill: var(--gray);
                 }
+                
+                .linked-section:hover{
+                    background-color: var(--active);
+                }
+                .linked-section:hover .linked{
+                    fill: var(--white);
+                }
+
+
+/* Постояные клиенты */
+
+.client-title{
+padding-top: 94px;
+padding-bottom: 50px;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+
+}
+
+.client-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+        
+.client-item{
+    width: 170px;
+    height: 90px;
+    padding: 20px 63px;
+    border: 1px solid #AFB1B8 ;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+    .logo-svg{
+        fill: var(--gray);
+        width: 44px;
+        height: 50px;
+     }
+
+     .client-item:hover{
+        border: 1px solid var(--active);
+     }
+
+     .client-item:hover .logo-svg{
+         fill: var(--active);
+     }
+
+
+     .client-item-logo4{
+        width: 170px;
+        height: 90px;
+        padding: 24px 45px;
+        border: 1px solid #AFB1B8 ;
+        box-sizing: border-box;
+        border-radius: 4px;
+     }
+
+     .logo4-svg{
+         width: 78px;
+         height: 42px;
+         fill: var(--gray);
+     }
+
+
+        .client-item-logo4:hover{
+            border: 1px solid var(--active);
+        }
+
+        .client-item-logo4:hover .logo4-svg{
+            fill: var(--active);
+        }
+
+     .client-item-logo5{
+        width: 170px;
+        height: 90px;
+        padding: 22px 55px;
+        border: 1px solid #AFB1B8 ;
+        box-sizing: border-box;
+        border-radius: 4px;
+     }
+      .logo5-svg{
+          width: 59px;
+          height: 47px;
+          fill: var(--gray);
+      }
+
+      .client-item-logo5:hover{
+        border: 1px solid var(--active);
+
+      }
+      .client-item-logo5:hover .logo5-svg{
+          fill: var(--active);
+      }
+
+
+     .client-item-logo6{
+        width: 170px;
+        height: 90px;
+        padding: 22px 41px;
+        border: 1px solid #AFB1B8 ;
+        box-sizing: border-box;
+        border-radius: 4px;
+     }
+     .logo6-svg{
+        fill: var(--gray);
+        width: 88px;
+        height: 45px;
+
+     }
+
+     .client-item-logo6:hover{
+        border: 1px solid var(--active);
+     }
+
+     .client-item-logo6:hover .logo6-svg{
+        fill: var(--active);
+     }
     
-
-
-
 
 /*  footer */
 
@@ -526,9 +663,11 @@ line-height: 1.71;
 
 }
 .footer{
+    width: 231px;
     padding-top: 60px;
     padding-bottom: 60px;
     /* outline: 1px solid tomato; */
+    
     
    
 }
@@ -541,3 +680,93 @@ line-height: 1.71;
 .footer-list .mail{
     margin-bottom: 9px;
 } 
+
+
+.main-footer{
+    display: flex;
+    /* outline: 1px solid tomato; */
+}
+
+    .join-section{
+        padding-left: 70px;
+        padding-top: 72px;
+        padding-bottom: 100px;
+        /* outline: 1px solid tomato; */
+    }
+    .join-title{ 
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1,14;
+    color: var(--white);
+
+    }
+
+    .svg-positoin{
+        display: flex;
+        /* outline: 1px solid tomato; */
+        height: 44px;
+        justify-content: center;
+        
+    }
+        .link-svg{
+            margin-right: 10px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* outline: 1px solid tomato; */
+        }
+        .link-svg:last-child{
+            margin-right: 0px;
+        }
+
+        .link-svg:hover{
+            background-color: var(--active);
+        }
+        .link-svg:hover .inst-svg{
+            fill: var(--white);
+        }
+
+
+        .inst-svg{
+            margin: 12px 12px;
+            width: 20px;
+            height: 20px;
+            fill: var(--white);
+        }
+
+
+
+        .twit-svg{
+            margin: 14px 12px;
+            width: 20px;
+            height: 16px;
+            fill: var(--white);
+        }
+        .link-svg:hover .twit-svg{
+            fill: var(--white);
+        }
+
+        .facebook-svg{
+            margin: 12px 17px;
+            width: 10px;
+            height: 20px;
+            fill: var(--white);
+        }
+
+        .link-svg:hover .facebook-svg{
+            fill: var(--white);
+        }
+
+        .linked-svg{
+            margin: 12px 12px;
+            height: 20px;
+            width: 20px;    
+            fill: var(--white);
+        }
+
+        .link-svg:hover .linked-svg{
+            fill: var(--white);
+        }
+
