@@ -58,12 +58,19 @@ body {
 .header-container{
     display: flex;
     align-items: center;
+  
     
    
 }
 
 .site-nav{
     display: flex;
+    
+   
+}
+.site-nav-item{
+    
+
 }
 
 .site-nav li:not(:last-child) {
@@ -86,6 +93,7 @@ body {
     color: var(--footer-hero);
 }
 .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-style: normal;
@@ -95,6 +103,9 @@ body {
     color: var(--black);
 }
 
+.box{
+    outline: 1px solid tomato
+}
 .link:hover{
     color: var(--active);
 
@@ -111,11 +122,13 @@ body {
     line-height: 1.14;
     color: var(--gray);
     align-items: center;
+    
 }
 
 .auth-nav{
     display: flex;
     margin-left: auto;
+    
    
 }
     .auth-link:hover .emale{
@@ -156,7 +169,6 @@ body {
 .page-hero{
    text-align: center;
    background-color: var(--footer-hero);
-   /* max-width: 1600px; */
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
    url("../images/hero.jpg");
    background-repeat: no-repeat;
@@ -656,6 +668,7 @@ text-align: center;
 
 
 .logo-footer{
+    padding-bottom: 20px;
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -693,6 +706,8 @@ text-align: center;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
 } 
+
+
 
 
 .main-footer{

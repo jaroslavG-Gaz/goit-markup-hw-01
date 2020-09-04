@@ -96,6 +96,7 @@ body{
   color: var(--footer-hero);
 }
 .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-style: normal;
@@ -110,7 +111,9 @@ body{
 
 }
 
-.mail, .phone{
+.auth-link{
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -118,40 +121,46 @@ body{
   color: var(--gray);
 }
 
-.phone{
-  margin-left: 50px;
+
+.auth-item:not(:first-child){
+  margin-left: 30px;
+
 }
-.mail:hover,
-.phone:hover{
-  color: var(--active);
-}
+
 
 .auth-nav{
   display: flex;
+  justify-content: center;
+  padding: 0;
   margin-left: auto;
+  
 }
 
+    .phone-svg{
+      margin-right: 10px;
+      width: 10px;
+      height: 16px;
+      fill: var(--gray);
+    }
 
-.auth-nav{
-  display: flex;
-margin-left: auto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
+    .emale-svg{
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+      fill: var(--gray);
+    } 
+      .auth-link:hover .emale-svg{
+        fill: var(--active);
+      }
+      .auth-link:hover{
+        color: var(--active);
+      }
+      .auth-link:hover .phone-svg{
+        fill: var(--active);
+      }
 
-}
 
-.auth-item{
-  color: var(--gray)
-}
-.auth-item:not(:last-child){
-  margin-right: 50px;
-}
 
-.auth-item:hover{
-  color: var(--active);
-}
 
 /* Projects */
 
@@ -196,6 +205,10 @@ color: #757575;
 .projects-item:hover{
   background-color: var(--active);
   color: var(--white);
+  box-shadow: 0px 3px 1px 
+  rgba(0, 0, 0, 0.1), 0px 1px 2px 
+  rgba(0, 0, 0, 0.08), 0px 2px 2px
+ rgba(0, 0, 0, 0.12);
 }
 
 .projects-nav-item:hover{
@@ -217,6 +230,11 @@ color: #757575;
   width: calc((100% - 30px * 2) /3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.projects-card:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-card:nth-child(3n){
@@ -241,16 +259,87 @@ color: #757575;
 
 
 .footer-box{
+  width: 231px;
  padding-top: 60px;
   padding-bottom: 60px;
+  /* outline: 1px solid tomato; */
 }
 
+.footer-icon{
+  margin-left: 70px;
+  margin-top: 75px;
+  width: 206px;
+  /* outline: 1px solid tomato; */
+}
+
+.footer-container{
+  display: flex;
+}
 .footer{
   background-color: var(--footer-hero);
 }
 
+.icon-title{
+font-weight: bold;
+font-size: 14px;
+line-height: 1,14;
+color: var(--white);
+}
+  .icon-link{
+    display: block;
+    width: 44px;
+    height: 44px;
+    
+  }
 
+  .icon-list{
+    display: flex;
+    /* outline: 1px solid tomato; */
+    margin-bottom: 97px;
+  }
 
+  .inst-svg{
+    margin: 12px 12px;
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+  }
+    .twit-svg{
+      margin: 14px 12px;
+      width: 20px;
+      height: 16px;
+      fill: var(--white);
+    }
+      .facebook-svg{
+        margin: 12px 17px;
+        width: 10px;
+        height: 20px;
+        fill: var(--white);
+      }
+        .linked-svg{
+          margin: 12px 12px;
+          height: 20px;
+          width: 20px;    
+          fill: var(--white);
+        }
+
+          .icon-item{
+            width: 44px;
+            height: 44px;
+            margin-right: 10px;
+            margin-top: 20px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* outline: 1px solid tomato; */
+          }
+                                    .icon-item:last-child{
+                                      margin-right: 0px;
+                                    }
+
+                                    .icon-item:hover{
+                                      background-color: var(--active);
+                                    }
+               
 .logo3{
   padding-bottom: 20px;
   font-weight: bold;
