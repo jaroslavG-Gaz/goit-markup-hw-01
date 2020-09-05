@@ -68,10 +68,7 @@ body {
     
    
 }
-.site-nav-item{
-    
 
-}
 
 .site-nav li:not(:last-child) {
     margin-right: 50px;
@@ -112,7 +109,9 @@ body {
 }
 
 
-
+.site-nav .action{
+    color: var(--active);
+}
 
 .auth-link{
     display: flex;
