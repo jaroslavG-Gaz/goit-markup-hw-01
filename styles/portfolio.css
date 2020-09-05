@@ -262,18 +262,18 @@ color: #757575;
   width: 231px;
  padding-top: 60px;
   padding-bottom: 60px;
-  /* outline: 1px solid tomato; */
+ 
 }
 
 .footer-icon{
   margin-left: 70px;
-  margin-top: 75px;
   width: 206px;
-  /* outline: 1px solid tomato; */
+
 }
 
 .footer-container{
   display: flex;
+  align-items: baseline;
 }
 .footer{
   background-color: var(--footer-hero);
@@ -294,8 +294,7 @@ color: var(--white);
 
   .icon-list{
     display: flex;
-    /* outline: 1px solid tomato; */
-    margin-bottom: 97px;
+    
   }
 
   .inst-svg{
@@ -330,7 +329,7 @@ color: var(--white);
             margin-top: 20px;
             border-radius: 50px;
             background-color: rgba(255, 255, 255, 0.1);
-            /* outline: 1px solid tomato; */
+            
           }
                                     .icon-item:last-child{
                                       margin-right: 0px;
@@ -341,7 +340,8 @@ color: var(--white);
                                     }
                
 .logo3{
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -349,7 +349,6 @@ color: var(--white);
 }
 
 .adress{
-  margin-top: 20px;
   margin-bottom: 9px;
   font-style: normal;
   font-weight: 200;
