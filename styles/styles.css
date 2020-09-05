@@ -168,11 +168,10 @@ body {
 
 .page-hero{
    text-align: center;
-   background-color: var(--footer-hero);
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
    url("../images/hero.jpg");
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: center, center;
   ;
 }
 
