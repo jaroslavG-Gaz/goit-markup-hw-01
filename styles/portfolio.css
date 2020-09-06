@@ -79,6 +79,12 @@ body{
 .site-nav li:not(:last-child) {
   margin-right: 50px;
 }
+.border{
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--active);
+  border-radius: 2px;
+}
 
 .logo{
   color: var(--active);
@@ -98,7 +104,7 @@ body{
 .link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -227,8 +233,34 @@ color: #757575;
   
   
 }
+  .projects-tumb{
+    position: relative;
+  }
+
+    .tumb-text{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 63px 24px;
+      height: 100%;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.5; 
+      color: var(--white);
+      background-color: rgba(33, 150, 243, 0.9);
+
+      opacity: 0;
+    }
+
+    .projects-card:hover .tumb-text{
+      opacity: 1;
+    }
 
 .projects-card{
+  
   width: calc((100% - 30px * 2) /3);
   margin-right: 30px;
   margin-bottom: 30px;
