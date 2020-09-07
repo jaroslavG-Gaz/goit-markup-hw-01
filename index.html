@@ -16,7 +16,7 @@
                 <a href="????" class="naked"><span class="logo">Web</span><span class="logo2">Studio</span></a>
             
             <ul class="site-nav naked">
-                <li class="site-nav-item"><a href="./index.html" class="link naked action">Студия</a> <div class="border"></div></li>
+                <li class="site-nav-item line"><a href="./index.html" class="link naked line action">Студия</a></li>
                 <li class="site-nav-item"><a href="./portfolio.html" class="link naked ">Портфолио</a></li>
                 <li class="site-nav-item"><a href="./conacts.html" class="link naked">Контакты</a></li>
             </ul>
@@ -60,7 +60,7 @@
     <div class="container-hero">
         <h1 class="main-title">Эффективные решения <br> для вашего бизнеса </h1>   
     
-        <a href="???????"  class="naked"><span class="button ">Заказать услугу</span></a>
+        <a data-open-modal  class="naked"><span class="button">Заказать услугу</span></a>
     
     </div>
 </div>
@@ -452,6 +452,7 @@
 </main>
 
 <!---Подвал сайта-->
+
 <footer class="page-footer">
     <div class="container">
 
@@ -515,7 +516,43 @@
     </div>
 
 </div>
+
 </div>
+
 </footer>
 
+<div class="backdrop is-hidden" data-backdrop> 
+  
+    <div class="modal">
+        <button data-close-modal type="button" class="btn">
+
+        <svg class="cross-svg">
+            <use href="./images/symbol-defss.svg#icon-close-black-"> </use>
+        </svg>
+
+        </button>
+    </div>
+</div>
+<script>
+    const refs = {
+      openModalBtn: document.querySelector("[data-open-modal]"),
+      closeModalBtn: document.querySelector("[data-close-modal]"),
+      backdrop: document.querySelector("[data-backdrop]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refs.backdrop.classList.toggle("is-hidden");
+    }
+
+    function logBackdropClick() {
+      console.log("Это клик в бекдроп");
+    }
+  </script>
 </body>
+
+
