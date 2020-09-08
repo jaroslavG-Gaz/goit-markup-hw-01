@@ -82,7 +82,7 @@ body {
   display: block;
   bottom: 0;
   left: 0;
-  width: 51px;
+  width: 100%;
 
   border-bottom-width: 4px;
   border-bottom-style: solid;
@@ -247,7 +247,7 @@ body {
 
 .advantages-container{
     padding-top: 94px;
-    padding-bottom: 288px;
+    padding-bottom: 94px;
     /* outline: 1px solid tomato; */
 }
 
@@ -255,14 +255,9 @@ body {
     display: flex;
     justify-content: end;
     
-    
 }
 
-.item{
-    width: 270px;
-    height: 75px;
-    /* outline: 1px solid tomato; */
-}
+
 
 .item:not(:last-child){
     margin-right: 30px;;
@@ -897,22 +892,28 @@ text-align: center;
     }
 
         .btn{
-    
+            
             background-color: var(--white);
-            margin-top: 8px;
-            margin-right: 8px;
-            margin-left: 488px;
-            width: 33px;
-            height: 33px;
             border-radius: 50px;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
             .cross-svg{
-                width: 16px;
-                height: 16px;
-                margin-top: 5px;
-              
+                width: 11px;
+                height: 11px;
                 fill: var(--black);
                 
             }
+    
+
+
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-left: 490px;
+        margin-bottom: 543px;
+        width: 30px;
+        height: 30px;
+    }

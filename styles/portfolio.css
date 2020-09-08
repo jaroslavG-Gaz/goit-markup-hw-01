@@ -28,6 +28,7 @@ body{
   font-family: "Roboto";
   line-height: 1.67 ;
   letter-spacing: 0.03em;
+  
 }
 
 /* container */
@@ -93,7 +94,7 @@ body{
   display: block;
   bottom: 0;
   left: 0;
-  width: 78px;
+  width: 100%;
 
   border-bottom-width: 4px;
   border-bottom-style: solid;
@@ -189,13 +190,17 @@ body{
 /* Projects */
 
 h2{
+margin-top:0 ;
+margin-bottom: 4px;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 2;
+color: black;
 
 }
 p{
+  margin: 0;
 font-weight: normal;
 font-size: 16px;
 line-height: 2.25;
@@ -232,7 +237,8 @@ color: #757575;
   box-shadow: 0px 3px 1px 
   rgba(0, 0, 0, 0.1), 0px 1px 2px 
   rgba(0, 0, 0, 0.08), 0px 2px 2px
- rgba(0, 0, 0, 0.12);
+  rgba(0, 0, 0, 0.12);
+  
 }
 
 .projects-nav-item:hover{
@@ -251,12 +257,15 @@ color: #757575;
 }
   .projects-tumb{
     position: relative;
+    overflow: hidden;
+
   }
 
     .tumb-text{
       position: absolute;
       top: 0;
       left: 0;
+      transform: translateY(100%);
       margin: 0;
       padding: 63px 24px;
       height: 100%;
@@ -268,11 +277,13 @@ color: #757575;
       color: var(--white);
       background-color: rgba(33, 150, 243, 0.9);
 
-      opacity: 0;
+      /* opacity: 0; */
     }
 
     .projects-card:hover .tumb-text{
-      opacity: 1;
+      transform: translateY(0);
+      transition: transform  250ms ease;
+      /* opacity: 1; */
     }
 
 .projects-card{
