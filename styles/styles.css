@@ -127,6 +127,7 @@ body {
 
 .link:hover{
     color: var(--active);
+    transition-duration: 250ms;
 
 }
 
@@ -154,13 +155,16 @@ body {
 }
     .auth-link:hover .emale{
         fill: var(--active);
+        transition-duration: 250ms;
     }
     .auth-link:hover .phone-svg{
         fill: var(--active);
+        transition-duration: 250ms;
     }
 
     .auth-link:hover{
         color: var(--active);
+        transition-duration: 250ms;
     }
 
     
@@ -513,11 +517,13 @@ line-height: 1.71;
                 }
                     .inst-section:hover .instagram{
                         fill: var(--white);
+                        transition-duration: 250ms;
                         
                     }
             
                     .inst-section:hover{
                         background-color: var(--active);
+                        transition-duration: 250ms;
                     }
                         
                         
@@ -541,11 +547,13 @@ line-height: 1.71;
                 
                 .twitt-section:hover .twitter{
                     fill: var(--white);
+                    transition-duration: 250ms;
 
                 }
                 
                 .twitt-section:hover{
                     background-color: var(--active);
+                    transition-duration: 250ms;
                 }
             
 
@@ -566,10 +574,12 @@ line-height: 1.71;
 
                 .facebook-section:hover .facebook{
                     fill: var(--white);
+                    transition-duration: 250ms;
                     
                 }
                 .facebook-section:hover{
                     background-color: var(--active);
+                    transition-duration: 250ms;
                 }
 
 
@@ -590,9 +600,11 @@ line-height: 1.71;
                 
                 .linked-section:hover{
                     background-color: var(--active);
+                    transition-duration: 250ms;
                 }
                 .linked-section:hover .linked{
                     fill: var(--white);
+                    transition-duration: 250ms;
                 }
 
 
@@ -635,10 +647,12 @@ text-align: center;
 
      .client-item:hover{
         border: 1px solid var(--active);
+        transition-duration: 250ms;
      }
 
      .client-item:hover .logo-svg{
          fill: var(--active);
+         transition-duration: 250ms;
      }
 
 
@@ -660,10 +674,12 @@ text-align: center;
 
         .client-item-logo4:hover{
             border: 1px solid var(--active);
+            transition-duration: 250ms;
         }
 
         .client-item-logo4:hover .logo4-svg{
             fill: var(--active);
+            transition-duration: 250ms;
         }
 
      .client-item-logo5{
@@ -682,10 +698,12 @@ text-align: center;
 
       .client-item-logo5:hover{
         border: 1px solid var(--active);
+        transition-duration: 250ms;
 
       }
       .client-item-logo5:hover .logo5-svg{
           fill: var(--active);
+          transition-duration: 250ms;
       }
 
 
@@ -706,10 +724,12 @@ text-align: center;
 
      .client-item-logo6:hover{
         border: 1px solid var(--active);
+        transition-duration: 250ms;
      }
 
      .client-item-logo6:hover .logo6-svg{
         fill: var(--active);
+        transition-duration: 250ms;
      }
     
 
@@ -809,9 +829,11 @@ text-align: center;
 
         .link-svg:hover{
             background-color: var(--active);
+            transition-duration: 250ms;
         }
         .link-svg:hover .inst-svg{
             fill: var(--white);
+            transition-duration: 250ms;
         }
 
 
@@ -832,6 +854,7 @@ text-align: center;
         }
         .link-svg:hover .twit-svg{
             fill: var(--white);
+            transition-duration: 250ms;
         }
 
         .facebook-svg{
@@ -843,6 +866,7 @@ text-align: center;
 
         .link-svg:hover .facebook-svg{
             fill: var(--white);
+            transition-duration: 250ms;
         }
 
         .linked-svg{
@@ -854,6 +878,7 @@ text-align: center;
 
         .link-svg:hover .linked-svg{
             fill: var(--white);
+            transition-duration: 250ms;
         }
 
 
