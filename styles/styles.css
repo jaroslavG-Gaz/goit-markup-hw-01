@@ -120,6 +120,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: var(--black);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 }
 
     
@@ -127,7 +129,7 @@ body {
 
 .link:hover{
     color: var(--active);
-    transition-duration: 250ms;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 
 }
 
@@ -144,6 +146,7 @@ body {
     line-height: 1.14;
     color: var(--gray);
     align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
 }
 
@@ -155,16 +158,16 @@ body {
 }
     .auth-link:hover .emale{
         fill: var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     }
     .auth-link:hover .phone-svg{
         fill: var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     }
 
     .auth-link:hover{
         color: var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     }
 
     
@@ -173,6 +176,7 @@ body {
             width: 16px;
             height: 12px;
             fill: var(--gray);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
         
     
@@ -182,6 +186,7 @@ body {
             width: 10px;
             height: 16px;
             fill: var(--gray);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
         }
         
@@ -501,6 +506,8 @@ line-height: 1.71;
         }
 
         .inst-section{
+            transition: background-color 250ms linear;
+           
             margin-right: 10px;
             width: 44px;
             height: 44px;
@@ -517,13 +524,13 @@ line-height: 1.71;
                 }
                     .inst-section:hover .instagram{
                         fill: var(--white);
-                        transition-duration: 250ms;
+                        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                         
                     }
             
                     .inst-section:hover{
                         background-color: var(--active);
-                        transition-duration: 250ms;
+                        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                     }
                         
                         
@@ -534,6 +541,7 @@ line-height: 1.71;
             width: 44px;
             height: 44px;
             border-radius: 50px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
             
         }
 
@@ -542,18 +550,21 @@ line-height: 1.71;
                  width: 20px;
                  height: 16px;
                  fill: var(--gray);
+                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                 
                  
                 }
                 
                 .twitt-section:hover .twitter{
                     fill: var(--white);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                    
 
                 }
                 
                 .twitt-section:hover{
                     background-color: var(--active);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
             
 
@@ -562,6 +573,7 @@ line-height: 1.71;
             width: 44px;
             height: 44px;
             border-radius: 50px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
            
         } 
                 
@@ -570,16 +582,17 @@ line-height: 1.71;
                 width: 10px;
                 height: 20px;
                 fill: var(--gray);
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
 
                 .facebook-section:hover .facebook{
                     fill: var(--white);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
                     
                 }
                 .facebook-section:hover{
                     background-color: var(--active);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
 
 
@@ -588,6 +601,7 @@ line-height: 1.71;
             width: 44px;
             height: 44px;
             border-radius: 50px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
             
             
         }        
@@ -596,15 +610,16 @@ line-height: 1.71;
                 width: 20px;
                 height: 20px;
                 fill: var(--gray);
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
                 
                 .linked-section:hover{
                     background-color: var(--active);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
                 .linked-section:hover .linked{
                     fill: var(--white);
-                    transition-duration: 250ms;
+                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                 }
 
 
@@ -637,22 +652,24 @@ text-align: center;
     border: 1px solid #AFB1B8 ;
     box-sizing: border-box;
     border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 }
     .logo-svg{
         margin: 20px 63px;
         fill: var(--gray);
         width: 44px;
         height: 50px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
      .client-item:hover{
         border: 1px solid var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
      .client-item:hover .logo-svg{
          fill: var(--active);
-         transition-duration: 250ms;
+         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
 
@@ -662,6 +679,7 @@ text-align: center;
         border: 1px solid #AFB1B8 ;
         box-sizing: border-box;
         border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
      .logo4-svg{
@@ -669,17 +687,18 @@ text-align: center;
          width: 78px;
          height: 42px;
          fill: var(--gray);
+         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
 
         .client-item-logo4:hover{
             border: 1px solid var(--active);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
         .client-item-logo4:hover .logo4-svg{
             fill: var(--active);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
      .client-item-logo5{
@@ -688,22 +707,24 @@ text-align: center;
         border: 1px solid #AFB1B8 ;
         box-sizing: border-box;
         border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
       .logo5-svg{
           margin: 22px 55px;
           width: 59px;
           height: 47px;
           fill: var(--gray);
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
       }
 
       .client-item-logo5:hover{
         border: 1px solid var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 
       }
       .client-item-logo5:hover .logo5-svg{
           fill: var(--active);
-          transition-duration: 250ms;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
       }
 
 
@@ -713,23 +734,25 @@ text-align: center;
         border: 1px solid #AFB1B8 ;
         box-sizing: border-box;
         border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
      .logo6-svg{
          margin: 22px 41px;
         fill: var(--gray);
         width: 88px;
         height: 45px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 
      }
 
      .client-item-logo6:hover{
         border: 1px solid var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
 
      .client-item-logo6:hover .logo6-svg{
         fill: var(--active);
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
      }
     
 
@@ -821,6 +844,8 @@ text-align: center;
             height: 44px;
             border-radius: 50px;
             background-color: rgba(255, 255, 255, 0.1);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
             
         }
         .link-svg:last-child{
@@ -829,11 +854,11 @@ text-align: center;
 
         .link-svg:hover{
             background-color: var(--active);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
         .link-svg:hover .inst-svg{
             fill: var(--white);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
 
@@ -854,7 +879,7 @@ text-align: center;
         }
         .link-svg:hover .twit-svg{
             fill: var(--white);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
         .facebook-svg{
@@ -866,7 +891,7 @@ text-align: center;
 
         .link-svg:hover .facebook-svg{
             fill: var(--white);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
         .linked-svg{
@@ -878,7 +903,7 @@ text-align: center;
 
         .link-svg:hover .linked-svg{
             fill: var(--white);
-            transition-duration: 250ms;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
         }
 
 
@@ -890,15 +915,20 @@ text-align: center;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition-duration: 250ms;
+    background-color: rgba(0, 0, 0, 0.301);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }   
 
     .backdrop.is-hidden{
         opacity: 0;
         pointer-events: none;
-        transition-duration: 250ms;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     }
+
+        .backdrop.is-hidden .modal{
+            transform: translate(-50%, -50%) scale(1.1) ;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        }
 
     .modal{
         position: absolute;
@@ -906,7 +936,7 @@ text-align: center;
         height: 581px;
         top:  50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+       
 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -915,6 +945,8 @@ text-align: center;
 
         background-color: var(--white);
 
+        transform: translate(-50%, -50%)  scale(1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         
     }
 
