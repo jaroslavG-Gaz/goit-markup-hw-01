@@ -240,6 +240,7 @@ color: #757575;
   background-color: var(--active);
   color: var(--white);
   transition-duration: 250ms;
+  
   box-shadow: 0px 3px 1px 
   rgba(0, 0, 0, 0.1), 0px 1px 2px 
   rgba(0, 0, 0, 0.08), 0px 2px 2px
@@ -251,6 +252,7 @@ color: #757575;
   background-color: var(--active);
   color: var(--white);
   transition-duration: 250ms;
+  
 }
 
 
@@ -265,6 +267,7 @@ color: #757575;
   .projects-tumb{
     position: relative;
     overflow: hidden;
+    
 
   }
 
@@ -284,12 +287,14 @@ color: #757575;
       color: var(--white);
       background-color: rgba(33, 150, 243, 0.9);
 
-      
+      transition-duration: 250ms;
+     
     }
 
     .projects-card:hover .tumb-text{
       transform: translateY(0);
-      transition-duration: 250ms;
+      transition: transform 250ms ease;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       
     }
 
