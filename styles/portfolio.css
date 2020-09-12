@@ -313,12 +313,15 @@ color: #757575;
       transition-duration: 250ms;
      
     }
-
-    .projects-card:hover .tumb-text{
+   
+      
+    
+    .projects-card:hover .tumb-text {
       transform: translateY(0);
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       
     }
+
 
 .projects-card{
   
@@ -473,7 +476,3 @@ color: var(--white);
 
 
 
-.xxx:focus{
-  
-  color: #2196F3;
-}
