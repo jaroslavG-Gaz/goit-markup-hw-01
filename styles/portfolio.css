@@ -145,6 +145,7 @@ body{
   font-size: 14px;
   line-height: 1.14;
   color: var(--gray);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 }
 
 
@@ -179,15 +180,15 @@ body{
     } 
       .auth-link:hover .emale-svg{
         fill: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
       }
       .auth-link:hover{
         color: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
       }
       .auth-link:hover .phone-svg{
         fill: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
       }
 
 .site-nav .action{
@@ -260,7 +261,7 @@ color: #757575;
 .projects-item:hover {
   background-color: var(--active);
   color: var(--white);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
   box-shadow: 0px 3px 1px 
   rgba(0, 0, 0, 0.1), 0px 1px 2px 
@@ -274,7 +275,7 @@ color: #757575;
 .projects-nav-item:hover{
   background-color: var(--active);
   color: var(--white);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+  
   
 }
 
@@ -318,7 +319,7 @@ color: #757575;
     
     .projects-card:hover .tumb-text {
       transform: translateY(0);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
       
     }
 
@@ -334,7 +335,7 @@ color: #757575;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+  
 }
 
 .projects-card:nth-child(3n){
@@ -438,7 +439,7 @@ color: var(--white);
 
                                     .icon-item:hover{
                                       background-color: var(--active);
-                                      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                                      
                                     }
                
 .logo3{

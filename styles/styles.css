@@ -129,7 +129,7 @@ body {
 
 .link:hover{
     color: var(--active);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+    
 
 }
 
@@ -158,16 +158,16 @@ body {
 }
     .auth-link:hover .emale{
         fill: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
     }
     .auth-link:hover .phone-svg{
         fill: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
     }
 
     .auth-link:hover{
         color: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
     }
 
     
@@ -494,7 +494,7 @@ line-height: 1.71;
     margin: 0 ;
 
 }
-        /* Первый заздел */
+        /* Первый pаздел */
         .icon-section{
             display: flex;
             margin-top: 16px;
@@ -506,12 +506,12 @@ line-height: 1.71;
         }
 
         .inst-section{
-            transition: background-color 250ms linear;
-           
+
             margin-right: 10px;
             width: 44px;
             height: 44px;
             border-radius: 50px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
             
         }
                 .instagram{
@@ -520,17 +520,18 @@ line-height: 1.71;
                  width: 20px;
                  height: 20px;
                  fill: var(--gray);
+                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
                  
                 }
                     .inst-section:hover .instagram{
                         fill: var(--white);
-                        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                        
                         
                     }
             
                     .inst-section:hover{
                         background-color: var(--active);
-                        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                       
                     }
                         
                         
@@ -557,14 +558,14 @@ line-height: 1.71;
                 
                 .twitt-section:hover .twitter{
                     fill: var(--white);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                   
                     
 
                 }
                 
                 .twitt-section:hover{
                     background-color: var(--active);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                   
                 }
             
 
@@ -587,12 +588,12 @@ line-height: 1.71;
 
                 .facebook-section:hover .facebook{
                     fill: var(--white);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                    
                     
                 }
                 .facebook-section:hover{
                     background-color: var(--active);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                    
                 }
 
 
@@ -615,11 +616,11 @@ line-height: 1.71;
                 
                 .linked-section:hover{
                     background-color: var(--active);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                    
                 }
                 .linked-section:hover .linked{
                     fill: var(--white);
-                    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                     
                 }
 
 
@@ -664,12 +665,12 @@ text-align: center;
 
      .client-item:hover{
         border: 1px solid var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
      }
 
      .client-item:hover .logo-svg{
          fill: var(--active);
-         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+         
      }
 
 
@@ -693,12 +694,12 @@ text-align: center;
 
         .client-item-logo4:hover{
             border: 1px solid var(--active);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
 
         .client-item-logo4:hover .logo4-svg{
             fill: var(--active);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
 
      .client-item-logo5{
@@ -719,12 +720,12 @@ text-align: center;
 
       .client-item-logo5:hover{
         border: 1px solid var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        
 
       }
       .client-item-logo5:hover .logo5-svg{
           fill: var(--active);
-          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+          
       }
 
 
@@ -747,12 +748,12 @@ text-align: center;
 
      .client-item-logo6:hover{
         border: 1px solid var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+         
      }
 
      .client-item-logo6:hover .logo6-svg{
         fill: var(--active);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+       
      }
     
 
@@ -854,11 +855,11 @@ text-align: center;
 
         .link-svg:hover{
             background-color: var(--active);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
         .link-svg:hover .inst-svg{
             fill: var(--white);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
 
 
@@ -879,7 +880,7 @@ text-align: center;
         }
         .link-svg:hover .twit-svg{
             fill: var(--white);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
 
         .facebook-svg{
@@ -891,7 +892,7 @@ text-align: center;
 
         .link-svg:hover .facebook-svg{
             fill: var(--white);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            
         }
 
         .linked-svg{
@@ -903,7 +904,7 @@ text-align: center;
 
         .link-svg:hover .linked-svg{
             fill: var(--white);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+           
         }
 
 
