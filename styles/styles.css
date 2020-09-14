@@ -973,15 +973,17 @@ text-align: center;
                     width: 30px;
                     height: 30px;
 
-                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgba(0, 0, 0, 0.2);
                     border-radius: 50px;
                     cursor: pointer;
-                    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+                    
                     background-color: #fff;
                 }
-
+                    .btn:hover .cross-svg{
+                        fill: var(--active);
+                    }
 .subscribe-section{
-
+    
     margin-left: 94px;
 }
 
@@ -1005,7 +1007,7 @@ text-align: center;
             padding-top: 15px;
             padding-bottom: 15px;
             padding-left: 15px;
-            width: 358px;
+            width: 350px;
             
 
             background-color: var(--footer-hero);
@@ -1026,6 +1028,7 @@ text-align: center;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 29px;
+                padding-right: 25.5px;
 
                 font-weight: bold;
                 font-size: 16px;
@@ -1036,6 +1039,7 @@ text-align: center;
                 background-color: var(--active);
                 border: 0;
                 border-radius: 4px;
+                cursor: pointer;
 
 
             }
@@ -1045,5 +1049,6 @@ text-align: center;
                         fill: var(--white);
                         width: 24px;
                         height: 24px;
+                        margin-left: 10px;
                     }
        
