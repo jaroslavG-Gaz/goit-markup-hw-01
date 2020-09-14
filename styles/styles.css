@@ -828,7 +828,7 @@ text-align: center;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     color: var(--white);
 
     }
@@ -976,6 +976,74 @@ text-align: center;
                     border: 1px solid rgba(0, 0, 0, 0.1);
                     border-radius: 50px;
                     cursor: pointer;
-                    box-shadow: 0px 0.5px 5px 0.5px rgba(0,0,0,0.14);
+                    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
                     background-color: #fff;
                 }
+
+.subscribe-section{
+
+    margin-left: 94px;
+}
+
+    .subscribe-title{
+        margin: 0;
+        
+        
+        
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: var(--white);
+    }
+
+        .subscribe-form input{
+
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            width: 358px;
+            
+
+            background-color: var(--footer-hero);
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+
+        }
+
+            .subscribe-btn{
+                display: inline-flex;
+                align-items: center;
+                margin-left: 8px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 29px;
+
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 1.87;
+                letter-spacing: 0.06em;
+
+                color: var(--white);
+                background-color: var(--active);
+                border: 0;
+                border-radius: 4px;
+
+
+            }
+
+                
+                    .subscribe-btn .icon-svg{
+                        fill: var(--white);
+                        width: 24px;
+                        height: 24px;
+                    }
+       
