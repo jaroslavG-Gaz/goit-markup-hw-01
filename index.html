@@ -519,9 +519,9 @@
 
             <p class="subscribe-title">Подпишитесь на рассылку</p>
 
-            <form action="" class="subscribe-form">
+            <form action="#" method="POST" id="form" class="subscribe-form">
 
-                <input type="email" name="email" placeholder="E-mail" >
+                <input type="email" name="email" placeholder="E-mail" autocomplete="off" >
 
                 <button type="submit" class="subscribe-btn">Подписаться
                     <svg class="icon-svg">
@@ -529,6 +529,7 @@
                     </svg>
                 </button>
 
+                
             </form>
 
 
@@ -544,7 +545,7 @@
 <div class="backdrop is-hidden" data-backdrop> 
   
     <div class="modal">
-       
+        
         <button data-close-modal type="button" class="btn">
 
         <svg class="cross-svg">
@@ -552,7 +553,51 @@
         </svg>
 
         </button>
-      
+        <p class="backdrop-title">Оставьте свои данные, мы вам перезвоним</p>
+        
+        
+    <form action="#" method="POST" class="form-blank"> 
+
+        <div class="form-section">
+            <label for="user-name">Имя
+                <input type="text" name="user-name" id="user-name">
+            </label>
+        </div>
+
+        <div class="form-section">
+            <label for="user-nuber">Телефон
+                <input type="text" name="user-number" id="user-nuber">
+            </label>
+        </div>
+
+        <div class="form-section">
+            <label for="user-mail">Почта
+                <input type="email" name="user-mail" id="user-mail">
+            </label>
+        </div>
+
+        <div class="coments-section">
+
+
+        <label type="text" for="coments">Комментарий</label>
+        <textarea name="coments" rows="5" cols="45" id="coments" placeholder="Введите текст"></textarea>
+
+        </div>
+
+        <div class="consent-section">
+
+        <label name="checkbox" class="checkbox">
+            <input type="checkbox"><p>Соглашаюсь с рассылкой и принимаю</p> 
+            <a href="https://brandu.top/publiccontract" target="_blank">Условия договора</a>
+        </label>
+
+        </div>
+
+        <button type="submit" class="sent-btn">Отправить</button>
+
+        
+
+    </form>
     </div>
 </div>
 <script>
