@@ -995,6 +995,8 @@ text-align: center;
 
                             color: var(--black);
                         }
+
+                        /* Секция бланка */
 .form-blank{
     width: 448px;
     margin-left: auto;
@@ -1003,11 +1005,26 @@ text-align: center;
 }
                         
 .form-section{
-    outline: 1px solid tomato;
+    
+    
     margin-bottom: 12px;
     
 }
+.svg-wrape{
+    position: relative;
+
+}
+
+    .svg-man{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        width: 12px;
+        height: 12px;
+    }
     .form-section input{
+        padding-left: 42px;
         height: 40px;
         width: 100%;
 
@@ -1100,6 +1117,8 @@ textarea{
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* Секция футтера "подписывайтесь" */
 
 .subscribe-section{
     
