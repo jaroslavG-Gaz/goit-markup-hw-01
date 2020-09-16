@@ -980,6 +980,8 @@ text-align: center;
                     transition: 700ms;
                     background-color: #fff;
                 }
+
+                
                     .btn:hover .cross-svg{
                         fill: var(--active);
                         transform: rotateZ(360deg);
@@ -1032,6 +1034,19 @@ text-align: center;
     position: relative;
     
 }
+                              .mail-wrape input{
+                                  color: rgb(126, 126, 126);
+                                  letter-spacing: 0.038em;
+                                }
+                               .number-wrape input{
+                                color: rgb(126, 126, 126);
+                                letter-spacing: 0.038em;
+                               }
+                               .name-wrape input{
+                                color: rgb(126, 126, 126);
+                                letter-spacing: 0.038em;
+                               }
+
 .svg-man{
     position: absolute;
         top: 50%;
