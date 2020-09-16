@@ -955,6 +955,7 @@ text-align: center;
                     width: 20px;
                     height: 20px;
                     fill: var(--black);
+                    transition: transform 700ms linear;
                     
                     
                 }
@@ -963,6 +964,7 @@ text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
 
                     margin-top: 8px;
                     margin-right: 8px;
@@ -975,12 +977,19 @@ text-align: center;
                     border: 1px solid rgba(0, 0, 0, 0.2);
                     border-radius: 50px;
                     cursor: pointer;
-                    
+                    transition: 700ms;
                     background-color: #fff;
                 }
                     .btn:hover .cross-svg{
                         fill: var(--active);
+                        transform: rotateZ(360deg);
                     }
+                        .btn:hover{
+                            transform: rotateZ(360deg);
+                            
+                            border-top: 1px solid var(--active);
+                            border-bottom: 1px solid var(--active);
+                        }
 
                         .backdrop-title{
                             margin: 0;
@@ -1005,16 +1014,45 @@ text-align: center;
 }
                         
 .form-section{
-    
-    
     margin-bottom: 12px;
     
 }
-.svg-wrape{
+
+                .name-wrape:focus-within .svg-man{
+                    fill: #2196F3;
+                }
+                .name-wrape:focus-within input{
+                    border: 1px solid var(--active);
+                }
+
+                .number-wrape:focus-within .svg-number{
+                    fill: var(--active);
+                }
+                .number-wrape:focus-within input{
+
+                    border: 1px solid var(--active);
+                }
+
+                .mail-wrape:focus-within input{
+                    border: 1px solid var(--active);
+                }
+                .mail-wrape:focus-within .svg-mail{
+                    fill: var(--active);
+                }
+                
+.name-wrape{
     position: relative;
 
 }
 
+.number-wrape{
+    position: relative;
+}
+
+.mail-wrape{
+    position: relative;
+
+}
     .svg-man{
         position: absolute;
         top: 50%;
@@ -1023,6 +1061,27 @@ text-align: center;
         width: 12px;
         height: 12px;
     }
+
+    .svg-number{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        width: 13px;
+        height: 13px;
+    }
+
+    .svg-mail{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+
+
     .form-section input{
         padding-left: 42px;
         height: 40px;
@@ -1056,10 +1115,14 @@ text-align: center;
                 border-radius: 4px;
             }
             
+            textarea:focus-within{
+                border: 1px solid var(--active);
+            }
+
                 textarea::placeholder{
                     
                     font-family: Roboto;
-                    font-size: 13px;
+                    font-size: 14px;
                     line-height: 1.16;
                     letter-spacing: 0.03em;
                     color: rgba(117, 117, 117, 0.781);
