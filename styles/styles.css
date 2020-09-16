@@ -1018,32 +1018,11 @@ text-align: center;
     
 }
 
-                .name-wrape:focus-within .svg-man{
-                    fill: #2196F3;
-                }
-                .name-wrape:focus-within input{
-                    border: 1px solid var(--active);
-                }
-
-                .number-wrape:focus-within .svg-number{
-                    fill: var(--active);
-                }
-                .number-wrape:focus-within input{
-
-                    border: 1px solid var(--active);
-                }
-
-                .mail-wrape:focus-within input{
-                    border: 1px solid var(--active);
-                }
-                .mail-wrape:focus-within .svg-mail{
-                    fill: var(--active);
-                }
-                
 .name-wrape{
     position: relative;
-
+    
 }
+
 
 .number-wrape{
     position: relative;
@@ -1051,17 +1030,17 @@ text-align: center;
 
 .mail-wrape{
     position: relative;
-
+    
 }
-    .svg-man{
-        position: absolute;
+.svg-man{
+    position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 15px;
         width: 12px;
         height: 12px;
     }
-
+    
     .svg-number{
         position: absolute;
         top: 50%;
@@ -1070,7 +1049,7 @@ text-align: center;
         width: 13px;
         height: 13px;
     }
-
+    
     .svg-mail{
         position: absolute;
         top: 50%;
@@ -1079,9 +1058,31 @@ text-align: center;
         width: 15px;
         height: 15px;
     }
+    
+    
+                 .name-wrape:focus-within .svg-man{
+                     fill: #2196F3;
+                 }
+                 .name-wrape:focus-within input{
+                     border: 1px solid var(--active);
+                 }
 
+                 .number-wrape:focus-within .svg-number{
+                     fill: var(--active);
+                 }
+                 .number-wrape:focus-within input{
 
+                     border: 1px solid var(--active);
+                 }
 
+                 .mail-wrape:focus-within input{
+                     border: 1px solid var(--active);
+                 }
+                 .mail-wrape:focus-within .svg-mail{
+                     fill: var(--active);
+                 }
+    
+    
     .form-section input{
         padding-left: 42px;
         height: 40px;
@@ -1131,12 +1132,14 @@ text-align: center;
                 }
 
       
-                .checkbox a{
+                .check-label a{
+                    margin: 0;
+                    margin-left: 4px;
                     color:var(--active);
                     font-size: 14px;
                 }
 
-                .checkbox p{
+                .check-label p{
                     display: inline;
                     margin: 0;
                     margin-left: 4px;
@@ -1146,14 +1149,48 @@ text-align: center;
                     color: var(--gray);
                 }
 
-                 .checkbox{
+                 .check-label{
+                     display: flex;
+                     align-items: center;
                      margin-left: 12px;
 
                  }
+                 .check-label input{
+                     position: absolute;
+                     width: 1px;
+                     height: 1px;
+                     margin: -1px;
+                     border: 0;
+                     padding: 0;
+                     clip: rect(0 0 0 0);
+                     overflow: hidden;
+                 }
         
+
+                 .check-box{
+                     display: inline-block;
+                     margin-right: 4px;
+                     width: 16px;
+                     height: 15px;
+                     border: 2px solid black;
+                     border-radius: 3px;
+                     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+                    
+                 }
+
+                 .check-label input:checked + .check-box{
+                     background-image: url(../images/iconcheck.svg);
+                     background-color: var(--active);
+                     background-size: contain;
+                     background-origin: border-box;
+                     border: 2px solid var(--active);
+                     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                 }
+
         .form-section input{
             border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 4px
+            border-radius: 4px;
         }
 
 textarea{
@@ -1163,6 +1200,9 @@ textarea{
 }
 
 .sent-btn{
+    position: relative;
+    top: 0;
+    transition: 200ms;
     display: inline-block;
     padding: 10px 55px;
     margin-left: 124px;
@@ -1178,8 +1218,17 @@ textarea{
     color: var(--white);
     border: 0;
     border-radius: 4px;
+    box-shadow: 0 4px 0px rgba(60, 53, 74, 0.459);
+    
     cursor: pointer;
 }
+
+.sent-btn:hover{
+    top: 2px; 
+    box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
+    transition-duration: top 500ms;
+}
+
 
 /* Секция футтера "подписывайтесь" */
 
@@ -1190,8 +1239,6 @@ textarea{
 
     .subscribe-title{
         margin: 0;
-        
-        
         
         font-weight: bold;
         font-size: 14px;
