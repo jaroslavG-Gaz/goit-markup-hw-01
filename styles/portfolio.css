@@ -448,7 +448,7 @@ color: var(--white);
   margin-left: 94px;
 }
 
-  .subscribe-title{
+  .subscribe-section label{
     
     font-weight: bold;
     font-size: 14px;
@@ -491,6 +491,7 @@ color: var(--white);
       background-color: var(--active);
       border: 0;
       border-radius: 4px;
+      transition: 100ms cubic-bezier(0.4, 0, 0.2, 1) ;
       cursor: pointer;
       
     }
@@ -500,11 +501,15 @@ color: var(--white);
           width: 24px;
           height: 24px;
         }
-
+        .subscribe-form input:not(:placeholder-shown),
         .subscribe-form input:focus{
           border: 1px solid var(--active);
         }
 
+        .subscribe-btn:hover{
+          box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
+          
+      }
 
 .logo3{
   display: inline-block;

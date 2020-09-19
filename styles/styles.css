@@ -230,7 +230,7 @@ body {
     margin-bottom: 200px;
     
     border-radius: 4px;
-
+    transition: 100ms cubic-bezier(0.4, 0, 0.2, 1) ;
     background-color: var(--active);
     color: var(--white);
     
@@ -243,6 +243,13 @@ body {
 
 
 }
+
+    .button:hover{
+        box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
+                        
+     }
+
+
 .button span{
     font-style: normal;
     font-weight: bold;
@@ -1154,8 +1161,10 @@ text-align: center;
                     font-size: 14px;
                 }
 
-                .check-label p{
-                    display: inline;
+                .check-label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     margin: 0;
                     margin-left: 4px;
                     font-size: 14px;
@@ -1164,12 +1173,7 @@ text-align: center;
                     color: var(--gray);
                 }
 
-                 .check-label{
-                     display: flex;
-                     align-items: center;
-                     margin-left: 12px;
-
-                 }
+            
                  .check-label input{
                      position: absolute;
                      width: 1px;
@@ -1207,6 +1211,22 @@ text-align: center;
             border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
         }
+        
+        .form-section input:invalid{
+            box-shadow: none ;
+        }
+
+        .form-section> .mail-wrape input:invalid{
+            box-shadow: rgb(255, 0, 0) 0px 0px 1.5px 1px ;
+        }
+        .form-section> .mail-wrape input:placeholder-shown:invalid{
+           
+            box-shadow: none;
+        }
+
+
+ 
+          
 
 textarea{
     width: 100%;
@@ -1252,7 +1272,7 @@ textarea{
     margin-left: 94px;
 }
 
-    .subscribe-title{
+    .subscribe-section label{
         margin: 0;
         
         font-weight: bold;
@@ -1282,8 +1302,8 @@ textarea{
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
 
-        }
-               
+        }     
+
             .subscribe-btn{
                 display: inline-flex;
                 align-items: center;
@@ -1302,6 +1322,7 @@ textarea{
                 background-color: var(--active);
                 border: 0;
                 border-radius: 4px;
+                transition: 100ms cubic-bezier(0.4, 0, 0.2, 1) ;
                 cursor: pointer;
 
 
@@ -1315,7 +1336,12 @@ textarea{
                         height: 24px;
                         margin-left: 10px;
                     }
-       
+                    .subscribe-form input:not(:placeholder-shown),
                     .subscribe-form input:focus{
                         border: 1px solid var(--active);
+                        
+                    }
+                    .subscribe-btn:hover{
+                        box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
+                        
                     }

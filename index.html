@@ -517,9 +517,9 @@
 
         <div class="subscribe-section">
 
-            <label for="email"> <p class="subscribe-title">Подпишитесь на рассылку</p> </label>
+            <label for="email">Подпишитесь на рассылку</label>
 
-            <form action="#" method="POST" id="form" class="subscribe-form">
+            <form  id="form" class="subscribe-form">
 
                 <input type="email" name="email" placeholder="E-mail" autocomplete="off"  id="email">
 
@@ -542,6 +542,8 @@
 
 </footer>
 
+<!-- Модальное окно  -->
+
 <div class="backdrop is-hidden" data-backdrop> 
   
     <div class="modal">
@@ -556,30 +558,30 @@
         <p class="backdrop-title">Оставьте свои данные, мы вам перезвоним</p>
         
         
-    <form action="#" method="POST" class="form-blank"> 
+    <form   class="form-blank"> 
 
         <div class="form-section">
             
-            <label>Имя
+            <label for="name">Имя</label>
 
                 <div class="name-wrape">
 
-                    <input type="text" name="user-name">
+                    <input type="text" name="user-name" id="name" required placeholder="Иван Иванов" autocomplete="off">
                     
                 <svg class="svg-man">  
                     <use href="./images/symbol-defs.svg#icon-icon-man"></use>
                 </svg>
 
                 </div>
-            </label>
+            
         </div>
 
         <div class="form-section">
-            <label>Телефон
+            <label for="number">Телефон</label>
 
                 <div class="number-wrape">
                         
-                <input type="text" name="user-number">
+                <input type="text" name="user-number" id="number" required placeholder="+38" autocomplete="off" > 
                     <svg class="svg-number">
 
                         <use href="./images/symbol-defs.svg#icon-phone-call"></use>
@@ -587,40 +589,40 @@
                     </svg>
                 </div>
 
-            </label>
+    
 
         </div>
 
         <div class="form-section">
 
-            <label>Почта
+            <label for="mail">Почта </label>
                 <div class="mail-wrape">
 
-                <input type="email" name="user-mail">
+                <input type="email" name="user-mail" id="mail" required placeholder="yourmail@gmail.com" autocomplete="off">
                 <svg class="svg-mail">
                     <use href="./images/symbol-defs.svg#icon-Massages"></use>
                 </svg>
 
                 </div>
 
-            </label>
+           
 
         </div>
 
         <div class="coments-section">
 
 
-        <label type="text" for="coments">Комментарий</label>
+        <label for="coments">Комментарий</label>
         <textarea name="coments" rows="5" cols="45" id="coments" placeholder="Введите текст"></textarea>
 
         </div>
 
         <div class="consent-section">
 
-        <label class="check-label">
+        <label class="check-label" for="checkbox">
 
-            <input type="checkbox">
-            <span class="check-box"></span> <p>Соглашаюсь с рассылкой и принимаю</p> 
+            <input type="checkbox" id="checkbox">
+            <span class="check-box"></span> Соглашаюсь с рассылкой и принимаю 
             <a href="https://store.steampowered.com/eula/290730_eula_0?eulaLang=russian" target="_blank">Условия договора</a>
         </label>
 
