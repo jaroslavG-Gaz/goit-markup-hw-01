@@ -995,11 +995,11 @@ text-align: center;
                     }
                         .btn:hover{
                             transform: rotateZ(360deg);
-                            
-                            border-top: 1px solid var(--active);
-                            border-bottom: 1px solid var(--active);
+                            border: 1px solid var(--active);
+  
                         }
 
+                        
                         .backdrop-title{
                             margin: 0;
                             margin-bottom: 12px;
