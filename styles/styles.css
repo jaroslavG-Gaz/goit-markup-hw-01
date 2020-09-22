@@ -1,4 +1,4 @@
-html{
+html {
     box-sizing: border-box;
 }
 
@@ -18,11 +18,22 @@ html{
     --team-back : #F5F4FA ;
 }
 
-.naked{
+.naked {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .img {
@@ -263,10 +274,10 @@ body {
 .advantages-container{
     padding-top: 94px;
     padding-bottom: 94px;
-    /* outline: 1px solid tomato; */
+    
 }
 
-.advantages-nav{
+.advantages-nav {
     display: flex;
     justify-content: end;
     
@@ -274,21 +285,19 @@ body {
 
 
 
-.item:not(:last-child){
+.item:not(:last-child) {
     margin-right: 30px;;
 }
-.hiden-text{
-    display: none;
-}
 
-.item h3{
+
+.item h3 {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.item p{
+.item p {
 color: var(--gray);
 font-style: normal;
 font-weight: normal;
@@ -297,7 +306,7 @@ line-height: 1.71;
 }
 
 
-    .antenna-section{
+    .antenna-section {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -306,7 +315,7 @@ line-height: 1.71;
     background-color: #F5F4FA;
 
     }
-    .antenna{
+    .antenna {
     width: 65px;
     height: 70px;
     margin-left: 102px;
@@ -316,7 +325,7 @@ line-height: 1.71;
   
     }
 
-    .clock-section{
+    .clock-section {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -326,7 +335,7 @@ line-height: 1.71;
     
     }
 
-    .clock{
+    .clock {
     width: 65px;
     height: 70px;
     margin-left: 102px;
@@ -335,7 +344,7 @@ line-height: 1.71;
     margin-bottom: 20px;
       
     }
-    .diagram-section{
+    .diagram-section {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -767,6 +776,7 @@ text-align: center;
 /*  footer */
 
 .page-footer{
+  
     background-color: var(--footer-hero);
 }
 
@@ -784,12 +794,14 @@ text-align: center;
 .adress{
     margin-bottom: 9px;
     font-weight: 200;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     color: var(--white);
 
 }
-.footer{
+.addres-section{
+
     width: 231px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -798,15 +810,16 @@ text-align: center;
     
    
 }
-.footer-list{
+.addres-list{
     list-style-type: none;
     padding: 0;
     margin: 0;
     
 }
 
-.footer-list .mail{
+.addres-list .mail{
     margin-bottom: 9px;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -814,19 +827,21 @@ text-align: center;
     
 } 
 
-.footer-list .mail:last-child{
+.addres-list .mail:last-child{
     margin-bottom: 0;
 }
 
 
 
 .main-footer{
+  
     display: flex;
     align-items: baseline;
     
 }
 
     .join-section{
+       
         margin-left: 70px;
         
         
@@ -914,6 +929,89 @@ text-align: center;
            
         }
 
+/* Секция футтера "подписывайтесь" */
+
+.subscribe-section{
+
+    margin-left: 94px;
+}
+
+    .subscribe-section label{
+        margin: 0;
+        
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: var(--white);
+    }
+
+        .subscribe-form input{
+
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            width: 350px;
+            
+
+            background-color: var(--footer-hero);
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+
+        }     
+
+            .subscribe-btn{
+                display: inline-flex;
+                align-items: center;
+                margin-left: 8px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 29px;
+                padding-right: 25.5px;
+
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 1.87;
+                letter-spacing: 0.06em;
+
+                color: var(--white);
+                background-color: var(--active);
+                border: 0;
+                border-radius: 4px;
+                transition: 100ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                cursor: pointer;
+
+
+            }   
+
+
+                
+                    .subscribe-btn .icon-svg{
+                        fill: var(--white);
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 10px;
+                    }
+                    .subscribe-form input:not(:placeholder-shown),
+                    .subscribe-form input:focus{
+                        border: 1px solid var(--active);
+                        
+                    }
+                    .subscribe-btn:hover{
+                        box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
+                        
+                    }
+
+
+
 
 /* модалка */
 
@@ -959,6 +1057,8 @@ text-align: center;
 
                 .cross-svg{
                     padding: 0;
+                    margin-right: 1px;
+                    margin-top: 1px;
                     width: 20px;
                     height: 20px;
                     fill: var(--black);
@@ -984,7 +1084,7 @@ text-align: center;
                     border: 1px solid rgba(0, 0, 0, 0.2);
                     border-radius: 50px;
                     cursor: pointer;
-                    transition: 450ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) ;
                     background-color: #fff;
                 }
 
@@ -992,10 +1092,12 @@ text-align: center;
                     .btn:hover .cross-svg{
                         fill: var(--active);
                         transform: rotateZ(360deg);
+                        transform: scale(1.4);
                     }
                         .btn:hover{
+             
                             transform: rotateZ(360deg);
-                            border: 1px solid var(--active);
+                            border: 2px solid var(--active);
   
                         }
 
@@ -1014,7 +1116,7 @@ text-align: center;
                             color: var(--black);
                         }
 
-                        /* Секция бланка */
+                        /* Секция бланка из модалки*/
 .form-blank{
     width: 448px;
     margin-left: auto;
@@ -1263,85 +1365,3 @@ textarea{
     box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
     transition-duration: top 500ms;
 }
-
-
-/* Секция футтера "подписывайтесь" */
-
-.subscribe-section{
-   
-    margin-left: 94px;
-}
-
-    .subscribe-section label{
-        margin: 0;
-        
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        
-        color: var(--white);
-    }
-
-        .subscribe-form input{
-
-            margin-top: 20px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 15px;
-            width: 350px;
-            
-
-            background-color: var(--footer-hero);
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-
-        }     
-
-            .subscribe-btn{
-                display: inline-flex;
-                align-items: center;
-                margin-left: 8px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 29px;
-                padding-right: 25.5px;
-
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 1.87;
-                letter-spacing: 0.06em;
-
-                color: var(--white);
-                background-color: var(--active);
-                border: 0;
-                border-radius: 4px;
-                transition: 100ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                cursor: pointer;
-
-
-            }   
-
-
-                
-                    .subscribe-btn .icon-svg{
-                        fill: var(--white);
-                        width: 24px;
-                        height: 24px;
-                        margin-left: 10px;
-                    }
-                    .subscribe-form input:not(:placeholder-shown),
-                    .subscribe-form input:focus{
-                        border: 1px solid var(--active);
-                        
-                    }
-                    .subscribe-btn:hover{
-                        box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
-                        
-                    }
