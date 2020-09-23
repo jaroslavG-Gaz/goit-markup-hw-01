@@ -390,17 +390,22 @@
         </ul>
     </div>
 </section>
+
+
+<!-- СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ -->
+
 <section class="page-client">
 
 <div class="container">
 
-    <h2 class="client-title naked">Постоянные клиенты</h5>
+    <h2 class="page-client__title naked">Постоянные клиенты</h5>
+
     <ul class="client-list naked">  
 
         
-        <li class="client-item"> 
-            <a href="" class="client-link">
-            <svg class="logo-svg">
+        <li class="client-list__item"> 
+            <a href="" class="client-list__link">
+            <svg class="client-list__svg">
                 <use href="./images/symbol-defs.svg#icon-logo1"></use>
             </svg>
         </a>
@@ -409,36 +414,36 @@
 
 
         
-            <li class="client-item"> 
-                <a href="" class="client-link">
-                <svg class="logo-svg">
+            <li class="client-list__item"> 
+                <a href="" class="client-list__link">
+                <svg class="client-list__svg">
                     <use href="./images/symbol-defs.svg#icon-logo2"></use>
                 </svg>
             </a>
         </li>
     
         
-            <li class="client-item"> 
-                <a href="" class="client-link">
-                <svg class="logo-svg size3">
+            <li class="client-list__item"> 
+                <a href="" class="client-list__link">
+                <svg class="client-list__svg">
                     <use href="./images/symbol-defs.svg#icon-logo3"></use>
                 </svg>
             </a>
         </li>
     
         
-            <li class="client-item-logo4"> 
-                <a href="" class="client-link">
-                <svg class="logo4-svg ">
+            <li class="client-list__item"> 
+                <a href="" class="client-list__link">
+                <svg class="client-list__svg client-list__svg--geometry4">
                     <use href="./images/symbol-defs.svg#icon-logo4"></use>
                 </svg>
             </a>
         </li>
     
         
-            <li class="client-item-logo5"> 
-                <a href="" class="client-link">
-                <svg class="logo5-svg">
+            <li class="client-list__item"> 
+                <a href="" class="client-list__link">
+                <svg class="client-list__svg client-list__svg--geometry5">
                     <use href="./images/symbol-defs.svg#icon-logo5"></use>
                 </svg>
             </a>
@@ -446,9 +451,9 @@
     
     
         
-            <li class="client-item-logo6"> 
-                <a href="" class="client-link">
-                <svg class="logo6-svg">
+            <li class="client-list__item"> 
+                <a href="" class="client-list__link">
+                <svg class="client-list__svg client-list__svg--geometry6">
                     <use href="./images/symbol-defs.svg#icon-logo6"></use>
                 </svg>
             </a>
@@ -481,9 +486,9 @@
 
                <ul class="naked">
            
-                   <li class="adress"><b>г. Киев, пр-т Леси Украинки, 26</b></li>
-                   <li class="mail">info@example.com</li>
-                   <li class="mail">+38 099 111 11 11</li>
+                   <li class="adress-list__addres"><b>г. Киев, пр-т Леси Украинки, 26</b></li>
+                   <li class="addres-list__mail">info@example.com</li>
+                   <li class="addres-list__mail">+38 099 111 11 11</li>
            
             </ul>
             
@@ -493,36 +498,37 @@
 
     <div class="join-section">
 
-        <p class="join-title naked">ПРИСОЕДИННЯЙТЕСЬ</p>
+        <p class="join-section__title naked">ПРИСОЕДИННЯЙТЕСЬ</p>
 
-        <div class="svg-positoin">
-            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="link-svg naked">
-                <svg class="inst-svg">
+        <div class="svg-position">
+
+            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="link__svg naked">
+                <svg class="link__svg-inst">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
           
     
             </a>
          
-             <a href="https://twitter.com/?lang=ru" target="_blank" class="link-svg naked">
+             <a href="https://twitter.com/?lang=ru" target="_blank" class="link__svg naked">
                  
-                <svg class="twit-svg">
+                <svg class="link__svg-twit">
                     <use href="./images/symbol-defs.svg#icon-twiter"></use>
                 </svg>
     
             </a>
     
-             <a href="https://uk-ua.facebook.com/" target="_blank" class="link-svg naked">
+             <a href="https://uk-ua.facebook.com/" target="_blank" class="link__svg naked">
     
-                <svg class="facebook-svg">
+                <svg class="link__svg-facebook">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
     
             </a>
     
-             <a href="https://www.linkedin.com/" target="_blank" class="link-svg">
+             <a href="https://www.linkedin.com/" target="_blank" class="link__svg naked">
     
-                <svg class="linked-svg">
+                <svg class="link__svg-linked">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
     
@@ -533,14 +539,14 @@
 
         <div class="subscribe-section">
 
-            <label for="email">Подпишитесь на рассылку</label>
+            <label for="email" class="subscribe-section__label">Подпишитесь на рассылку</label>
 
-            <form  id="form" class="subscribe-form">
+            <form  id="form">
 
-                <input type="email" name="email" placeholder="E-mail" autocomplete="off"  id="email">
+                <input class="subscribe-section__input" type="email" name="email" placeholder="E-mail" autocomplete="off"  id="email">
 
                 <button type="submit" class="subscribe-btn">Подписаться
-                    <svg class="icon-svg">
+                    <svg class="subscribe-btn__icon-svg">
                         <use href="./images/symbol-defs.svg#icon-Telegram"></use>
                     </svg>
                 </button>
@@ -564,25 +570,25 @@
   
     <div class="modal">
         
-        <button data-close-modal type="button" class="btn">
+        <button data-close-modal type="button" class="modal-btn">
 
         <svg class="cross-svg">
             <use href="./images/symbol-defs.svg#icon-close-black-"> </use>
         </svg>
 
         </button>
-        <p class="backdrop-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         
         
-    <form   class="form-blank"> 
+    <form   class="form"> 
 
         <div class="form-section">
             
-            <label for="name">Имя</label>
+            <label class="form-section__label" for="name">Имя</label>
 
-                <div class="name-wrape">
+                <div class="section__name-wrape">
 
-                    <input type="text" name="user-name" id="name" required placeholder="Иван Иванов" autocomplete="off">
+                    <input class="section__input" type="text" name="user-name" id="name" required placeholder="Иван Иванов" autocomplete="off">
                     
                 <svg class="svg-man">  
                     <use href="./images/symbol-defs.svg#icon-icon-man"></use>
@@ -593,11 +599,12 @@
         </div>
 
         <div class="form-section">
-            <label for="number">Телефон</label>
 
-                <div class="number-wrape">
+            <label class="form-section__label" for="number">Телефон</label>
+
+                <div class="section__number-wrape">
                         
-                <input type="text" name="user-number" id="number" required placeholder="+38" autocomplete="off" > 
+                <input  class="section__input" type="text" name="user-number" id="number" required placeholder="+38" autocomplete="off" > 
                     <svg class="svg-number">
 
                         <use href="./images/symbol-defs.svg#icon-phone-call"></use>
@@ -611,10 +618,12 @@
 
         <div class="form-section">
 
-            <label for="mail">Почта </label>
-                <div class="mail-wrape">
+            <label class="form-section__label" for="mail">Почта </label>
 
-                <input type="email" name="user-mail" id="mail" required placeholder="yourmail@gmail.com" autocomplete="off">
+                <div class="section__mail-wrape">
+
+                <input class="section__input" type="email" name="user-mail" id="mail" required placeholder="yourmail@gmail.com" autocomplete="off">
+
                 <svg class="svg-mail">
                     <use href="./images/symbol-defs.svg#icon-Massages"></use>
                 </svg>
@@ -628,8 +637,9 @@
         <div class="coments-section">
 
 
-        <label for="coments">Комментарий</label>
-        <textarea name="coments" rows="5" cols="45" id="coments" placeholder="Введите текст"></textarea>
+        <label class="coments-section__label" for="coments">Комментарий</label>
+
+        <textarea class="coments-section__textarea" name="coments" rows="5" cols="45" id="coments" placeholder="Введите текст"></textarea>
 
         </div>
 
@@ -637,9 +647,9 @@
 
         <label class="check-label" for="checkbox">
 
-            <input type="checkbox" id="checkbox">
+            <input class="check-label__input" type="checkbox" id="checkbox">
             <span class="check-box"></span> Соглашаюсь с рассылкой и принимаю 
-            <a href="https://store.steampowered.com/eula/290730_eula_0?eulaLang=russian" target="_blank">Условия договора</a>
+            <a class="check-label__link" href="https://store.steampowered.com/eula/290730_eula_0?eulaLang=russian" target="_blank">Условия договора</a>
         </label>
 
         </div>
