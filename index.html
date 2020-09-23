@@ -11,22 +11,25 @@
 <body>
 <!--Шапка сайта-->
 <header class="page-header">
+
  <div class="container">
-        <nav class="header-container">
-                <a href="????" class="naked"><span class="logo">Web</span><span class="logo2">Studio</span></a>
+
+        <nav class="header-nav">
+
+                <a href="????" class="naked"><span class="logo">Web</span><span class="logo__part">Studio</span></a>
             
-            <ul class="site-nav naked">
-                <li class="site-nav-item line"><a href="./index.html" class="link naked line action">Студия</a></li>
-                <li class="site-nav-item"><a href="./portfolio.html" class="link naked ">Портфолио</a></li>
-                <li class="site-nav-item"><a href="./index.html" class="link naked">Контакты</a></li>
+            <ul class="header-nav__list naked">
+                <li class="header-nav__list-item line"><a href="./index.html" class="header-nav__list-link line action naked">Студия</a></li>
+                <li class="header-nav__list-item"><a href="./portfolio.html" class="header-nav__list-link  naked ">Портфолио</a></li>
+                <li class="header-nav__list-item"><a href="./index.html" class="header-nav__list-link  naked">Контакты</a></li>
             </ul>
        
-            <ul class="auth-nav">
+            <ul class="connection-list">
 
                 
-                <li class="auth-item naked"> 
-                    <a href="mailto:info@devstudio.com" class="auth-link naked">
-                    <svg class="emale"> 
+                <li class="naked"> 
+                    <a href="mailto:info@devstudio.com" class="connection-list__link naked">
+                    <svg class="connection-list__svg-mail"> 
                         <use href="./images/symbol-defs.svg#icon-emale"> </use>
                     </svg> info@devstudio.com
                     </a>
@@ -34,8 +37,8 @@
                 </li>
 
                 
-                <li class="auth-item naked"> <a href="tel:+38(096)1111111" class="auth-link naked">
-                    <svg class="phone-svg"> 
+                <li class="naked"> <a href="tel:+38(096)1111111" class="connection-list__link naked">
+                    <svg class="connection-list__svg-phone"> 
                         <use href="./images/symbol-defs.svg#icon-phone"> </use>
                     </svg> +38 096 111 11 11
                 </a>
@@ -45,7 +48,9 @@
             </ul>
 
         </nav>
+
     </div>
+
 </header>
 
 <main>
@@ -53,16 +58,12 @@
 
 <section class="page-hero">
 
-
-    
-
 <div class="container">
-    <div class="container-hero">
-        <h1 class="main-title">Эффективные решения <br> для вашего бизнеса </h1>   
+
+        <h1 class="page-hero__title">Эффективные решения <br> для вашего бизнеса </h1>   
     
-        <a data-open-modal  class="naked"><span class="button">Заказать услугу</span></a>
+        <a data-open-modal  class="naked"><span class="page-hero__button">Заказать услугу</span></a>
     
-    </div>
 </div>
 
 </section>
@@ -72,53 +73,54 @@
 <!--Сексия наши преимущества-->
 
 <section class="page-advantages">
+
     <div class="container">
+
         <h2  class="visually-hidden">Наши преимущества </h2>
 
-    <div class="advantages-container">
-    <ul class="advantages-nav naked"> 
+    <ul class="advantages-list naked"> 
         
-        <li class="item">
+        <li class="advantages-list__item">
             <div class="antenna-section">
             <svg class="antenna">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
             </svg>
         </div>
-          <h3>Внимание к деталям</h3>
-          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          <h3 class="advantages-list__title">Внимание к деталям</h3>
+          <p class="advantages-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
 
-        <li class="item">
+        <li class="advantages-list__item">
             <div class="clock-section">
             <svg class="clock">
                 <use href="./images/symbol-defs.svg#icon-clock"></use>
             </svg>
         </div>
-          <h3>Пунктуальность</h3>
-          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          <h3 class="advantages-list__title">Пунктуальность</h3>
+          <p class="advantages-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
       
-        <li class="item">
+        <li class="advantages-list__item">
             <div class="diagram-section">
                 <svg class="diagram">
                     <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
             </div>
-          <h3>Планирование</h3>
-          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          <h3 class="advantages-list__title">Планирование</h3>
+          <p class="advantages-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
 
-        <li class="item">
+        <li class="advantages-list__item">
             <div class="astronaut-section">
                 <svg class="astronaut">
                     <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
             </div>
-          <h3>Современные технологии</h3>
-          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          <h3 class="advantages-list__title">Современные технологии</h3>
+          <p class="advantages-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
-    </div>
+    
     </div>
 </section>
 
@@ -127,39 +129,39 @@
 
     <div class="container">
 
-            <h2 class="doing-title">Чем мы занимаемся</h2>
+            <h2 class="page-doing__title">Чем мы занимаемся</h2>
 
-                <ul class="doing-list naked">
+                <ul class="page-doing__list naked">
 
 
-                    <li class="doing-item">
+                    <li class="page-doing__item">
                         
                         <img src="./images/img.png" class="img" width="370" alt="фото">
                         
-                        <div class="tumb-doing">
-                            <p>Десктопные приложения</p>
+                        <div class="page-doing__tumb">
+                            <p class="page-doing__text">Десктопные приложения</p>
                         </div>
 
                     </li>
 
-                    <li class="doing-item">
+                    <li class="page-doing__item">
                         
                         <img src="./images/img1.png" class="img" width="370" alt="фото" >
 
-                        <div class="tumb-doing">
+                        <div class="page-doing__tumb">
 
-                            <p>Мобильные приложения</p>
+                            <p class="page-doing__text">Мобильные приложения</p>
 
                         </div>
                     </li>
 
-                    <li class="doing-item">
+                    <li class="page-doing__item">
 
                         <img src="./images/img2.png" class="img" width="370" alt="фото">
 
-                        <div class="tumb-doing">
+                        <div class="page-doing__tumb">
 
-                            <p>Дизайнерские решения</p>
+                            <p class="page-doing__text">Дизайнерские решения</p>
 
                         </div>  
 
@@ -174,51 +176,53 @@
 </section>
 
 <!--Наша Команда-->
-<section class="page-command">
+
+<section class="page-team">
 
     <div class="container">
 
-        <h2 class="command-title">Наша Команда</h3>
+        <h2 class="page-team__title">Наша Команда</h3>
 
-        <ul class="command-list naked ">
-            <li class="command-item">
+        <ul class="page-team__list naked ">
+
+            <li class="page-team__list-item">
 
             <img src="./images/man1.jpg" width="270" alt="man1">
 
-            <div class="command-text">
+            <div class="page-team__tumb">
                 <h3>Игорь Демьяненко</h3>
-                 <p>Product Designer</p>
+                 <p class="page-team__tumb-text">Product Designer</p>
 
-                <div class="icon-section">
+                <div class="icons-container">
 
                     
-                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="inst-section">
-                        <svg class="instagram">
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="icon-section">
+                        <svg class="icon-section__instagram">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                   
    
                     </a>
                  
-                     <a href="https://twitter.com/?lang=ru" target="_blank" class="twitt-section">
+                     <a href="https://twitter.com/?lang=ru" target="_blank" class="icon-section">
                          
-                        <svg class="twitter">
+                        <svg class="icon-section__twitter">
                             <use href="./images/symbol-defs.svg#icon-twiter"></use>
                         </svg>
    
                     </a>
 
-                     <a href="https://uk-ua.facebook.com/" target="_blank" class="facebook-section">
+                     <a href="https://uk-ua.facebook.com/" target="_blank" class="icon-section">
 
-                        <svg class="facebook">
+                        <svg class="icon-section__facebook">
                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                         </svg>
    
                     </a>
 
-                     <a href="https://www.linkedin.com/" target="_blank" class="linked-section">
+                     <a href="https://www.linkedin.com/" target="_blank" class="icon-section">
 
-                        <svg class="linked">
+                        <svg class="icon-section__linked">
                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
    
@@ -233,42 +237,46 @@
     
     
 
-            <li class="command-item">
+            <li class="page-team__list-item">
 
             <img src="./images/girl1.jpg" width="270" alt="girl1">
 
-               <div class="command-text" >
-                <h3>Ольга Репина</h4>
-                <p>Frontend Developer</p>
-                <div class="icon-section">
+               <div class="page-team__tumb">
 
-                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="inst-section">
-                        <svg class="instagram">
+                <h3>Ольга Репина</h4>
+
+                <p class="page-team__tumb-text">Frontend Developer</p>
+
+                <div class="icons-container">
+
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="icon-section">
+
+                        <svg class="icon-section__instagram">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                   
    
                     </a>
                  
-                     <a href="https://twitter.com/?lang=ru" target="_blank" class="twitt-section">
+                     <a href="https://twitter.com/?lang=ru" target="_blank" class="icon-section">
                          
-                        <svg class="twitter">
+                        <svg class="icon-section__twitter">
                             <use href="./images/symbol-defs.svg#icon-twiter"></use>
                         </svg>
    
                     </a>
 
-                     <a href="https://uk-ua.facebook.com/" target="_blank" class="facebook-section">
+                     <a href="https://uk-ua.facebook.com/" target="_blank" class="icon-section">
 
-                        <svg class="facebook">
+                        <svg class="icon-section__facebook">
                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                         </svg>
    
                     </a>
 
-                     <a href="https://www.linkedin.com/" target="_blank" class="linked-section">
+                     <a href="https://www.linkedin.com/" target="_blank" class="icon-section">
 
-                        <svg class="linked">
+                        <svg class="icon-section__linked">
                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
    
@@ -280,42 +288,44 @@
     
 
     
-            <li class="command-item">
+            <li class="page-team__list-item">
 
             <img src="./images/man2.jpg" width="270" alt="man2">
 
-                <div class="command-text" >
-                    <h3>Николай Тарасов</h4>
-                    <p>Marketing</p>
-                    <div class="icon-section">
+                <div class="page-team__tumb" >
 
-                        <a href="https://www.instagram.com/?hl=ru" target="_blank" class="inst-section">
-                            <svg class="instagram">
+                    <h3>Николай Тарасов</h4>
+                    <p class="page-team__tumb-text">Marketing</p>
+
+                    <div class="icons-container">
+
+                        <a href="https://www.instagram.com/?hl=ru" target="_blank" class="icon-section">
+                            <svg class="icon-section__instagram">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                       
        
                         </a>
                      
-                         <a href="https://twitter.com/?lang=ru" target="_blank" class="twitt-section">
+                         <a href="https://twitter.com/?lang=ru" target="_blank" class="icon-section">
                              
-                            <svg class="twitter">
+                            <svg class="icon-section__twitter">
                                 <use href="./images/symbol-defs.svg#icon-twiter"></use>
                             </svg>
        
                         </a>
     
-                         <a href="https://uk-ua.facebook.com/" target="_blank" class="facebook-section">
+                         <a href="https://uk-ua.facebook.com/" target="_blank" class="icon-section">
     
-                            <svg class="facebook">
+                            <svg class="icon-section__facebook">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
        
                         </a>
     
-                         <a href="https://www.linkedin.com/" target="_blank" class="linked-section">
+                         <a href="https://www.linkedin.com/" target="_blank" class="icon-section">
     
-                            <svg class="linked">
+                            <svg class="icon-section__linked">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
        
@@ -328,42 +338,44 @@
 
 
 
-            <li class="command-item">
+            <li class="page-team__list-item">
             
              <img src="./images/man3.jpg" width="270" alt="man3">
 
-                <div class="command-text" >
-                    <h3>Михаил Ермаков</h4>
-                    <p>UI Designer</p> 
-                    <div class="icon-section">
+                <div class="page-team__tumb" >
 
-                        <a href="https://www.instagram.com/?hl=ru" target="_blank" class="inst-section">
-                            <svg class="instagram">
+                    <h3>Михаил Ермаков</h4>
+                    <p class="page-team__tumb-text">UI Designer</p> 
+
+                    <div class="icons-container">
+
+                        <a href="https://www.instagram.com/?hl=ru" target="_blank" class="icon-section">
+                            <svg class="icon-section__instagram">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                       
        
                         </a>
                      
-                         <a href="https://twitter.com/?lang=ru" target="_blank" class="twitt-section">
+                         <a href="https://twitter.com/?lang=ru" target="_blank" class="icon-section">
                              
-                            <svg class="twitter">
+                            <svg class="icon-section__twitter">
                                 <use href="./images/symbol-defs.svg#icon-twiter"></use>
                             </svg>
        
                         </a>
     
-                         <a href="https://uk-ua.facebook.com/" target="_blank" class="facebook-section">
+                         <a href="https://uk-ua.facebook.com/" target="_blank" class="icon-section">
     
-                            <svg class="facebook">
+                            <svg class="icon-section__facebook">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
        
                         </a>
     
-                         <a href="https://www.linkedin.com/" target="_blank" class="linked-section">
+                         <a href="https://www.linkedin.com/" target="_blank" class="icon-section">
     
-                            <svg class="linked">
+                            <svg class="icon-section__linked">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
        
@@ -461,8 +473,8 @@
 
     <div class="addres-section">
         
-        <a href="?????" class="link-footer naked">
-            <span class="logo">Web<span class="logo-footer">Studio</span></span>
+        <a href="?????" class="naked">
+            <span class="logo">Web<span class="logo__part--activ">Studio</span></span>
         </a>
 
             <address class="addres-list">
