@@ -1,0 +1,112 @@
+/* Сексия наши преимущества  */
+
+
+.advantages-list {
+    display: flex;
+    justify-content: end;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+
+
+.advantages-list__item:not(:last-child) {
+    margin-right: 30px;;
+}
+
+
+.advantages-list__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages-list__text {
+color: $gray;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+}
+
+
+    .antenna-section {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+
+    }
+    .antenna {
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    }
+
+    .clock-section {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .clock {
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }
+    .diagram-section {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .diagram {
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }
+
+
+    .astronaut-section {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+    
+    }
+
+    .astronaut {
+    width: 65px;
+    height: 70px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      
+    }

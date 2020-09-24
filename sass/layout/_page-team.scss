@@ -1,0 +1,145 @@
+
+   /* наша команда */
+
+   .page-team {
+       background-color:#F5F4FA;;
+   }
+   
+   .page-team__title {
+       margin: 0;
+       padding-top: 94px;
+       padding-bottom: 50px;
+   
+       font-weight: bold;
+       font-size: 36px;
+       line-height: 1.16;
+       text-align: center;
+       
+   }
+   
+   .page-team__list {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding-bottom: 94px;
+      
+   }
+   
+               
+      .page-team__list-item {
+          
+          width: calc((100% - 30px)/4);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+          0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+      
+      
+          max-width: 270px;
+          text-align: center;
+          background-color: $white;
+        }
+      
+      .page-team__tumb {
+          padding-bottom: 24px;
+         }
+               
+    .page-team__projects-tumb__text {
+        margin: 0 ;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.18;
+        color: $gray;
+       }
+    
+    
+            
+  .icons-container {
+   
+      display: flex;
+      margin-top: 16px;
+      margin-left: 32px;
+      width: 206px;
+      height: 44px;
+      
+                 
+     }
+                          
+   .icon-section{
+   
+       margin-right: 10px;
+       width: 44px;
+       height: 44px;
+       border-radius: 50px;
+       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+       
+   }
+                                    
+      .icon-section:last-child{
+          margin-right: 0px;
+      }
+       .icon-section__instagram{
+         margin-top: 12px;
+         margin-bottom: 12px;
+         width: 20px;
+         height: 20px;
+         fill: $gray;
+         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+         
+        }
+
+        .icon-section__twitter{
+
+            margin: 14px 12px;
+             width: 20px;
+             height: 16px;
+             fill: $gray;
+             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+             
+            }
+            
+            .icon-section__facebook {
+
+            margin: 12px 17px;
+            width: 10px;
+            height: 20px;
+            fill: $gray;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+
+            }
+
+            .icon-section__linked {
+              margin: 12px;
+              width: 20px;
+              height: 20px;
+              fill: $gray;
+              transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+            }
+           .icon-section:hover {
+              background-color: $active;
+
+          }
+                                             
+          .icon-section:hover .icon-section__instagram {
+            fill: $white;
+                                    
+        }
+                                    
+                                                    
+          .icon-section:hover .icon-section__twitter {
+            fill: $white;
+        }
+                                                   
+                                                    
+                                    
+           .icon-section:hover .icon-section__facebook {
+            fill: $white;
+        
+        }
+                                                    
+            .icon-section:hover .icon-section__linked {
+                                    
+            fill: $white;
+             
+         }
+                                                                    
+                                    

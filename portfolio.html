@@ -4,68 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./styles/normalize.css"/> 
-    <link rel="stylesheet" href="./styles/portfolio.css"/>
+    <!-- <link rel="stylesheet" href="./styles/normalize.css"/>  -->
+    <link rel="stylesheet" href="./css/portfolio.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" > 
 </head>
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
+
         <div class="container">
-               <nav class="header-container">
-                       <a href="????" class="naked"><span class="logo">Web</span><span class="logo2">Studio</span></a>
        
-                   <ul class="site-nav naked">
-                       <li><a href="./index.html" class="link naked">Студия</a></li>
-                       <li class="line-action"><a href="./portfolio.html" class="link naked action line">Портфолио</a></li>
-                       <li><a href="./conacts.html" class="link naked">Контакты</a></li>
+               <nav class="header-nav">
+       
+                       <a href="????" class="naked"><span class="logo">Web</span><span class="logo__part">Studio</span></a>
+                   
+                   <ul class="header-nav__list naked">
+                       <li class="header-nav__list-item line"><a href="./index.html" class="header-nav__list-link naked">Студия</a></li>
+                       <li class="header-nav__list-item"><a href="./portfolio.html" class="header-nav__list-link  line action  naked ">Портфолио</a></li>
+                       <li class="header-nav__list-item"><a href="./index.html" class="header-nav__list-link  naked">Контакты</a></li>
                    </ul>
+              
+                   <ul class="connection-list">
        
-                   <ul class="auth-nav">
-                       <li class="auth-item naked">
-
-                           <a href="mailto:info@devstudio.com" class="auth-link naked"> 
-                            <svg class="emale-svg">
-                                <use  href="./images/symbol-defs.svg#icon-emale" ></use>
-                           </svg>
-                               info@devstudio.com </a>
-                         </li>
-
-
-                       <li class="auth-item naked">
-
-                           <a href="tel:38(096)1111111" class="auth-link naked">
-
-                           <svg class="phone-svg">
-                               <use href="./images/symbol-defs.svg#icon-phone"></use>
-                           </svg>
-                           +38 096 111 11 11</a>
-                        
-                    </li>
+                       
+                       <li class="naked"> 
+                           <a href="mailto:info@devstudio.com" class="connection-list__link naked">
+                           <svg class="connection-list__svg-mail"> 
+                               <use href="./images/symbol-defs.svg#icon-emale"> </use>
+                           </svg> info@devstudio.com
+                           </a>
+                   
+                       </li>
+       
+                       
+                       <li class="naked"> <a href="tel:+38(096)1111111" class="connection-list__link naked">
+                           <svg class="connection-list__svg-phone"> 
+                               <use href="./images/symbol-defs.svg#icon-phone"> </use>
+                           </svg> +38 096 111 11 11
+                       </a>
+       
+                       </li>
        
                    </ul>
        
                </nav>
+       
            </div>
+       
        </header>
 <main>
     <!--Наши проэкты-->
+
 <section class="projects">
+
     <div class="container">
 
-        <h1 class="hidden">Нашы проэкты</h1>
+        <h1 class="visually-hidden">Нашы проэкты</h1>
+
         <ul class="projects-nav naked">
-            <li class="projects-item"><a href="" class="projects-link">Все</a></li>
-            <li class="projects-item"><a href="" class="projects-link">Веб-сайты</a></li>
-            <li class="projects-item"><a href="" class="projects-link">Приложения</a></li>
-            <li class="projects-item"><a href="" class="projects-link">Дизайн</a></li>
-            <li class="projects-item"><a href="" class="projects-link">Маркетинг</a></li>
+
+            <li class="projects-nav__item"><a href="" class="projects-nav__link">Все</a></li>
+            <li class="projects-nav__item"><a href="" class="projects-nav__link">Веб-сайты</a></li>
+            <li class="projects-nav__item"><a href="" class="projects-nav__link">Приложения</a></li>
+            <li class="projects-nav__item"><a href="" class="projects-nav__link">Дизайн</a></li>
+            <li class="projects-nav__item"><a href="" class="projects-nav__link">Маркетинг</a></li>
     </ul>
-    <div class="projects-sector">
+
+    
+        
     <ul class="projects-list naked">
 
-        <li class="projects-card">
-            <a href="./index.html" class="card-link naked">
+        <li class="projects-list__item">
+            
+            <a href="./index.html" class="naked">
                 
             <div class="projects-tumb">
         
@@ -86,7 +97,7 @@
         </a>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
 
            <a href="./index.html" class="naked">
             <div class="projects-tumb">
@@ -108,7 +119,8 @@
            </a>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
+            
             <a href="./index.html" class="naked">
             <div class="projects-tumb">
 
@@ -127,7 +139,7 @@
         </a>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
 
             <a href="./index.html" class="naked">
 
@@ -149,7 +161,7 @@
             </a>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
 
             <img src="./images/Images2/img4.jpg" class="img" alt="photo">
             
@@ -161,7 +173,7 @@
             </div>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
 
             <img src="./images/Images2/img5.jpg" class="img" alt="photo">
 
@@ -173,7 +185,7 @@
             </div>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
             
             <img src="./images/Images2/img6.jpg" class="img" alt="photo">
             
@@ -185,7 +197,7 @@
             </div>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
             
             <img src="./images/Images2/img7.jpg" class="img" alt="photo">
 
@@ -197,7 +209,7 @@
             </div>
         </li>
 
-        <li class="projects-card">
+        <li class="projects-list__item">
 
             <img src="./images/Images2/img8.jpg" class="img" alt="photo">
             
@@ -209,7 +221,7 @@
             </div>
         </li>
     </ul>
-        </div>
+      
     </div>
 </section>
 
@@ -217,81 +229,99 @@
 </main>
 
 <!---Подвал сайта-->
-<footer class=" footer">
-<div class="container">
-        <div class="footer-container">
+<footer class="page-footer">
+
+    <div class="container">
+
+    <div class="main-footer">
+
+    <div class="addres-section">
+        
+        <a href="?????" class="naked">
+            <span class="logo">Web<span class="logo__part--activ">Studio</span></span>
+        </a>
+
+            <address class="addres-list">
+
+               <ul class="naked">
+           
+                   <li class="adress-list__addres"><b>г. Киев, пр-т Леси Украинки, 26</b></li>
+                   <li class="addres-list__mail">info@example.com</li>
+                   <li class="addres-list__mail">+38 099 111 11 11</li>
+           
+            </ul>
             
-        <div class="footer-box">
+        </address>
 
-            
-            <a href="?????" class="logo naked">Web<span class="logo3">Studio</span></a>
+    </div>
 
-                <ul class="footer-list naked">
+    <div class="join-section">
 
-                    <li class="adress"><b>г. Киев, пр-т Леси Украинки, 26</b></li>
-                    <li class="footer-item">info@example.com</li>
-                    <li class="footer-item">+38 099 111 11 11</li>
+        <p class="join-section__title naked">ПРИСОЕДИННЯЙТЕСЬ</p>
 
-                </ul>   
-            </div>
-            <div class="footer-icon">
-                <p class="icon-title naked">ПРИСОЕДИННЯЙТЕСЬ</p>
-             <ul class="icon-list naked">
+        <div class="svg-position">
 
-                <li class="icon-item">
-                    <a class="icon-link" href="https://www.instagram.com/?hl=ru" target="_blank">
-                     <svg class="inst-svg">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                     </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a class="icon-link" href="https://twitter.com/?lang=ru" target="_blank">
-                     <svg class="twit-svg">
-                        <use href="./images/symbol-defs.svg#icon-twiter"></use>
-                     </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a class="icon-link" href="https://uk-ua.facebook.com/" target="_blank">
-                     <svg class="facebook-svg">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                     </svg>
-                    </a>
-                </li>
-                <li class="icon-item">
-                    <a class="icon-link" href="https://www.linkedin.com/" target="_blank">
-                     <svg class="linked-svg">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                     </svg>
-                    </a>
-                </li>
-            
-             </ul>
-            
-            </div>
+            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="link__svg naked">
+                <svg class="link__svg-inst">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+          
+    
+            </a>
+         
+             <a href="https://twitter.com/?lang=ru" target="_blank" class="link__svg naked">
+                 
+                <svg class="link__svg-twit">
+                    <use href="./images/symbol-defs.svg#icon-twiter"></use>
+                </svg>
+    
+            </a>
+    
+             <a href="https://uk-ua.facebook.com/" target="_blank" class="link__svg naked">
+    
+                <svg class="link__svg-facebook">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+    
+            </a>
+    
+             <a href="https://www.linkedin.com/" target="_blank" class="link__svg naked">
+    
+                <svg class="link__svg-linked">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+    
+            </a>
+        </div>
 
-            <div class="subscribe-section">
+    </div>
 
-                <label for="email">Подпишитесь на рассылку</label>
-                
-                <form  id="form" class="subscribe-form" >
+        <div class="subscribe-section">
 
-                <input type="email" name="mail" placeholder="E-mail" id="email" autocomplete="off">
+            <label for="email" class="subscribe-section__label">Подпишитесь на рассылку</label>
+
+            <form  id="form">
+
+                <input class="subscribe-section__input" type="email" name="email" placeholder="E-mail" autocomplete="off"  id="email">
 
                 <button type="submit" class="subscribe-btn">Подписаться
-
-                    <svg class="subscribe-svg"> 
+                    <svg class="subscribe-btn__icon-svg">
                         <use href="./images/symbol-defs.svg#icon-Telegram"></use>
                     </svg>
+                </button>
 
-                </button> 
                 
-
             </form>
-            </div>
+
+
         </div>
+
 </div>
+
+</div>
+
+
 </footer>
+
 </body>
 </html>

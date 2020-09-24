@@ -1,0 +1,120 @@
+/* header */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+  
+    
+   
+}
+
+
+.header-nav__list {
+    display: flex;
+
+}
+
+
+.line {
+    position: relative;
+
+
+}
+
+.header-nav__list-link.line::after {
+    content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: $active;
+  border-radius: 2px;
+  }
+
+
+
+
+.header-nav__list .header-nav__list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-nav__list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $black;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+}
+
+.header-nav__list-link:hover{
+  color: $active;
+}
+
+    
+.header-nav__list .action {
+    color: $active;
+}
+
+/*секция контактов */
+
+.connection-list{
+    display: flex;
+    margin-left: auto;
+    
+   
+}
+.connection-list__link {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $gray;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+    
+}
+
+    .connection-list__link:hover .connection-list__svg-mail {
+        fill: $active;
+        
+    }
+    .connection-list__link:hover .connection-list__svg-phone {
+        fill: $active;
+        
+    }
+
+    .connection-list__link:hover {
+        color: $active;
+        
+    }
+
+    
+        .connection-list__svg-mail {
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+            fill: $gray;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+        }
+        
+    
+        .connection-list__svg-phone {
+            margin-left: 30px;
+            margin-right: 10px;
+            width: 10px;
+            height: 16px;
+            fill: $gray;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+    
+        }
+        
