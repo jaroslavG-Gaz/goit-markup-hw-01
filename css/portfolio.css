@@ -51,6 +51,10 @@ body {
   margin-right: auto;
 }
 
+.border {
+  border-bottom: 1px solid #ECECEC;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -611,7 +615,7 @@ template {
   overflow: hidden;
 }
 
-.tumb-text {
+.projects-tumb__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -630,7 +634,7 @@ template {
           transition-duration: 250ms;
 }
 
-.projects-list__item:hover .tumb-text {
+.projects-list__item:hover .projects-tumb__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -646,7 +650,7 @@ template {
           box-sizing: border-box;
 }
 
-h2 {
+.card-text__title {
   margin-top: 0;
   margin-bottom: 4px;
   font-style: normal;
@@ -656,7 +660,7 @@ h2 {
   color: black;
 }
 
-p {
+.card-text__text {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
