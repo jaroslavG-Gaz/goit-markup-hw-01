@@ -7,30 +7,31 @@
     padding-top: 94px;
     padding-bottom: 94px;
     
-}
 
 
 
-.advantages-list__item:not(:last-child) {
+
+&__item:not(:last-child) {
     margin-right: 30px;;
 }
 
 
-.advantages-list__title {
+&__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.advantages-list__text {
-color: $gray;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-}
+&__text {
+   color: $gray;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 1.71;
+   }
 
+}
 
     .antenna-section {
     margin-bottom: 30px;

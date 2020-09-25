@@ -12,10 +12,10 @@
     background-position: center;
     
    
- }
  
  
- .page-hero__title {
+ 
+ &__title {
      padding-top: 200px;
      margin: 0;
      font-size: 44px;
@@ -23,10 +23,10 @@
      text-transform: uppercase;
      letter-spacing: 0.06em;
      color: $white;
-     
  
- }
- .page-hero__button {
+  }
+
+ &__button {
      display: inline-block;
      padding-left: 32px;
      padding-right: 32px;
@@ -50,9 +50,9 @@
  
  }
  
-     .page-hero__button:hover {
+&__button:hover {
          box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
                          
       }
  
- 
+}

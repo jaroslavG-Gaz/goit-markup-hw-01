@@ -51,10 +51,6 @@ body {
   margin-right: auto;
 }
 
-.border {
-  border-bottom: 1px solid #ECECEC;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -414,10 +410,6 @@ template {
   display: flex;
 }
 
-.line {
-  position: relative;
-}
-
 .header-nav__list-link.line::after {
   content: '';
   position: absolute;
@@ -453,6 +445,10 @@ template {
 
 .header-nav__list .action {
   color: #2196F3;
+}
+
+.line {
+  position: relative;
 }
 
 /*секция контактов */
@@ -963,7 +959,7 @@ template {
   margin: 0;
 }
 
-.adress-list__addres {
+.addres-list__addres {
   margin-top: 18px;
   margin-bottom: 9px;
   font-weight: 200;
@@ -1084,8 +1080,7 @@ template {
   border-radius: 4px;
 }
 
-.subscribe-section__input:not(:placeholder-shown),
-.subscribe-section__input:focus {
+.subscribe-section__input:not(:placeholder-shown), .subscribe-section__input:focus {
   border: 1px solid #2196F3;
 }
 
@@ -1198,6 +1193,25 @@ template {
   border: 2px solid #2196F3;
 }
 
+.modal-btn:hover .cross-svg {
+  fill: #2196F3;
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .cross-svg {
   padding: 0;
   margin-right: 1px;
@@ -1207,25 +1221,6 @@ template {
   fill: #212121;
   -webkit-transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover .cross-svg {
-  fill: #2196F3;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.modal__title {
-  margin: 0;
-  margin-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 /* Секция "форма" из модалки*/
@@ -1423,17 +1418,6 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-.check-box {
-  display: inline-block;
-  margin-right: 4px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 3px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .check-label__link {
   margin: 0;
   margin-left: 4px;
@@ -1451,6 +1435,17 @@ textarea::placeholder {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.check-box {
+  display: inline-block;
+  margin-right: 4px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 3px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .section__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1462,8 +1457,8 @@ textarea::placeholder {
 }
 
 .form-section > .section__mail-wrape .section__input:invalid {
-  -webkit-box-shadow: red 0px 0px 1.5px 1px;
-          box-shadow: red 0px 0px 1.5px 1px;
+  -webkit-box-shadow: 0px 0px 15px 0.1px red;
+          box-shadow: 0px 0px 15px 0.1px red;
 }
 
 .form-section > .section__mail-wrape

@@ -1,8 +1,9 @@
 
 /* Чем мы занимаемся */
 
+.page-doing {
 
-.page-doing__title {
+&__title {
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
@@ -14,7 +15,7 @@
 
 }
 
-.page-doing__list {
+&__list {
 
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,7 @@
     
 }
 
-.page-doing__item {
+&__item {
     position: relative;
     width: calc((100% - 30px *2) /3);
     margin-right: 30px;
@@ -31,7 +32,7 @@
     
 }
 
-.page-doing__tumb {
+&__tumb {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +50,7 @@
 }
         
 
-.page-doing__text {
+&__text {
     margin: 0;
     font-weight: bold;
     font-size: 14px;
@@ -60,8 +61,10 @@
    
 }
 
-.page-doing__item:nth-child(3n) {
+&__item:nth-child(3n) {
+    
     margin-right: 0;
+ }
 
 
 }

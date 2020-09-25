@@ -1,6 +1,4 @@
-
-
-     
+  
      /*  footer */
 
      .page-footer{
@@ -26,13 +24,13 @@
        
     }
     
-    .addres-list{
+    .addres-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
         
-    }
-    .adress-list__addres{
+   
+    &__addres{
         margin-top: 18px;
         margin-bottom: 9px;
         font-weight: 200;
@@ -43,7 +41,7 @@
     
     }
     
-    .addres-list__mail{
+    &__mail{
         margin-bottom: 9px;
         font-style: normal;
         font-weight: normal;
@@ -53,11 +51,11 @@
         
     } 
     
-    .addres-list__mail:last-child{
+    &__mail:last-child{
         margin-bottom: 0;
     }
     
-    
+}  
     
     
         .join-section{
@@ -65,8 +63,8 @@
             margin-left: 70px;
             
             
-        }
-        .join-section__title { 
+        
+        &__title { 
     
             padding-bottom: 20px;
             font-weight: bold;
@@ -75,7 +73,8 @@
             color: $white;
     
         }
-    
+    }
+
         .svg-position {
     
             display: flex;
@@ -89,12 +88,12 @@
                 height: 44px;
                 border-radius: 50px;
                 background-color: rgba(255, 255, 255, 0.1);
-                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
                 
                 
-            }
+            
     
-             .link__svg-inst{
+            &-inst{
                  margin: 12px 12px;
                  width: 20px;
                  height: 20px;
@@ -102,24 +101,24 @@
              }
     
     
-            .link__svg:last-child{
+            &:last-child{
                 margin-right: 0px;
             }
     
-            .link__svg:hover {
+            &:hover {
                 background-color: $active;
                 
             }
            
     
-            .link__svg-twit {
+            &-twit {
                 margin: 14px 12px;
                 width: 20px;
                 height: 16px;
                 fill: $white;
             }
     
-            .link__svg-facebook {
+            &-facebook {
                 margin: 12px 17px;
                 width: 10px;
                 height: 20px;
@@ -128,23 +127,23 @@
     
            
     
-            .link__svg-linked{
+            &-linked{
                 margin: 12px 12px;
                 height: 20px;
                 width: 20px;    
                 fill: $white;
             }
     
-    
+        }
     
     /* Секция футтера "подписывайтесь" */
     
     .subscribe-section{
     
         margin-left: 94px;
-    }
     
-        .subscribe-section__label{
+    
+        &__label{
             margin: 0;
             
             font-weight: bold;
@@ -156,7 +155,7 @@
             color: $white;
         }
         
-        .subscribe-section__input{
+        &__input{
             
             margin-top: 20px;
             padding-top: 15px;
@@ -176,12 +175,12 @@
             
         }     
         
-        .subscribe-section__input:not(:placeholder-shown),
-        .subscribe-section__input:focus{
+        &__input:not(:placeholder-shown),
+        &__input:focus{
             border: 1px solid $active;
             
         }
-        
+    }     
         .subscribe-btn{
             
                     display: inline-flex;
@@ -205,19 +204,19 @@
                     cursor: pointer;
     
     
-                }   
+                
     
     
                     
-                        .subscribe-btn__icon-svg{
+                       &__icon-svg{
                             fill: $white;
                             width: 24px;
                             height: 24px;
                             margin-left: 10px;
                         }
-                        .subscribe-btn:hover{
+                       &:hover{
                             box-shadow: inset 0px 0px 4px 5px rgba(0,0,0,0.29);
                             
                         }
     
-    
+}  

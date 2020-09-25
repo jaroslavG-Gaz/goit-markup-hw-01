@@ -9,18 +9,19 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.301);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-}   
 
-    .backdrop.is-hidden{
+
+    &.is-hidden{
         opacity: 0;
         pointer-events: none;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     }
 
-        .backdrop.is-hidden .modal{
+        &.is-hidden .modal{
             transform: translate(-50%, -50%) scale(1.1) ;
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         }
+ }
 
     .modal{
         position: absolute;
@@ -39,9 +40,9 @@
         transform: translate(-50%, -50%)  scale(1);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         
-    }
     
-                    .modal-btn{
+    
+                    &-btn{
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -63,37 +64,26 @@
                     }
     
                     
-                    .modal-btn:hover {
+                    &-btn:hover {
             
                         transform: rotateZ(360deg);
                         border: 2px solid $active;
                         
                     }
                     
-                    .cross-svg{
-                        padding: 0;
-                        margin-right: 1px;
-                        margin-top: 1px;
-                        width: 20px;
-                        height: 20px;
-                        fill: $black;
-                        transition: 450ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                        
-                    }
                     
                     
-                       .modal-btn:hover .cross-svg {
+                       &-btn:hover .cross-svg {
                            fill: $active;
                            transform: rotateZ(360deg);
                            transform: scale(1.4);
                        }
-                    
-                        .modal__title{
+                       
+                       &-title {
                             margin: 0;
                             margin-bottom: 12px;
-
-
+                            
+                            
                             text-align: center;
                             font-weight: bold;
                             font-size: 20px;
@@ -102,3 +92,5 @@
 
                             color: $black;
                         }
+}                        
+                      

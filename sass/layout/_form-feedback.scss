@@ -1,262 +1,262 @@
 
-
-                        /* Секция "форма" из модалки*/
-                        .form{
-                            width: 448px;
-                            margin-left: auto;
-                            margin-right: auto;
-                            
-                        }
-                                                
-                        .form-section{
-                            margin-bottom: 12px;
-                            
-                        }
-                        
-                        .section__name-wrape{
-                            position: relative;
-                            
-                        }
-                        
-                        
-                        .section__number-wrape{
-                            position: relative;
-                        }
-                        
-                        .section__mail-wrape{
-                            position: relative;
-                            
-                        }
-                                  .section__input{
-                                   color: rgb(126, 126, 126);
-                                   letter-spacing: 0.038em;
-                                  }
-                        
-                            .svg-man{
-                                position: absolute;
-                                top: 50%;
-                                transform: translateY(-50%);
-                                left: 15px;
-                                width: 12px;
-                                height: 12px;
-                                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                            }
-                            
-                            .svg-number{
-                                position: absolute;
-                                top: 50%;
-                                transform: translateY(-50%);
-                                left: 15px;
-                                width: 13px;
-                                height: 13px;
-                                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                            }
-                            
-                            .svg-mail{
-                                position: absolute;
-                                top: 50%;
-                                transform: translateY(-50%);
-                                left: 15px;
-                                width: 15px;
-                                height: 15px;
-                                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                            }
-                            
-                            
-                                         .section__name-wrape:focus-within .svg-man{
-                                             fill: $active;
-                                         }
-                                         .section__name-wrape:focus-within .section__input {
-                                             border: 1px solid $active;
-                                             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                                         }
-                        
-                                         .section__number-wrape:focus-within .svg-number{
-                                             fill: $active;
-                                         }
-                                         .section__number-wrape:focus-within .section__input{
-                        
-                                             border: 1px solid $active;
-                                             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                                         }
-                        
-                                         .section__mail-wrape:focus-within .section__input{
-                                             border: 1px solid $active;
-                                             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        
-                                         }
-                                         .section__mail-wrape:focus-within .svg-mail{
-                                             fill: $active;
-                                         }
-                            
-                                         
-                                         .section__input {
-                                padding-left: 42px;
-                                height: 40px;
-                                width: 100%;
-                                
-                            }
-                            .form-section__label{
-                                
-                                font-size: 14px;
-                                line-height: 1;
-                                letter-spacing: 0.01em;
-                                color: $gray;
-                                
-                            }
-                            
-                            
-                            .coments-section{
-                                width: 448px;
-                            }
-                            
-                            .coments-section__label{
-                                font-size: 14px;
-                                line-height: 1;
-                                letter-spacing: 0.01em;
-                                color: $gray;
-                            }
-                            
-                            
-                            .coments-section__textarea{
-                                width: 100%;
-                                height: 120px;
-                                padding: 12px 16px;
-                                margin-bottom: 20px;
-                                border: 1px solid rgba(33, 33, 33, 0.2);
-                                border-radius: 4px;
-                                resize: none;
-                            }
-                            
-                            .coments-section__textarea:focus-within{
-                                border: 1px solid $active;
-                                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                                
-                            }
-                            
-                            
-                            textarea::placeholder {
-                                
-                                font-family: Roboto;
-                                font-size: 14px;
-                                line-height: 1.16;
-                                letter-spacing: 0.03em;
-                                color: rgba(117, 117, 117, 0.781);
-                                
-                                
-                            }
-                        
-                        
-                            
-                            
-                            .check-label {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                margin: 0;
-                                margin-left: 4px;
-                                            font-size: 14px;
-                                            line-height: 1.71;
-                                            letter-spacing: 0.03em;
-                                            color: $gray;
-                                        }
-                                        
-                                        
-                                        .check-label__input {
-                                            position: absolute;
-                                            width: 1px;
-                                            height: 1px;
-                                            margin: -1px;
-                                            border: 0;
-                                            padding: 0;
-                                            clip: rect(0 0 0 0);
-                                            overflow: hidden;
-                                        }
-                                        
-                                        
-                                        .check-box{
-                                            display: inline-block;
-                                             margin-right: 4px;
-                                             width: 16px;
-                                             height: 15px;
-                                             border: 2px solid black;
-                                             border-radius: 3px;
-                                             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                                             
-                                             
-                                            }
-                                            
-                                            .check-label__link {
-                                                margin: 0;
-                                                margin-left: 4px;
-                                                color:$active;
-                                                font-size: 14px;
-                                            }
-                                            
-                                            .check-label__input:checked + .check-box{
-                                                background-image: url(../images/iconcheck.svg);
-                                                background-color: $active;
-                                                background-size: contain;
-                                                background-origin: border-box;
-                                                border: 2px solid $active;
-                                                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                            }
-                                            
-                                            .section__input{
-                                                border: 1px solid rgba(33, 33, 33, 0.2);
-                                                border-radius: 4px;
-                                            }
-                                            
-                                            .section__input:invalid{
-                                                box-shadow: none ;
-                                            }
-                                            
-                                            .form-section> .section__mail-wrape .section__input:invalid{
-                                                box-shadow: rgb(255, 0, 0) 0px 0px 1.5px 1px ;
-                                            }
-                        
-                                            .form-section> .section__mail-wrape 
-                                            .section__input:placeholder-shown:invalid{
-                                   
-                                                box-shadow: none;
-                                             }
-                        
-                        
+ /* Секция "форма" из модалки*/
+ .form {
+     width: 448px;
+     margin-left: auto;
+     margin-right: auto;
+     
+ 
                          
-                                  
+ &-section{
+     margin-bottom: 12px;
+     
+  }
+}
+ .section__name-wrape{
+     position: relative;
+     
+ }
+ 
+ 
+ .section__number-wrape{
+     position: relative;
+ }
+ 
+ .section__mail-wrape{
+     position: relative;
+     
+ }
+  .section__input{
+    color: rgb(126, 126, 126);
+      letter-spacing: 0.038em;
+ }
+                  
+ .svg-man{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 15px;
+     width: 12px;
+     height: 12px;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+ }
+ 
+ .svg-number{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 15px;
+     width: 13px;
+     height: 13px;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
                         
-                        
-                        .sent-btn {
-                            position: relative;
-                            top: 0;
-                            transition: 200ms;
-                            display: inline-block;
-                            padding: 10px 55px;
-                            margin-left: 124px;
-                            margin-top: 25px;
-                            margin-bottom: 25px;
-                        
-                                font-weight: bold;
-                                font-size: 16px;
-                                line-height: 1.87;
-                                letter-spacing: 0.06em;
-                        
-                            background-color: $active;
-                            color: $white;
-                            border: 0;
-                            border-radius: 4px;
-                            box-shadow: 0 4px 0px rgba(60, 53, 74, 0.459);
+ }
                             
-                            cursor: pointer;
-                        }
+ .svg-mail{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 15px;
+     width: 15px;
+     height: 15px;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
                         
-                        .sent-btn:hover {
-                            top: 2px; 
-                            box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
-                            transition-duration: top 500ms;
-                        }
+ }
+
+   .section__name-wrape:focus-within .svg-man{
+       fill: $active;
+   }
+   .section__name-wrape:focus-within .section__input {
+       border: 1px solid $active;
+       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+             
+   }
+             
+   .section__number-wrape:focus-within .svg-number{
+       fill: $active;
+   }
+   .section__number-wrape:focus-within .section__input{
                         
+       border: 1px solid $active;
+       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                        
+   }
+                        
+   .section__mail-wrape:focus-within .section__input{
+       border: 1px solid $active;
+       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                        
+   }
+   .section__mail-wrape:focus-within .svg-mail{
+       fill: $active;
+   }
+                            
+               
+  .section__input {
+      padding-left: 42px;
+      height: 40px;
+      width: 100%;
+      
+  }
+  .form-section__label{
+      
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      color: $gray;
+      
+  }
+  
+  
+  .coments-section{
+      width: 448px;
+ 
+  
+  &__label{
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      color: $gray;
+  }
+  
+                            
+   &__textarea{
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        resize: none;
+    }
+    
+    &__textarea:focus-within{
+        border: 1px solid $active;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        
+    }
+}   
+    
+    textarea::placeholder {
+        
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: rgba(117, 117, 117, 0.781);
+        
+        
+    }
+                        
+                        
+                            
+                        
+ .check-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-left: 4px;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: $gray;
+
+   
+          
+          
+ &__input {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+ 
+              
+ 
+ &__link {
+      margin: 0;
+      margin-left: 4px;
+      color:$active;
+      font-size: 14px;
+  }
+  
+  &__input:checked + .check-box{
+     background-image: url(../images/iconcheck.svg);
+     background-color: $active;
+     background-size: contain;
+     background-origin: border-box;
+     border: 2px solid $active;
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.check-box{
+ display: inline-block;
+  margin-right: 4px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 3px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  
+  
+ }
+.section__input{
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+ }
+        
+  .section__input:invalid{
+      box-shadow: none ;
+  }
+  
+  .form-section > .section__mail-wrape .section__input:invalid {
+      box-shadow: 0px 0px 15px 0.1px rgb(255, 0, 0);
+      
+      
+  }
+                   
+  .form-section> .section__mail-wrape 
+  .section__input:placeholder-shown:invalid{
+                                   
+      box-shadow: none;
+   }
+                        
+                                                             
+                        
+ .sent-btn {
+     position: relative;
+     top: 0;
+     transition: 200ms;
+     display: inline-block;
+     padding: 10px 55px;
+     margin-left: 124px;
+     margin-top: 25px;
+     margin-bottom: 25px;
+ 
+         font-weight: bold;
+         font-size: 16px;
+         line-height: 1.87;
+         letter-spacing: 0.06em;
+ 
+     background-color: $active;
+     color: $white;
+     border: 0;
+     border-radius: 4px;
+     box-shadow: 0 4px 0px rgba(60, 53, 74, 0.459);
+     
+     cursor: pointer;
+ 
+ 
+ &:hover {
+     top: 2px; 
+     box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
+     transition-duration: top 500ms;
+ }
+    
+}

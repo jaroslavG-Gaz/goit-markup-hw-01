@@ -6,43 +6,38 @@
   
     
    
-}
 
 
-.header-nav__list {
+
+&__list {
     display: flex;
 
 }
 
 
-.line {
-    position: relative;
 
-
-}
-
-.header-nav__list-link.line::after {
+&__list-link.line::after {
     content: '';
 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: $active;
-  border-radius: 2px;
-  }
-
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: $active;
+    border-radius: 2px;
+}
 
 
-.header-nav__list .header-nav__list-item:not(:last-child) {
+
+
+&__list &__list-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-nav__list-link {
+&__list-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 28px;
@@ -51,28 +46,35 @@
     font-size: 14px;
     line-height: 1.14;
     color: $black;
-
+    
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
 }
 
-.header-nav__list-link:hover{
-  color: $active;
-}
-
-    
-.header-nav__list .action {
+&__list-link:hover{
     color: $active;
 }
 
+
+&__list .action {
+    color: $active;
+ }
+
+}
+
+.line {
+    position: relative;
+}
+
+
 /*секция контактов */
 
-.connection-list{
+.connection-list {
     display: flex;
     margin-left: auto;
     
-   
-}
-.connection-list__link {
+    
+
+&__link {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -84,22 +86,22 @@
     
 }
 
-    .connection-list__link:hover .connection-list__svg-mail {
+&__link:hover &__svg-mail {
         fill: $active;
         
     }
-    .connection-list__link:hover .connection-list__svg-phone {
+    &__link:hover &__svg-phone {
         fill: $active;
         
     }
 
-    .connection-list__link:hover {
+    &__link:hover {
         color: $active;
         
     }
 
     
-        .connection-list__svg-mail {
+    &__svg-mail {
             margin-right: 10px;
             width: 16px;
             height: 12px;
@@ -108,7 +110,7 @@
         }
         
     
-        .connection-list__svg-phone {
+     &__svg-phone {
             margin-left: 30px;
             margin-right: 10px;
             width: 10px;
@@ -117,4 +119,4 @@
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 
     
         }
-        
+}       
