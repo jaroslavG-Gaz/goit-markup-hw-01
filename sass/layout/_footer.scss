@@ -1,19 +1,19 @@
   
      /*  footer */
 
-     .page-footer{
+     .page-footer {
     
         background-color: $footer-hero;
     }
-    
-    .main-footer{
+     
+    .main-footer {
       
         display: flex;
         align-items: baseline;
         
     }
     
-    .addres-section{
+    .addres-section {
         
         width: 231px;
         padding-top: 60px;
@@ -30,7 +30,7 @@
         margin: 0;
         
    
-    &__addres{
+    &__addres {
         margin-top: 18px;
         margin-bottom: 9px;
         font-weight: 200;
@@ -41,7 +41,7 @@
     
     }
     
-    &__mail{
+    &__mail {
         margin-bottom: 9px;
         font-style: normal;
         font-weight: normal;
@@ -51,14 +51,14 @@
         
     } 
     
-    &__mail:last-child{
+    &__mail:last-child {
         margin-bottom: 0;
     }
     
 }  
     
     
-        .join-section{
+        .join-section {
            
             margin-left: 70px;
             
@@ -93,7 +93,7 @@
                 
             
     
-            &-inst{
+            &-inst {
                  margin: 12px 12px;
                  width: 20px;
                  height: 20px;
