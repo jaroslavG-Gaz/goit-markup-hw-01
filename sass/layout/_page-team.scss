@@ -14,6 +14,18 @@
        font-size: 36px;
        line-height: 1.16;
        text-align: center;
+
+       @media screen and (max-width: 480px) {
+
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        
+       }
+         
+       
        
    }
    
@@ -24,7 +36,9 @@
        padding-bottom: 94px;
       
        @media screen and (max-width: 480px ) {
-         display: inline;
+         display: inline-block;
+         padding-bottom: 60px;
+         
        }
          
        
@@ -38,19 +52,46 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
       
-      
     max-width: 270px;
     text-align: center;
     background-color: $white;
 
-    }
-      
-    &__tumb {
-     padding-bottom: 24px;
+    @media screen and (max-width: 480px ) {
+
+      width: 100%;
+      max-width: 450px;
 
     }
-               
-    &__projects-tumb__text {
+
+    }
+      
+    &__img {
+
+      @media screen and (max-width: 480px ){
+         height: 460px;
+         width: 450px;
+      }
+    }
+
+    &__tumb {
+     padding-bottom: 24px;
+     
+
+    }
+        
+    &__tumb-title {
+
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.18;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+
+    }
+    
+    &__tumb-text {
         margin: 0 ;
         font-weight: normal;
         font-size: 16px;
@@ -69,8 +110,13 @@
       width: 206px;
       height: 44px;
       
-                 
-     }
+      @media screen and (max-width: 480px ) {
+        margin-left: 122px;
+        margin-right: 122px;
+        
+      }  
+
+  }
                           
    .icon-section{
    

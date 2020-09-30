@@ -9,7 +9,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: 1px solid tomato;
 }
 
 .naked {
@@ -637,7 +636,9 @@ template {
 
 @media screen and (max-width: 480px) {
   .advantages-list {
-    display: inline;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 }
 
@@ -645,11 +646,23 @@ template {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
 .advantages-list__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .advantages-list__title {
+    text-align: center;
+  }
 }
 
 .advantages-list__text {
@@ -668,6 +681,12 @@ template {
   background-color: #F5F4FA;
 }
 
+@media screen and (max-width: 480px) {
+  .antenna-section {
+    width: 100%;
+  }
+}
+
 .antenna {
   width: 65px;
   height: 70px;
@@ -677,12 +696,27 @@ template {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .antenna {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 192px;
+    margin-right: 192px;
+  }
+}
+
 .clock-section {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 480px) {
+  .clock-section {
+    width: 100%;
+  }
 }
 
 .clock {
@@ -694,12 +728,27 @@ template {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .clock {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 192px;
+    margin-right: 192px;
+  }
+}
+
 .diagram-section {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 480px) {
+  .diagram-section {
+    width: 100%;
+  }
 }
 
 .diagram {
@@ -711,12 +760,27 @@ template {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .diagram {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 192px;
+    margin-right: 192px;
+  }
+}
+
 .astronaut-section {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 480px) {
+  .astronaut-section {
+    width: 100%;
+  }
 }
 
 .astronaut {
@@ -726,6 +790,15 @@ template {
   margin-right: 102px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .astronaut {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 192px;
+    margin-right: 192px;
+  }
 }
 
 /* Чем мы занимаемся */
@@ -809,6 +882,16 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .page-team__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+
 .page-team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,7 +906,8 @@ template {
 
 @media screen and (max-width: 480px) {
   .page-team__list {
-    display: inline;
+    display: inline-block;
+    padding-bottom: 60px;
   }
 }
 
@@ -836,11 +920,34 @@ template {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 480px) {
+  .page-team__list-item {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-team__img {
+    height: 460px;
+    width: 450px;
+  }
+}
+
 .page-team__tumb {
   padding-bottom: 24px;
 }
 
-.page-team__projects-tumb__text {
+.page-team__tumb-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.page-team__tumb-text {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
@@ -856,6 +963,13 @@ template {
   margin-left: 32px;
   width: 206px;
   height: 44px;
+}
+
+@media screen and (max-width: 480px) {
+  .icons-container {
+    margin-left: 122px;
+    margin-right: 122px;
+  }
 }
 
 .icon-section {
