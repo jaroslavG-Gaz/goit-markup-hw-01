@@ -23,74 +23,74 @@
         }
  }
 
-    .modal{
-        position: absolute;
-        width: 528px;
-        top:  50%;
-        left: 50%;
-       
+.modal {
+    position: absolute;
+    width: 528px;
+    top:  50%;
+    left: 50%;
+   
 
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px rgba(0, 0, 0, 0.14), 
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
-        background-color: $white;
+    background-color: $white;
 
-        transform: translate(-50%, -50%)  scale(1);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    transform: translate(-50%, -50%)  scale(1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    
+
+
+                &-btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    margin-top: 8px;
+                    margin-right: 8px;
+                    margin-left: 490px;
+                    margin-bottom: 2px;
+                    padding: 0;
+                    width: 30px;
+                    height: 30px;
+
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                    background-color: #fff;
+                }
+
+                
+                &-btn:hover {
         
-    
-    
-                    &-btn{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    transform: rotateZ(360deg);
+                    border: 2px solid $active;
+                    
+                }
+                
+                
+                
+                   &-btn:hover .cross-svg {
+                       fill: $active;
+                       transform: rotateZ(360deg);
+                       transform: scale(1.4);
+                   }
+                   
+                   &-title {
+                        margin: 0;
+                        margin-bottom: 12px;
                         
-    
-                        margin-top: 8px;
-                        margin-right: 8px;
-                        margin-left: 490px;
-                        margin-bottom: 2px;
-                        padding: 0;
-                        width: 30px;
-                        height: 30px;
-    
-                        border: 1px solid rgba(0, 0, 0, 0.2);
-                        border-radius: 50px;
-                        cursor: pointer;
-                        transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) ;
-                        background-color: #fff;
-                    }
-    
-                    
-                    &-btn:hover {
-            
-                        transform: rotateZ(360deg);
-                        border: 2px solid $active;
                         
-                    }
-                    
-                    
-                    
-                       &-btn:hover .cross-svg {
-                           fill: $active;
-                           transform: rotateZ(360deg);
-                           transform: scale(1.4);
-                       }
-                       
-                       &-title {
-                            margin: 0;
-                            margin-bottom: 12px;
-                            
-                            
-                            text-align: center;
-                            font-weight: bold;
-                            font-size: 20px;
-                            line-height: 1.15;
-                            letter-spacing: 0.03em;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 1.15;
+                        letter-spacing: 0.03em;
 
-                            color: $black;
-                        }
-}                        
+                        color: $black;
+                    }
+}                       
                       

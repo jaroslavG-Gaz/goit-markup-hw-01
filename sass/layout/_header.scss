@@ -3,9 +3,13 @@
 .header-nav {
     display: flex;
     align-items: center;
-  
     
-   
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 
 
 
@@ -59,11 +63,14 @@
     color: $active;
  }
 
+
+
 }
 
 .line {
     position: relative;
 }
+
 
 
 /*секция контактов */
@@ -102,6 +109,7 @@
 
     
     &__svg-mail {
+        
             margin-right: 10px;
             width: 16px;
             height: 12px;
@@ -111,6 +119,7 @@
         
     
      &__svg-phone {
+
             margin-left: 30px;
             margin-right: 10px;
             width: 10px;
@@ -120,3 +129,14 @@
     
         }
 }       
+
+
+// .mob-menu {
+//     outline: 1px solid tomato;
+//     display: inline-flex;
+//     width: 40px;
+//     height: 40px;  
+    
+    
+// }
+

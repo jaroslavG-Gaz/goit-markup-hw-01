@@ -9,6 +9,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 
 .naked {
@@ -44,11 +45,29 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -404,6 +423,18 @@ template {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
+
 .header-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,10 +564,17 @@ template {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 480px) {
+  .page-hero {
+    max-width: 480px;
+    background-image: url("../../images/mob-hero.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-hero__title {
