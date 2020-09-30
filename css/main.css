@@ -635,6 +635,12 @@ template {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .advantages-list {
+    display: inline;
+  }
+}
+
 .advantages-list__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -723,6 +729,12 @@ template {
 }
 
 /* Чем мы занимаемся */
+@media screen and (max-width: 480px) {
+  .page-doing {
+    display: none;
+  }
+}
+
 .page-doing__title {
   text-align: center;
   margin-bottom: 0;
@@ -807,6 +819,12 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 480px) {
+  .page-team__list {
+    display: inline;
+  }
 }
 
 .page-team__list-item {
@@ -930,6 +948,12 @@ template {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .client-list {
+    display: inline;
+  }
+}
+
 .client-list__item {
   width: 170px;
   height: 90px;
@@ -994,6 +1018,12 @@ template {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media screen and (max-width: 480px) {
+  .main-footer {
+    display: inline;
+  }
 }
 
 .addres-section {

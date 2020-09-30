@@ -2,6 +2,11 @@
 /* Чем мы занимаемся */
 
 .page-doing {
+ @media screen  and ( max-width: 480px) {
+     display: none;
+ }
+     
+ 
 
 &__title {
     text-align: center;
