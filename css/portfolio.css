@@ -837,7 +837,7 @@ template {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  width: 353px;
+  max-width: 353px;
   background-color: #2F303A;
   font-size: 16px;
   line-height: 1.25;
