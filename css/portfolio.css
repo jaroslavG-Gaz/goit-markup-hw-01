@@ -832,25 +832,6 @@ template {
   color: #ffffff;
 }
 
-.subscribe-section__input {
-  margin-top: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  max-width: 353px;
-  background-color: #2F303A;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
-
-.subscribe-section__input:not(:placeholder-shown), .subscribe-section__input:focus {
-  border: 1px solid #2196F3;
-}
-
 .subscribe-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
