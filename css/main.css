@@ -573,7 +573,7 @@ template {
 @media screen and (max-width: 480px) {
   .page-hero {
     max-width: 480px;
-    background-image: url("../../images/mob-hero.jpg");
+    background-image: url("../images/mob-hero.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
