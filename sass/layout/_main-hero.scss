@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     
-    @media screen  and (min-width: 480px) {
+    @media screen  and (max-width: 480px) {
         max-width: 480px;
         background-image: url("../../images/mob-hero.jpg") ;
         background-size: contain;
