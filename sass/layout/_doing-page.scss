@@ -2,7 +2,7 @@
 /* Чем мы занимаемся */
 
 .page-doing {
- @media screen  and ( max-width: 480px) {
+ @media screen  and ( max-width: 480px), screen and (max-width: 768px) {
      display: none;
  }
      

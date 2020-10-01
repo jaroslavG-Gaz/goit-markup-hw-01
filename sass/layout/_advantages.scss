@@ -7,13 +7,22 @@
     padding-top: 94px;
     padding-bottom: 94px;
     
-    @media screen and ( max-width: 480px) {
+    @media screen and ( max-width: 480px)  {
         display: block ;
         padding-top: 0;
         padding-bottom: 60px;
         width: 100%;
-       
+    
     }
+    @media screen and ( max-width: 768px)  {
+        display: block ;
+        padding-top: 0;
+        padding-bottom: 60px;
+        width: 100%;
+    
+    }
+
+
 
 &__item {
     width: 100%;
@@ -23,6 +32,9 @@
     margin-right: 30px;
     
     @media screen and ( max-width: 480px) {
+        margin-right: 0;
+    }
+    @media screen and ( max-width: 768px) {
         margin-right: 0;
     }
 }
@@ -35,6 +47,10 @@
     text-transform: uppercase;
 
     @media screen and ( max-width: 480px) {
+        text-align: center;
+        
+    }
+    @media screen and ( max-width: 768px) {
         text-align: center;
         
     }
@@ -66,6 +82,12 @@
        width: 100%;
 
     }
+    @media screen and ( max-width: 768px) {
+       display: flex;
+       justify-content: center;
+       width: 100%;
+
+    }
 
     }
     .antenna {
@@ -80,6 +102,13 @@
     
 
     @media screen and ( max-width: 480px) {
+        
+        margin-top: 25px;
+        margin-bottom: 25px;
+        
+
+     }
+    @media screen and ( max-width: 768px) {
         
         margin-top: 25px;
         margin-bottom: 25px;
@@ -101,6 +130,11 @@
         justify-content: center;
         width: 100%;
      }
+    @media screen and ( max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
     }
 
     .clock {
@@ -117,6 +151,12 @@
         
 
      }  
+    @media screen and ( max-width: 768px) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        
+
+     }  
     }
     .diagram-section {
     margin-bottom: 30px;
@@ -126,6 +166,11 @@
     background-color: #F5F4FA;
 
     @media screen and ( max-width: 480px) {
+       display: flex;
+       justify-content: center;
+       width: 100%;
+    }
+    @media screen and ( max-width: 768px) {
        display: flex;
        justify-content: center;
        width: 100%;
@@ -148,6 +193,12 @@
        
 
      }
+    @media screen and ( max-width: 768px) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+       
+
+     }
     }
 
 
@@ -165,6 +216,12 @@
         width: 100%;
      }
     
+    @media screen and ( max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+    
     }
 
     .astronaut {
@@ -176,6 +233,12 @@
     margin-bottom: 20px;
       
     @media screen and ( max-width: 480px) {
+        margin-top: 25px;
+        margin-bottom: 25px;
+       
+
+     }
+    @media screen and ( max-width: 768px) {
         margin-top: 25px;
         margin-bottom: 25px;
        

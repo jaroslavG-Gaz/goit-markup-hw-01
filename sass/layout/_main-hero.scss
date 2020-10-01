@@ -17,6 +17,12 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+    @media screen  and (max-width: 768px) {
+        max-width: 480px;
+        background-image: url("../images/mob-hero.jpg") ;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
    
  
  &__title {
@@ -29,6 +35,14 @@
      color: $white;
 
      @media screen  and (max-width: 480px) {
+
+       font-size: 26px ;
+       line-height: 1.38;
+       text-align: center ;
+       letter-spacing: 0.06em; 
+
+     }
+     @media screen  and (max-width: 768px) {
 
        font-size: 26px ;
        line-height: 1.38;

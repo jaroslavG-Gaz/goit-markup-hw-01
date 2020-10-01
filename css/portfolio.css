@@ -713,7 +713,7 @@ template {
           align-items: baseline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .main-footer {
     display: inline;
   }
@@ -725,7 +725,7 @@ template {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .addres-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -747,7 +747,7 @@ template {
   margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .addres-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -772,7 +772,7 @@ template {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .addres-list__addres {
     margin-bottom: 8px;
   }
@@ -787,7 +787,7 @@ template {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .addres-list__mail {
     margin-bottom: 8px;
   }
@@ -801,7 +801,7 @@ template {
   margin-left: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .join-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -886,7 +886,7 @@ template {
   margin-left: 94px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -912,13 +912,13 @@ template {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__label {
     margin-top: 60px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__form {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -948,10 +948,10 @@ template {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__input {
     margin-bottom: 20px;
-    max-width: 450px;
+    width: 450px;
   }
 }
 
@@ -984,7 +984,7 @@ template {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-btn {
     margin-bottom: 60px;
   }
