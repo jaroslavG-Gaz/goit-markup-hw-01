@@ -1145,6 +1145,7 @@ template {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    background-color: #ccc;
   }
 }
 
