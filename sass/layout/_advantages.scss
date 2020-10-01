@@ -11,10 +11,13 @@
         display: block ;
         padding-top: 0;
         padding-bottom: 60px;
+        width: 100%;
        
     }
 
-
+&__item {
+    width: 100%;
+}
 
 &__item:not(:last-child) {
     margin-right: 30px;
@@ -49,6 +52,7 @@
 }
 
     .antenna-section {
+    
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -57,25 +61,32 @@
     background-color: #F5F4FA;
 
     @media screen and ( max-width: 480px) {
+       display: flex;
+       justify-content: center;
        width: 100%;
+
     }
 
     }
     .antenna {
+
+    
     width: 65px;
     height: 70px;
     margin-left: 102px;
     margin-right: 102px;
     margin-top: 20px;
     margin-bottom: 20px;
+    
 
     @media screen and ( max-width: 480px) {
+        
         margin-top: 25px;
         margin-bottom: 25px;
-        margin-left: 192px;
-        margin-right: 192px;
+        
 
      }
+
     }
 
     .clock-section {
@@ -86,6 +97,8 @@
     background-color: #F5F4FA;
 
     @media screen and ( max-width: 480px) {
+        display: flex;
+        justify-content: center;
         width: 100%;
      }
     }
@@ -101,8 +114,7 @@
     @media screen and ( max-width: 480px) {
         margin-top: 25px;
         margin-bottom: 25px;
-        margin-left: 192px;
-        margin-right: 192px;
+        
 
      }  
     }
@@ -114,6 +126,8 @@
     background-color: #F5F4FA;
 
     @media screen and ( max-width: 480px) {
+       display: flex;
+       justify-content: center;
        width: 100%;
     }
 
@@ -131,8 +145,7 @@
     @media screen and ( max-width: 480px) {
         margin-top: 25px;
         margin-bottom: 25px;
-        margin-left: 192px;
-        margin-right: 192px;
+       
 
      }
     }
@@ -147,6 +160,8 @@
     background-color: #F5F4FA;
 
     @media screen and ( max-width: 480px) {
+        display: flex;
+        justify-content: center;
         width: 100%;
      }
     
@@ -163,8 +178,7 @@
     @media screen and ( max-width: 480px) {
         margin-top: 25px;
         margin-bottom: 25px;
-        margin-left: 192px;
-        margin-right: 192px;
+       
 
      }
     }

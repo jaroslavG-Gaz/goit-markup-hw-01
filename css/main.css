@@ -639,7 +639,12 @@ template {
     display: block;
     padding-top: 0;
     padding-bottom: 60px;
+    width: 100%;
   }
+}
+
+.advantages-list__item {
+  width: 100%;
 }
 
 .advantages-list__item:not(:last-child) {
@@ -683,6 +688,12 @@ template {
 
 @media screen and (max-width: 480px) {
   .antenna-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -700,8 +711,6 @@ template {
   .antenna {
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 192px;
-    margin-right: 192px;
   }
 }
 
@@ -715,6 +724,12 @@ template {
 
 @media screen and (max-width: 480px) {
   .clock-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -732,8 +747,6 @@ template {
   .clock {
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 192px;
-    margin-right: 192px;
   }
 }
 
@@ -747,6 +760,12 @@ template {
 
 @media screen and (max-width: 480px) {
   .diagram-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -764,8 +783,6 @@ template {
   .diagram {
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 192px;
-    margin-right: 192px;
   }
 }
 
@@ -779,6 +796,12 @@ template {
 
 @media screen and (max-width: 480px) {
   .astronaut-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
 }
@@ -796,8 +819,6 @@ template {
   .astronaut {
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 192px;
-    margin-right: 192px;
   }
 }
 
@@ -924,6 +945,7 @@ template {
   .page-team__list-item {
     width: 100%;
     max-width: 450px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1042,6 +1064,13 @@ template {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 480px) {
+  .tumb {
+    outline: 10px solid tomato;
+    max-width: 400px;
+  }
+}
+
 /* Постояные клиенты */
 .page-client__title {
   padding-top: 94px;
@@ -1050,6 +1079,13 @@ template {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .page-client__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 }
 
 .client-list {
@@ -1064,7 +1100,12 @@ template {
 
 @media screen and (max-width: 480px) {
   .client-list {
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 30px;
   }
 }
 
@@ -1079,10 +1120,32 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .client-list__item {
+    width: calc((100% - 1 * 15px) / 2);
+    margin-bottom: 30px;
+  }
+}
+
 .client-list__link {
   display: block;
   width: 170px;
   height: 90px;
+}
+
+@media screen and (max-width: 480px) {
+  .client-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
 }
 
 .client-list__svg {
@@ -1094,10 +1157,22 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .client-list__svg {
+    margin: 0;
+  }
+}
+
 .client-list__svg--geometry4 {
   margin: 24px 45px;
   width: 78px;
   height: 42px;
+}
+
+@media screen and (max-width: 480px) {
+  .client-list__svg--geometry4 {
+    margin: 0;
+  }
 }
 
 .client-list__svg--geometry5 {
@@ -1106,10 +1181,22 @@ template {
   height: 47px;
 }
 
+@media screen and (max-width: 480px) {
+  .client-list__svg--geometry5 {
+    margin: 0;
+  }
+}
+
 .client-list__svg--geometry6 {
   margin: 22px 41px;
   width: 88px;
   height: 45px;
+}
+
+@media screen and (max-width: 480px) {
+  .client-list__svg--geometry6 {
+    margin: 0;
+  }
 }
 
 .client-list__item:hover .client-list__svg {

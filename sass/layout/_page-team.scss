@@ -36,8 +36,10 @@
        padding-bottom: 94px;
       
        @media screen and (max-width: 480px ) {
+
          display: inline-block;
          padding-bottom: 60px;
+         
          
        }
          
@@ -60,6 +62,8 @@
 
       width: 100%;
       max-width: 450px;
+      margin-bottom: 30px;
+    
 
     }
 
@@ -70,13 +74,17 @@
       @media screen and (max-width: 480px ){
          height: 460px;
          width: 450px;
+         
+        
       }
     }
 
     &__tumb {
+
      padding-bottom: 24px;
      
-
+     
+    
     }
         
     &__tumb-title {
@@ -92,6 +100,7 @@
     }
     
     &__tumb-text {
+
         margin: 0 ;
         font-weight: normal;
         font-size: 16px;
@@ -113,6 +122,7 @@
       @media screen and (max-width: 480px ) {
         margin-left: 122px;
         margin-right: 122px;
+       
         
       }  
 
@@ -197,3 +207,12 @@
      }
                                                                     
 }                     
+
+.tumb {
+  @media screen and (max-width: 480px ){
+
+   outline: 10px solid tomato;
+  
+  max-width: 400px;
+  }
+}
