@@ -544,6 +544,12 @@ template {
   line-height: 1.19;
 }
 
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
 .logo__part {
   margin-right: 93px;
   font-family: Raleway;
@@ -1240,10 +1246,41 @@ template {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  .addres-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 .addres-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .addres-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .addres-list__addres {
@@ -1256,6 +1293,12 @@ template {
   color: #ffffff;
 }
 
+@media screen and (max-width: 480px) {
+  .addres-list__addres {
+    margin-bottom: 8px;
+  }
+}
+
 .addres-list__mail {
   margin-bottom: 9px;
   font-style: normal;
@@ -1265,12 +1308,34 @@ template {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 480px) {
+  .addres-list__mail {
+    margin-bottom: 8px;
+  }
+}
+
 .addres-list__mail:last-child {
   margin-bottom: 0;
 }
 
 .join-section {
   margin-left: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .join-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
 }
 
 .join-section__title {
@@ -1342,6 +1407,22 @@ template {
   margin-left: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .subscribe-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
 .subscribe-section__label {
   margin: 0;
   font-weight: bold;
@@ -1350,6 +1431,53 @@ template {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe-section__label {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe-section__form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.subscribe-section__input {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 353px;
+  background-color: #2F303A;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe-section__input {
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+}
+
+.subscribe-section__input:not(:placeholder-shown), .subscribe-section__input:focus {
+  border: 1px solid #2196F3;
 }
 
 .subscribe-btn {
@@ -1375,6 +1503,12 @@ template {
   -webkit-transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe-btn {
+    margin-bottom: 60px;
+  }
 }
 
 .subscribe-btn__icon-svg {

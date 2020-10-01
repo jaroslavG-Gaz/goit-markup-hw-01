@@ -4,8 +4,12 @@
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1.19;
 
+    line-height: 1.19;
+    @media screen and (max-width: 480px) {
+           
+      font-size: 24px;
+   }
 
 &__part  {
 
