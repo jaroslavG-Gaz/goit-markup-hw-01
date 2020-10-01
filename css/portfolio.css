@@ -544,7 +544,7 @@ template {
   line-height: 1.19;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .logo {
     font-size: 24px;
   }
@@ -951,7 +951,7 @@ template {
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__input {
     margin-bottom: 20px;
-    max-width: 480px;
+    max-width: 360px;
   }
 }
 
@@ -987,6 +987,7 @@ template {
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-btn {
     margin-bottom: 60px;
+    margin-left: 0;
   }
 }
 
