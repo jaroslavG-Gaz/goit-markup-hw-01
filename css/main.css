@@ -961,7 +961,6 @@ template {
 @media screen and (max-width: 480px) {
   .page-team__list-img {
     min-width: 100%;
-    height: 460px;
   }
 }
 
