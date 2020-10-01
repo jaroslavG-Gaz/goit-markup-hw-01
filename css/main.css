@@ -927,8 +927,14 @@ template {
 
 @media screen and (max-width: 480px) {
   .page-team__list {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 60px;
+    max-width: 480px;
   }
 }
 
@@ -943,16 +949,19 @@ template {
 
 @media screen and (max-width: 480px) {
   .page-team__list-item {
-    width: 100%;
-    max-width: 450px;
+    min-width: 100%;
     margin-bottom: 30px;
   }
 }
 
+.page-team__list-item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 480px) {
-  .page-team__img {
+  .page-team__list-img {
+    min-width: 100%;
     height: 460px;
-    width: 450px;
   }
 }
 
@@ -989,8 +998,8 @@ template {
 
 @media screen and (max-width: 480px) {
   .icons-container {
-    margin-left: 122px;
-    margin-right: 122px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1062,13 +1071,6 @@ template {
 
 .icon-section:hover .icon-section__linked {
   fill: #ffffff;
-}
-
-@media screen and (max-width: 480px) {
-  .tumb {
-    outline: 10px solid tomato;
-    max-width: 400px;
-  }
 }
 
 /* Постояные клиенты */
@@ -1145,7 +1147,6 @@ template {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background-color: #ccc;
   }
 }
 

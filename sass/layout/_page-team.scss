@@ -37,10 +37,12 @@
       
        @media screen and (max-width: 480px ) {
 
-         display: inline-block;
+         display: flex;
+         justify-content: center;
          padding-bottom: 60px;
+         max-width: 480px;
          
-         
+    
        }
          
        
@@ -59,23 +61,26 @@
     background-color: $white;
 
     @media screen and (max-width: 480px ) {
-
-      width: 100%;
-      max-width: 450px;
+        
+      min-width: 100%;
       margin-bottom: 30px;
-    
-
+      
+     
     }
 
     }
       
-    &__img {
+    &__list-item:last-child {
 
-      @media screen and (max-width: 480px ){
-         height: 460px;
-         width: 450px;
-         
-        
+      margin-bottom: 0;
+    }
+
+    &__list-img {
+
+      @media screen and (max-width: 480px ) {
+
+      min-width: 100%;
+      height: 460px;
       }
     }
 
@@ -83,8 +88,6 @@
 
      padding-bottom: 24px;
      
-     
-    
     }
         
     &__tumb-title {
@@ -120,8 +123,9 @@
       height: 44px;
       
       @media screen and (max-width: 480px ) {
-        margin-left: 122px;
-        margin-right: 122px;
+
+        margin-left: auto;
+        margin-right: auto;
        
         
       }  
@@ -208,11 +212,3 @@
                                                                     
 }                     
 
-.tumb {
-  @media screen and (max-width: 480px ){
-
-   outline: 10px solid tomato;
-  
-  max-width: 400px;
-  }
-}
