@@ -1587,7 +1587,7 @@ template {
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__input {
     margin-bottom: 20px;
-    width: 450px;
+    max-width: 480px;
   }
 }
 
