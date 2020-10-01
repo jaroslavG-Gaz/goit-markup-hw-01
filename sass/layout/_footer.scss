@@ -235,7 +235,7 @@
         
         &__input:not(:placeholder-shown),
         &__input:focus{
-            border: 1px solid $active;
+            border: 2px solid $active;
             
         }
     }     

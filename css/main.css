@@ -1477,7 +1477,7 @@ template {
 }
 
 .subscribe-section__input:not(:placeholder-shown), .subscribe-section__input:focus {
-  border: 1px solid #2196F3;
+  border: 2px solid #2196F3;
 }
 
 .subscribe-btn {
