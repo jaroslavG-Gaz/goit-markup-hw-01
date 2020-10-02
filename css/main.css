@@ -1532,6 +1532,12 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .backdrop {
+    position: absolute;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1955,6 +1961,7 @@ textarea::placeholder {
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .sent-btn {
     margin-left: 0;
+    margin-bottom: 40px;
   }
 }
 
