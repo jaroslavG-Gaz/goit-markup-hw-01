@@ -1564,7 +1564,7 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .modal {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
   }
 }
@@ -1629,8 +1629,8 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .modal-title {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
     font-size: 20px;
     line-height: 1.50;
@@ -1856,7 +1856,8 @@ textarea::placeholder {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .check-label {
-    margin: -2px;
+    display: block;
+    text-align: center;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;

@@ -173,6 +173,7 @@
                             
                         
  .check-label {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,10 +185,13 @@
   color: $gray;
 
    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
-    margin: -2px;
+
+    display: block;
+    text-align: center;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    
    }
           
           
