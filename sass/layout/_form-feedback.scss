@@ -17,11 +17,14 @@
  &-section {
 
      margin-bottom: 12px;
+
+
      @media screen  and (max-width: 480px), screen and (max-width: 768px) {
          margin-left: 3px;
          margin-right: 3px;
      }
-  }
+ }
+
 }
  .section__name-wrape{
      position: relative;
@@ -181,7 +184,7 @@
   color: $gray;
 
    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
-
+    margin: 1px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
