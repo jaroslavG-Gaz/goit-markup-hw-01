@@ -1856,7 +1856,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .check-label {
-    margin: 1px;
+    margin: -2px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
