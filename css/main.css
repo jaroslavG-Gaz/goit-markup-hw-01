@@ -1598,7 +1598,7 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .modal-btn {
-    margin-right: -10px;
+    margin-right: -15px;
     margin-bottom: 0;
     margin-left: auto;
   }
