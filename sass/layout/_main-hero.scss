@@ -11,18 +11,13 @@
     background-repeat: no-repeat;
     background-position: center;
     
-    @media screen  and (max-width: 480px) {
+    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
         max-width: 480px;
         background-image: url("../images/mob-hero.jpg") ;
         background-size: contain;
         background-repeat: no-repeat;
     }
-    @media screen  and (max-width: 768px) {
-        max-width: 480px;
-        background-image: url("../images/mob-hero.jpg") ;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+   
    
  
  &__title {
@@ -34,7 +29,7 @@
      letter-spacing: 0.06em;
      color: $white;
 
-     @media screen  and (max-width: 480px) {
+     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
 
        font-size: 26px ;
        line-height: 1.38;
@@ -42,14 +37,7 @@
        letter-spacing: 0.06em; 
 
      }
-     @media screen  and (max-width: 768px) {
-
-       font-size: 26px ;
-       line-height: 1.38;
-       text-align: center ;
-       letter-spacing: 0.06em; 
-
-     }
+    
   }
 
  &__button {

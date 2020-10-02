@@ -1,13 +1,21 @@
 
  /* Секция "форма" из модалки*/
  .form {
+
      width: 448px;
      margin-left: auto;
      margin-right: auto;
-     
+
+     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+
+         width: 100%;
+         max-width: 370px;
+         
+     }
  
                          
- &-section{
+ &-section {
+
      margin-bottom: 12px;
      
   }
@@ -110,7 +118,11 @@
   
   .coments-section{
       width: 448px;
- 
+
+      @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+          width: 100%;
+          max-width: 370px;
+      }
   
   &__label{
       font-size: 14px;
@@ -157,12 +169,17 @@
   justify-content: center;
   margin: 0;
   margin-left: 4px;
-   font-size: 14px;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-   color: $gray;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $gray;
 
-   
+   @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+    display: inline;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+   }
           
           
  &__input {
@@ -183,6 +200,12 @@
       margin-left: 4px;
       color:$active;
       font-size: 14px;
+      @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+      }
   }
   
   &__input:checked + .check-box{
@@ -251,8 +274,12 @@
      box-shadow: 0 4px 0px rgba(60, 53, 74, 0.459);
      
      cursor: pointer;
- 
- 
+      
+     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+       
+        
+     }
+     
  &:hover {
      top: 2px; 
      box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);

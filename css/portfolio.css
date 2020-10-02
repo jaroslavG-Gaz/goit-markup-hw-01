@@ -422,13 +422,7 @@ template {
           align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  .header-nav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .header-nav {
     display: none;
   }

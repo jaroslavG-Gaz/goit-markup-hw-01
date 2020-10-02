@@ -422,13 +422,7 @@ template {
           align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  .header-nav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .header-nav {
     display: none;
   }
@@ -575,16 +569,7 @@ template {
   background-position: center;
 }
 
-@media screen and (max-width: 480px) {
-  .page-hero {
-    max-width: 480px;
-    background-image: url("../images/mob-hero.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .page-hero {
     max-width: 480px;
     background-image: url("../images/mob-hero.jpg");
@@ -603,16 +588,7 @@ template {
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
-  .page-hero__title {
-    font-size: 26px;
-    line-height: 1.38;
-    text-align: center;
-    letter-spacing: 0.06em;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .page-hero__title {
     font-size: 26px;
     line-height: 1.38;
@@ -658,16 +634,7 @@ template {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 480px) {
-  .advantages-list {
-    display: block;
-    padding-top: 0;
-    padding-bottom: 60px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .advantages-list {
     display: block;
     padding-top: 0;
@@ -684,13 +651,7 @@ template {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 480px) {
-  .advantages-list__item:not(:last-child) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .advantages-list__item:not(:last-child) {
     margin-right: 0;
   }
@@ -703,13 +664,7 @@ template {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
-  .advantages-list__title {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .advantages-list__title {
     text-align: center;
   }
@@ -731,19 +686,7 @@ template {
   background-color: #F5F4FA;
 }
 
-@media screen and (max-width: 480px) {
-  .antenna-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .antenna-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -764,14 +707,7 @@ template {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .antenna {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .antenna {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -786,19 +722,7 @@ template {
   background-color: #F5F4FA;
 }
 
-@media screen and (max-width: 480px) {
-  .clock-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .clock-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,14 +743,7 @@ template {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .clock {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .clock {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -841,19 +758,7 @@ template {
   background-color: #F5F4FA;
 }
 
-@media screen and (max-width: 480px) {
-  .diagram-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .diagram-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -874,14 +779,7 @@ template {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .diagram {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .diagram {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -896,19 +794,7 @@ template {
   background-color: #F5F4FA;
 }
 
-@media screen and (max-width: 480px) {
-  .astronaut-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .astronaut-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -929,14 +815,7 @@ template {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .astronaut {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
   .astronaut {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -1211,6 +1090,8 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .page-client__title {
+    font-size: 28px;
+    line-height: 1.17;
     padding-top: 60px;
     padding-bottom: 30px;
   }
@@ -1680,6 +1561,13 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 .modal-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1703,6 +1591,14 @@ template {
   -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fff;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .modal-btn {
+    margin-right: 0;
+    margin-bottom: 2px;
+    margin-left: 412px;
+  }
 }
 
 .modal-btn:hover {
@@ -1730,6 +1626,18 @@ template {
   color: #212121;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .modal-title {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.50;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
 .cross-svg {
   padding: 0;
   margin-right: 1px;
@@ -1746,6 +1654,13 @@ template {
   width: 448px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+    max-width: 370px;
+  }
 }
 
 .form-section {
@@ -1852,6 +1767,13 @@ template {
   width: 448px;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .coments-section {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
 .coments-section__label {
   font-size: 14px;
   line-height: 1;
@@ -1925,6 +1847,15 @@ textarea::placeholder {
   color: #757575;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .check-label {
+    display: inline;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
+
 .check-label__input {
   position: absolute;
   width: 1px;
@@ -1941,6 +1872,14 @@ textarea::placeholder {
   margin-left: 4px;
   color: #2196F3;
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .check-label__link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-label__input:checked + .check-box {
