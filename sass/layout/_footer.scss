@@ -202,9 +202,11 @@
         &__form {
 
             @media screen and (max-width: 480px), screen and (max-width: 768px) {
+
              display: inline-flex;
              flex-direction: column;
              align-items: center;
+             width: 100%;
             
             }
         }
@@ -230,7 +232,7 @@
             
             @media screen and (max-width: 480px), screen and (max-width: 768px) {
                 margin-bottom: 20px;
-                max-width: 360px;
+                width: 100%;
             }
         }     
         

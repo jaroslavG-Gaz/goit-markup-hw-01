@@ -924,6 +924,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -945,7 +946,7 @@ template {
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .subscribe-section__input {
     margin-bottom: 20px;
-    max-width: 360px;
+    width: 100%;
   }
 }
 
