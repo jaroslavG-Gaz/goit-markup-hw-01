@@ -1791,6 +1791,12 @@ template {
   resize: none;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .coments-section__textarea {
+    margin-bottom: 5px;
+  }
+}
+
 .coments-section__textarea:focus-within {
   border: 1px solid #2196F3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1849,7 +1855,6 @@ textarea::placeholder {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .check-label {
-    display: inline;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -1947,11 +1952,28 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .sent-btn {
+    margin-left: 0;
+  }
+}
+
 .sent-btn:hover {
   top: 2px;
   -webkit-box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
           box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
   -webkit-transition-duration: top 500ms;
           transition-duration: top 500ms;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .sent-btn-geometry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

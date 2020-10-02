@@ -140,7 +140,13 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         resize: none;
-    }
+
+        @media screen  and (max-width: 480px), screen and (max-width: 768px) { 
+
+        margin-bottom: 5px
+
+        }
+   }
     
     &__textarea:focus-within{
         border: 1px solid $active;
@@ -175,7 +181,7 @@
   color: $gray;
 
    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
-    display: inline;
+
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -274,11 +280,14 @@
      box-shadow: 0 4px 0px rgba(60, 53, 74, 0.459);
      
      cursor: pointer;
-      
+
      @media screen  and (max-width: 480px), screen and (max-width: 768px) {
-       
         
-     }
+     margin-left: 0;
+    }
+    
+
+
      
  &:hover {
      top: 2px; 
@@ -286,4 +295,15 @@
      transition-duration: top 500ms;
  }
     
+}
+
+
+.sent-btn-geometry {
+
+    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+        
+        display: flex;
+        justify-content: center;
+        
+    }
 }
