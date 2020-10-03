@@ -140,47 +140,50 @@
 }       
 
 
-.mob-nav {
+.mob-btn {
 
     display: none;
     
     @media screen and (max-width: 480px), screen and (max-width: 768px) {
 
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 40px;
-        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        margin-top: 22px;
+        margin-bottom: 22px;
         cursor: pointer;
-      
+        height: 20px;
+        width: 20px;
         
        
     }
 
    
 
- &__svg-menu {
 
-    width: 24px;
-    height: 17px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-    
- }
-
- &:hover &__svg-menu {
+  &:hover &__svg-menu {
 
      fill: $active;
-     transform: scaleX(0.9);
-     transform-origin: center ;
+
  }
 
  &__svg-cross {
 
     display: none;
-    width: 24px;
-    height: 17px;
+   
+ }
 
-    
+ &.is-open  &__svg-cross {
+
+     display: block;
+     
+ }
+
+ &.is-open  &__svg-menu {
+
+     display: none;
  }
 
 }

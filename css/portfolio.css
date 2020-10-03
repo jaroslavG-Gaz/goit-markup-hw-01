@@ -551,42 +551,43 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-nav {
+.mob-btn {
   display: none;
 }
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
-  .mob-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 40px;
-    height: 40px;
+  .mob-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    margin-top: 22px;
+    margin-bottom: 22px;
     cursor: pointer;
+    height: 20px;
+    width: 20px;
   }
 }
 
-.mob-nav__svg-menu {
-  width: 24px;
-  height: 17px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-nav:hover .mob-nav__svg-menu {
+.mob-btn:hover .mob-btn__svg-menu {
   fill: #2196F3;
-  -webkit-transform: scaleX(0.9);
-          transform: scaleX(0.9);
-  -webkit-transform-origin: center;
-          transform-origin: center;
 }
 
-.mob-nav__svg-cross {
+.mob-btn__svg-cross {
   display: none;
-  width: 24px;
-  height: 17px;
+}
+
+.mob-btn.is-open .mob-btn__svg-cross {
+  display: block;
+}
+
+.mob-btn.is-open .mob-btn__svg-menu {
+  display: none;
 }
 
 .logo {
