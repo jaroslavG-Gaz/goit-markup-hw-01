@@ -656,6 +656,17 @@ template {
   margin-top: 60px;
 }
 
+.mob-menu__list-link.mob-line::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 8px;
+  border: 2px solid #2196F3;
+  border-radius: 2px;
+}
+
 .mob-line {
   position: relative;
 }
