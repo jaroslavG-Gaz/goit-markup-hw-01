@@ -13,43 +13,121 @@
     <header class="page-header border">
 
         <div class="container">
-       
-               <nav class="header-nav">
-       
-                       <a href="./index.html" class="naked"><span class="logo">Web</span><span class="logo__part">Studio</span></a>
-                   
-                   <ul class="header-nav__list naked">
-                       <li class="header-nav__list-item line"><a href="./index.html" class="header-nav__list-link naked">Студия</a></li>
-                       <li class="header-nav__list-item"><a href="./portfolio.html" class="header-nav__list-link  line action  naked ">Портфолио</a></li>
-                       <li class="header-nav__list-item"><a href="./index.html" class="header-nav__list-link  naked">Контакты</a></li>
-                   </ul>
-              
-                   <ul class="connection-list">
-       
-                       
-                       <li class="naked"> 
-                           <a href="mailto:info@devstudio.com" class="connection-list__link naked">
-                           <svg class="connection-list__svg-mail"> 
-                               <use href="./images/symbol-defs.svg#icon-emale"> </use>
-                           </svg> info@devstudio.com
-                           </a>
-                   
-                       </li>
-       
-                       
-                       <li class="naked"> <a href="tel:+38(096)1111111" class="connection-list__link naked">
-                           <svg class="connection-list__svg-phone"> 
-                               <use href="./images/symbol-defs.svg#icon-phone"> </use>
-                           </svg> +38 096 111 11 11
-                       </a>
-       
-                       </li>
-       
-                   </ul>
-       
-               </nav>
-       
-           </div>
+
+            <nav class="header-nav">
+                
+                <!-- Шапка сайте MOBILE -->
+    
+                <button type="button" class="mob-btn is-open" data-menu-button>
+    
+                    <svg class="mob-btn__svg"
+                         width="40" 
+                         height="40" 
+                         aria-label="Переключатель мобильного меню"
+                         aria-expanded="false"
+                         aria-controls="mob-menu_container"> 
+    
+                        <use class="mob-btn__svg-menu" href="./images/symbol-defs.svg#icon-close-test"></use>
+                        <use class="mob-btn__svg-cross" href="./images/symbol-defs.svg#icon-menu_test"></use>
+    
+                    </svg>
+        
+                </button>
+    
+                <!-- Секция навагиции меню MOBILE -->
+    
+                <div class="mob-menu__container is-open" id="mob-menu_container" data-menu>
+                    <nav>
+                    <ul class="mob-menu__list naked">
+    
+                        <li class="mob-menu__list-item">
+    
+                        <a href="./index.html" class="mob-menu__list-link mob-line  mob-action naked">Студия</a>
+    
+                        </li>
+    
+                        <li class="mob-menu__list-item">
+    
+                        <a href="./portfolio.html" class="mob-menu__list-link  naked ">Портфолио</a>
+    
+                        </li>
+    
+                        <li class="mob-menu__list-item">
+    
+                        <a href="./index.html" class="mob-menu__list-link  naked">Контакты</a>
+    
+                        </li>
+    
+                    </ul>
+    
+    
+                    <ul class="mob-connection__list">
+    
+                    
+                        <li class="naked"> 
+    
+                            <a href="mailto:info@devstudio.com" class="mob-connection__link naked">
+    
+                            <svg class="mob-connection__svg-mail"> 
+    
+                                <use href="./images/symbol-defs.svg#icon-emale"> </use>
+                                
+                            </svg>  info@devstudio.com </a>
+                    
+                        </li>
+        
+                        
+                        <li class="naked"> 
+    
+                            <a href="tel:+38(096)1111111" class="mob-connection__link naked">
+    
+                            <svg class="mob-connection__svg-phone"> 
+    
+                                <use href="./images/symbol-defs.svg#icon-phone"> </use>
+    
+                            </svg> +38 096 111 11 11 </a>
+        
+                        </li>
+        
+                    </ul>
+                 </nav>
+                </div>   
+                <!-- Шапка сайта DESKTOP -->
+    
+                    <a href="????" class="naked"><span class="logo">Web</span><span class="logo__part">Studio</span></a>
+               
+                <ul class="header-nav__list naked">
+                    <li class="header-nav__list-item"><a href="./index.html" class="header-nav__list-link  naked">Студия</a></li>
+                    <li class="header-nav__list-item"><a href="./portfolio.html" class="header-nav__list-link line action naked ">Портфолио</a></li>
+                    <li class="header-nav__list-item"><a href="./index.html" class="header-nav__list-link  naked">Контакты</a></li>
+                </ul>
+           
+                <ul class="connection-list">
+    
+                    
+                    <li class="naked"> 
+                        <a href="mailto:info@devstudio.com" class="connection-list__link naked">
+                        <svg class="connection-list__svg-mail"> 
+                            <use href="./images/symbol-defs.svg#icon-emale"> </use>
+                        </svg> info@devstudio.com
+                        </a>
+                
+                    </li>
+    
+                    
+                    <li class="naked"> <a href="tel:+38(096)1111111" class="connection-list__link naked">
+                        <svg class="connection-list__svg-phone"> 
+                            <use href="./images/symbol-defs.svg#icon-phone"> </use>
+                        </svg> +38 096 111 11 11
+                    </a>
+    
+                    </li>
+    
+                </ul>
+    
+            </nav>
+    
+        </div>
        
        </header>
 <main>
@@ -80,7 +158,7 @@
                 
             <div class="projects-tumb">
         
-                <img src="./images/Images2/img.jpg" class="img" alt="photo">
+                <img src="./images/Images2/img.jpg" class="img projects-tumb__img " alt="photo">
 
                     <p class="projects-tumb__text">Технокряк это современная площадка распространения коронавируса.
                         Компании используют эту платформу для цифрового шпионажа и атак 
@@ -102,7 +180,7 @@
            <a href="./index.html" class="naked">
             <div class="projects-tumb">
 
-                <img src="./images/Images2/img1.jpg" class="img" alt="photo">
+                <img src="./images/Images2/img1.jpg" class="img projects-tumb__img" alt="photo">
     
                 <p class="projects-tumb__text">Технокряк это современная площадка распространения коронавируса.
                     Компании используют эту платформу для цифрового шпионажа и атак 
@@ -125,7 +203,7 @@
 
             <div class="projects-tumb">
 
-            <img src="./images/Images2/img2.jpg" class="img" alt="photo">
+            <img src="./images/Images2/img2.jpg" class="img projects-tumb__img" alt="photo">
 
             <p class="projects-tumb__text">Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак 
@@ -147,7 +225,7 @@
 
                 <div class="projects-tumb">
 
-                    <img src="./images/Images2/img3.jpg" class="img" alt="photo">
+                    <img src="./images/Images2/img3.jpg" class="img projects-tumb__img" alt="photo">
 
                     <p class="projects-tumb__text">Lorem, ipsum dolor sit 
                         amet consectetur adipisicing elit. 
@@ -174,7 +252,7 @@
                 
             <div class="projects-tumb">
 
-                <img src="./images/Images2/img4.jpg" class="img" alt="photo">
+                <img src="./images/Images2/img4.jpg" class="img projects-tumb__img" alt="photo">
             
                  <p class="projects-tumb__text">Lorem, ipsum dolor sit 
                       amet consectetur adipisicing elit. 
@@ -199,7 +277,7 @@
 
             <div class="projects-tumb">
 
-                <img src="./images/Images2/img5.jpg" class="img" alt="photo">
+                <img src="./images/Images2/img5.jpg" class="img projects-tumb__img" alt="photo">
 
                   <p class="projects-tumb__text">Lorem, ipsum dolor sit 
                       amet consectetur adipisicing elit. 
@@ -225,7 +303,7 @@
                 <div class="projects-tumb">
 
         
-                 <img src="./images/Images2/img5.jpg" class="img" alt="photo">
+                 <img src="./images/Images2/img5.jpg" class="img projects-tumb__img" alt="photo">
 
                   <p class="projects-tumb__text">Товарищи! дальнейшее развитие       различных форм деятельности в значительной степени обуславливает       создание дальнейших направлений развития. Повседневная практика       показывает. </p>
 
@@ -247,7 +325,7 @@
 
                <div class="projects-tumb">
 
-                 <img src="./images/Images2/img7.jpg" class="img" alt="photo">
+                 <img src="./images/Images2/img7.jpg" class="img projects-tumb__img" alt="photo">
 
                     <p class="projects-tumb__text">Товарищи! дальнейшее развитие  различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития. Повседневная практика показывает. </p>
 
@@ -268,7 +346,7 @@
 
               <div class="projects-tumb">
 
-                <img src="./images/Images2/img8.jpg" class="img" alt="photo">
+                <img src="./images/Images2/img8.jpg" class="img projects-tumb__img" alt="photo">
                   
                   <p class="projects-tumb__text">Товарищи! дальнейшее развитие  различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития. Повседневная практика показывает. </p>
 
@@ -385,6 +463,21 @@
 
 
 </footer>
+<script>
+    (() => {
+const menuBtnRef = document.querySelector("[data-menu-button]");
+const mobileMenuRef = document.querySelector("[data-menu]");
 
+menuBtnRef.addEventListener("click", () => {
+  const expanded =
+    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+  menuBtnRef.classList.toggle("is-open");
+  menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+  mobileMenuRef.classList.toggle("is-open");
+});
+})();
+</script>
 </body>
 </html>

@@ -618,6 +618,7 @@ template {
     max-width: 480px;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    z-index: 1;
   }
 }
 
@@ -798,7 +799,8 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .projects-nav {
-    display: none;
+    outline: 1px solid tomato;
+    display: inline;
   }
 }
 
@@ -861,6 +863,14 @@ template {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .projects-list__item {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 0;
+  }
+}
+
 .projects-list__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -892,6 +902,11 @@ template {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+.projects-tumb__img {
+  width: 100%;
+  max-width: 450px;
 }
 
 .projects-list__item:hover .projects-tumb__text {

@@ -12,7 +12,8 @@
     padding-bottom: 50px;
    
     @media screen and ( max-width: 480px), screen and (max-width: 768px) {
-      display: none;
+      outline: 1px solid tomato;
+      display: inline;
     }
   
   &__item {
@@ -33,6 +34,7 @@
   }
   
   &__link {
+
     display: inline-block;
     padding: 6px 22px;
     border-radius: 4px;
@@ -49,6 +51,7 @@
   }
   
   &__item:hover {
+
     background-color: #2196F3;
     color: #ffffff;
     -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -60,6 +63,7 @@
   
   
   .projects-list {
+
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
@@ -76,6 +80,14 @@
     width: calc((100% - 30px * 2) /3);
     margin-right: 30px;
     margin-bottom: 30px;
+
+    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+
+      width: 100%;
+      max-width: 450px;
+      margin-right: 0;
+    }
+
   }
   
   &__item:hover{
@@ -119,6 +131,11 @@
   }
 }
   
+.projects-tumb__img{
+  width: 100%;
+  max-width: 450px;
+}
+
   .projects-list__item:hover .projects-tumb__text {
     transform: translateY(0);
     
