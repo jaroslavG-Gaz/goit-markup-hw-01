@@ -611,7 +611,9 @@ template {
     position: absolute;
     display: block;
     top: 100%;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: #ffffff;
     border-top: 1px solid #ECECEC;
     width: 100%;

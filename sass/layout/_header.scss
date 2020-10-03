@@ -215,7 +215,8 @@
         
         display: block;
         top: 100%;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     
         background-color: $white;
         border-top: 1px solid #ECECEC;
