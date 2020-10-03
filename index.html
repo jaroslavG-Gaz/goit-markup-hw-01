@@ -18,14 +18,15 @@
 
         <nav class="header-nav">
             
-            
+            <!-- Шапка сайте MOBILE -->
+
             <button type="button" class="mob-btn is-open" data-menu-button>
 
                 <svg class="mob-btn__svg"
                      width="40" 
                      height="40" 
                      aria-label="Переключатель мобильного меню"
-                     aria-expanded="false"
+                     aria-expanded="true"
                      aria-controls="mob-menu_container"> 
 
                     <use class="mob-btn__svg-menu" href="./images/symbol-defs.svg#icon-menu_test"></use>
@@ -34,9 +35,66 @@
                 </svg>
     
             </button>
-            <div class="mob-menu_container is-open" id="mob-menu_container" data-menu>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi omnis necessitatibus 
-            </div>
+
+            <!-- Секция навагиции меню MOBILE -->
+
+            <div class="mob-menu__container is-open" id="mob-menu_container" data-menu>
+                <nav>
+                <ul class="mob-menu__list naked">
+
+                    <li class="mob-menu__list-item line mob-line">
+
+                    <a href="./index.html" class="mob-menu__list-link mob-line mob-action naked">Студия</a>
+
+                    </li>
+
+                    <li class="mob-menu__list-item">
+
+                    <a href="./portfolio.html" class="mob-menu__list-link  naked ">Портфолио</a>
+
+                    </li>
+
+                    <li class="mob-menu__list-item">
+
+                    <a href="./index.html" class="mob-menu__list-link  naked">Контакты</a>
+
+                    </li>
+
+                </ul>
+
+
+                <ul class="mob-connection__list">
+
+                
+                    <li class="naked"> 
+
+                        <a href="mailto:info@devstudio.com" class="mob-connection__link naked">
+
+                        <svg class="mob-connection__svg-mail"> 
+
+                            <use href="./images/symbol-defs.svg#icon-emale"> </use>
+                            
+                        </svg>  info@devstudio.com </a>
+                
+                    </li>
+    
+                    
+                    <li class="naked"> 
+
+                        <a href="tel:+38(096)1111111" class="mob-connection__link naked">
+
+                        <svg class="mob-connection__svg-phone"> 
+
+                            <use href="./images/symbol-defs.svg#icon-phone"> </use>
+
+                        </svg> +38 096 111 11 11 </a>
+    
+                    </li>
+    
+                </ul>
+             </nav>
+            </div>   
+            <!-- Шапка сайта DESKTOP -->
 
                 <a href="????" class="naked"><span class="logo">Web</span><span class="logo__part">Studio</span></a>
            
