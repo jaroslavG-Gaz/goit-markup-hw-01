@@ -7,8 +7,9 @@
 
     line-height: 1.19;
     @media screen and (max-width: 480px),  screen and (max-width: 768px) {
-           
+      
       font-size: 24px;
+     
    }
 
 &__part  {
@@ -19,6 +20,12 @@
     font-size: 26px;
     line-height: 1.19;
     color: $footer-hero;
+    @media screen and (max-width: 480px),  screen and (max-width: 768px) {
+           
+     margin-right: 0;
+     font-size: 24px;
+       
+     }
  }
 
 

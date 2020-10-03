@@ -1,11 +1,17 @@
 /* header */
 
+
+
 .header-nav {
     display: flex;
     align-items: center;
     
     @media screen and (max-width: 480px), screen and (max-width: 768px) {
-        display: none;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      
     }
     
 
@@ -14,6 +20,9 @@
 &__list {
     display: flex;
 
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -77,7 +86,9 @@
     display: flex;
     margin-left: auto;
     
-    
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
+        display: none;
+    }
 
 &__link {
     display: flex;
@@ -129,12 +140,45 @@
 }       
 
 
-// .mob-menu {
-//     outline: 1px solid tomato;
-//     display: inline-flex;
-//     width: 40px;
-//     height: 40px;  
+.mob-nav {
+
+    display: none;
     
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
+
+        display: flex;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      
+        
+       
+    }
+
+   
+
+ &__svg-menu {
+
+    width: 24px;
+    height: 17px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     
-// }
+ }
+
+ &:hover &__svg-menu {
+
+     fill: $active;
+     transform: scale(1.05);
+ }
+
+ &__svg-cross {
+
+    display: none;
+    width: 24px;
+    height: 17px;
+
+    
+ }
+
+}
 

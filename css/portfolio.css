@@ -424,7 +424,16 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .header-nav {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -432,6 +441,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .header-nav__list {
+    display: none;
+  }
 }
 
 .header-nav__list-link.line::after {
@@ -483,6 +498,12 @@ template {
   margin-left: auto;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .connection-list {
+    display: none;
+  }
+}
+
 .connection-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,6 +551,40 @@ template {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mob-nav {
+  display: none;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .mob-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+.mob-nav__svg-menu {
+  width: 24px;
+  height: 17px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-nav:hover .mob-nav__svg-menu {
+  fill: #2196F3;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.mob-nav__svg-cross {
+  display: none;
+  width: 24px;
+  height: 17px;
+}
+
 .logo {
   color: #2196F3;
   font-family: Raleway;
@@ -551,6 +606,13 @@ template {
   font-size: 26px;
   line-height: 1.19;
   color: #2F303A;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .logo__part {
+    margin-right: 0;
+    font-size: 24px;
+  }
 }
 
 .logo__part--activ {
