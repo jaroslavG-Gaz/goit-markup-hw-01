@@ -575,8 +575,10 @@ template {
 
 .mob-nav:hover .mob-nav__svg-menu {
   fill: #2196F3;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scaleX(0.9);
+          transform: scaleX(0.9);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .mob-nav__svg-cross {

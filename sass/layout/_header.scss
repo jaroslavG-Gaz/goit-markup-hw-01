@@ -168,7 +168,8 @@
  &:hover &__svg-menu {
 
      fill: $active;
-     transform: scale(1.05);
+     transform: scaleX(0.9);
+     transform-origin: center ;
  }
 
  &__svg-cross {
