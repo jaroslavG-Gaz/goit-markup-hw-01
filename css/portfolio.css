@@ -796,6 +796,12 @@ template {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .projects-nav {
+    display: none;
+  }
+}
+
 .projects-nav__item {
   margin-right: 8px;
   border-radius: 4px;
@@ -841,6 +847,12 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .projects-list {
+    display: inline;
+  }
 }
 
 .projects-list__item {
