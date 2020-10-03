@@ -578,16 +578,20 @@ template {
   fill: #2196F3;
 }
 
+.mob-btn.is-open .mob-btn__svg-menu {
+  display: none;
+}
+
 .mob-btn__svg-cross {
   display: none;
 }
 
-.mob-btn.is-open .mob-btn__svg-cross {
-  display: block;
+.mob-btn:hover .mob-btn__svg-cross {
+  fill: #2196F3;
 }
 
-.mob-btn.is-open .mob-btn__svg-menu {
-  display: none;
+.mob-btn.is-open .mob-btn__svg-cross {
+  display: block;
 }
 
 .logo {

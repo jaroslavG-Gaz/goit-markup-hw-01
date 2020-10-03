@@ -168,22 +168,31 @@
      fill: $active;
 
  }
+ 
+  &.is-open  &__svg-menu {
+ 
+      display: none;
+  }
+ 
 
+
+  
  &__svg-cross {
 
     display: none;
    
  }
 
+ &:hover &__svg-cross {
+
+    fill: $active;
+
+}
+
  &.is-open  &__svg-cross {
 
      display: block;
      
- }
-
- &.is-open  &__svg-menu {
-
-     display: none;
  }
 
 }
