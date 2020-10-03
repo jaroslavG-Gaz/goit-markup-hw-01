@@ -1,13 +1,17 @@
 /* header */
 
-
+.page-header{
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
+        position: relative;
+    }
+}
 
 .header-nav {
     display: flex;
     align-items: center;
     
     @media screen and (max-width: 480px), screen and (max-width: 768px) {
-
+        
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -163,7 +167,8 @@
    
 
 
-  &:hover &__svg-menu {
+  &:hover,
+  &:focus &__svg-menu {
 
      fill: $active;
 
@@ -183,7 +188,8 @@
    
  }
 
- &:hover &__svg-cross {
+ &:hover,
+ &:focus &__svg-cross {
 
     fill: $active;
 
@@ -196,4 +202,30 @@
  }
 
 }
+
+.mob-menu_container {
+ 
+    display: none;
+
+    @media screen and (max-width: 480px), screen and (max-width: 768px) {
+
+
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+    
+        background-color: #ccc;
+        width: 100%;
+        max-width: 480px;
+        padding: 10px;
+    }
+
+    &.is-open {
+        @media screen and (max-width: 480px), screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
 
