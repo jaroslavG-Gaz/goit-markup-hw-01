@@ -799,8 +799,16 @@ template {
 
 @media screen and (max-width: 480px), screen and (max-width: 768px) {
   .projects-nav {
-    outline: 1px solid tomato;
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
 
@@ -815,6 +823,12 @@ template {
   line-height: 1.85;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .projects-nav__item {
+    margin-bottom: 15px;
+  }
 }
 
 .projects-nav__item:last-child {
@@ -902,6 +916,12 @@ template {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
+  .projects-tumb__text {
+    padding: 90px 24px;
+  }
 }
 
 .projects-tumb__img {
