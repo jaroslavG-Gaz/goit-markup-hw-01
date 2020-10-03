@@ -212,7 +212,7 @@
 
 
         position: absolute;
-        // display: none;
+        
         display: block;
         top: 100%;
         left: 0;
@@ -226,14 +226,17 @@
         0px 2px 4px rgba(0, 0, 0, 0.08),
         0px 1px 3px rgba(0, 0, 0, 0.16);
 
+        
+
         z-index: 1;
        
     }
 
     &.is-open {
         @media screen and (max-width: 480px), screen and (max-width: 768px) {
-            // display: block;
+           
             display: none;
+           
         }
     }
 
