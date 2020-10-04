@@ -12,11 +12,16 @@
     background-position: center;
     
     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+
+        width: 100%;
         max-width: 480px;
         margin-bottom: 60px;
-        background-image: url("../images/mob-hero.jpg") ;
-        background-size: contain;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ),
+        url("../images/mob-hero.jpg") ;
+        background-position: center;
         background-repeat: no-repeat;
+        
     }
    
    
