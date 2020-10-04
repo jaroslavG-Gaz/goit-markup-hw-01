@@ -7,7 +7,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
     
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         display: block ;
         padding-top: 0;
         padding-bottom: 60px;
@@ -15,20 +15,38 @@
     
     }
    
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 30px;
+       
+    }
 
 
 
 &__item {
     width: 100%;
+
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 354px;
+    }
 }
 
 &__item:not(:last-child) {
     margin-right: 30px;
     
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         margin-right: 0;
     }
-   
+
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        margin-right: 0;
+    }
 }
 
 
@@ -38,7 +56,7 @@
     line-height: 1.14;
     text-transform: uppercase;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         text-align: center;
         
     }
@@ -65,13 +83,18 @@
 
     background-color: #F5F4FA;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
        display: flex;
        justify-content: center;
        width: 100%;
 
     }
     
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+       display: flex;
+       justify-content: center;
+       width: 100%;
+    }
 
     }
     .antenna {
@@ -85,7 +108,7 @@
     margin-bottom: 20px;
     
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         
         margin-top: 25px;
         margin-bottom: 25px;
@@ -97,13 +120,20 @@
     }
 
     .clock-section {
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: #F5F4FA;
+
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+
+     @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -119,7 +149,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         margin-top: 25px;
         margin-bottom: 25px;
         
@@ -134,11 +164,17 @@
     border-radius: 4px;
     background-color: #F5F4FA;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
        display: flex;
        justify-content: center;
        width: 100%;
     }
+
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
 
     }
 
@@ -151,7 +187,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
       
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         margin-top: 25px;
         margin-bottom: 25px;
        
@@ -169,7 +205,13 @@
 
     background-color: #F5F4FA;
 
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+
+     @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -185,7 +227,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
       
-    @media screen and ( max-width: 480px), screen and (max-width: 768px) {
+    @media screen and ( max-width: 480px), screen and (max-width: 767px) {
         margin-top: 25px;
         margin-bottom: 25px;
        

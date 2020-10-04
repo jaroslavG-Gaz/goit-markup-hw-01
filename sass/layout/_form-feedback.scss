@@ -6,11 +6,17 @@
      margin-left: auto;
      margin-right: auto;
 
-     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+     @media screen  and (max-width: 480px), screen and (max-width: 767px) {
 
          width: 100%;
          max-width: 370px;
          
+        }
+        
+        @media screen  and (min-width: 768px) and  ( max-width: 1199px){
+            
+        width: 100%;
+        max-width: 370px;
      }
  
                          
@@ -141,14 +147,20 @@
         border-radius: 4px;
         resize: none;
 
-        @media screen  and (max-width: 480px), screen and (max-width: 768px) { 
+        @media screen  and (max-width: 480px), screen and (max-width: 767px) { 
 
-        margin-bottom: 5px
-
+          margin-bottom: 5px
+          
+        }
+        
+        @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+            
+           margin-bottom: 5px
         }
    }
     
-    &__textarea:focus-within{
+    &__textarea:focus-within {
+
         border: 1px solid $active;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
         
@@ -167,7 +179,10 @@
     }
                         
                         
-                            
+.consent-section {
+
+    text-align: center;
+}                          
                         
  .check-label {
 
@@ -181,16 +196,27 @@
   letter-spacing: 0.03em;
   color: $gray;
 
-   @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+   @media screen  and (max-width: 480px), screen and (max-width: 767px) {
 
-    display: block;
-    text-align: center;
+    display:inline-flex;
+    align-items: center;
+    
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     margin: 0;
+    
+ }
 
-   }
+   @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+    
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
           
           
  &__input {
@@ -211,22 +237,31 @@
       margin-left: 4px;
       color:$active;
       font-size: 14px;
-      @media screen  and (max-width: 480px), screen and (max-width: 768px) {
 
+      @media screen  and (max-width: 480px), screen and (max-width: 767px) {
+        display: contents;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
+    
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) { 
+        
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.03em;
       }
   }
   
-  &__input:checked + .check-box{
+  &__input:checked + .check-box {
+
      background-image: url(../images/iconcheck.svg);
      background-color: $active;
      background-size: contain;
      background-origin: border-box;
      border: 2px solid $active;
      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
 }
 
 .check-box{
@@ -286,16 +321,22 @@
      
      cursor: pointer;
 
-     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+     @media screen  and (max-width: 480px), screen and (max-width: 767px) {
         
-     margin-left: 0;
-     
+      margin-left: 0;
+      
+    }
+    
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        
+        margin-left: 0;
     }
     
 
 
      
  &:hover {
+
      top: 2px; 
      box-shadow: 0 2px 0px rgba(60, 53, 74, 0.459);
      transition-duration: top 500ms;
@@ -306,10 +347,16 @@
 
 .sent-btn-geometry {
 
-    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+    @media screen  and (max-width: 480px), screen and (max-width: 767px) {
         
         display: flex;
         justify-content: center;
         
+    }
+    
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+        
+        display: flex;
+        justify-content: center;
     }
 }

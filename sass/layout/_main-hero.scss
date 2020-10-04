@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: center;
     
-    @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+    @media screen  and (max-width: 480px), screen and (max-width: 767px) {
 
         width: 100%;
         max-width: 480px;
@@ -22,6 +22,21 @@
         background-position: center;
         background-repeat: no-repeat;
         
+    }
+
+    @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+
+        width: 100%;
+        max-width: 768px;
+        margin-bottom: 60px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ),
+        url("../images/tablet-hero.jpg") ;
+        background-position: center;
+        background-repeat: no-repeat;
+      
+
+
     }
    
    
@@ -35,13 +50,22 @@
      letter-spacing: 0.06em;
      color: $white;
 
-     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+     @media screen  and (max-width: 480px), screen and (max-width: 767px) {
         padding-top: 118px;
        font-size: 26px ;
        line-height: 1.38;
        text-align: center ;
        letter-spacing: 0.06em; 
 
+     }
+
+     @media screen  and (min-width: 768px) and  ( max-width: 1199px){
+        padding-top: 118px;
+        font-size: 26px ;
+        line-height: 1.5;
+        text-align: center ;
+        letter-spacing: 0.06em; 
+ 
      }
     
   }
@@ -66,11 +90,15 @@
      line-height: 1.87;
      cursor: pointer;
     
-     @media screen  and (max-width: 480px), screen and (max-width: 768px) {
+     @media screen  and (max-width: 480px), screen and (max-width: 767px) {
         margin-bottom: 118px;
 
      }
- 
+     
+     @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
+
+        margin-bottom: 118px;
+     }
  }
  
 &__button:hover {
