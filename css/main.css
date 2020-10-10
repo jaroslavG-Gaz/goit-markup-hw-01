@@ -2072,6 +2072,7 @@ template {
   background-color: rgba(0, 0, 0, 0.301);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -2107,6 +2108,7 @@ template {
   .modal {
     width: 90%;
     max-width: 450px;
+    margin-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -2438,12 +2440,6 @@ textarea::placeholder {
 
 @media screen and (max-width: 480px), screen and (max-width: 767px) {
   .check-label {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -2515,6 +2511,7 @@ textarea::placeholder {
   display: inline-block;
   margin-right: 4px;
   width: 16px;
+  min-width: 14px;
   height: 15px;
   border: 2px solid black;
   border-radius: 3px;
