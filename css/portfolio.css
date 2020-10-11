@@ -612,8 +612,8 @@ template {
     border: 0;
     padding: 0;
     background-color: transparent;
-    margin-top: 31px;
-    margin-bottom: 31px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -657,7 +657,6 @@ template {
     background-color: #ffffff;
     border-top: 1px solid #ECECEC;
     width: 100%;
-    max-width: 480px;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 1;
