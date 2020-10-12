@@ -986,6 +986,7 @@ template {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   padding: 63px 24px;
+  margin-top: 1px;
   height: 100%;
   font-style: normal;
   font-weight: normal;

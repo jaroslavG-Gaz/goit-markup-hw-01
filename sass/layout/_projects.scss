@@ -90,13 +90,16 @@
   
   
     @media screen and ( max-width: 480px), screen and (max-width: 767px) {
+
       display: inline;
+
     }
     @media screen  and (min-width: 768px) and  ( max-width: 1199px) {
 
       display: flex;
       flex-wrap: wrap;
       padding-bottom: 30px;
+
     }
   
   
@@ -158,6 +161,7 @@
     left: 0;
     transform: translateY(100%);
     padding: 63px 24px;
+    margin-top: 1px;
     height: 100%;
     
     font-style: normal;
@@ -168,6 +172,8 @@
     background-color: rgba(33, 150, 243, 0.9);
     
     transition-duration: 250ms;
+    
+    
     @media screen and ( max-width: 480px), screen and (max-width: 767px) {
 
       padding: 90px 24px;
